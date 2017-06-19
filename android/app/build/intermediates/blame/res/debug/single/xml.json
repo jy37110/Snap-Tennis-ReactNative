@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.2/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.2/res/xml/preferences.xml"
+    }
+]

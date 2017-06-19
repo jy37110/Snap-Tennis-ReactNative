@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_1ec8e7baf072b0ba3831e7e3b8b6e8d72be5aa99.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_85be92fdc16c96e71c1e5d64c41a53c0bcb499d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_2230896a7011bb42d9b3094294b6d367d8006f91.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/nativeWebStorm/react-native-maps/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cfe651e3dc0896e6e084eb8ab986e16aa0cf47c0">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/nativeWebStorm-react-native-maps-unspecified_284afda71fb763dbaa6fbd0ead921f067916437b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_26150adee9827c102a91b211c1d0567f1fa596e3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_d010c285d499ee12723e2dd1b05a333ee0668686.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_03a04ae0f8da1e21188eb2d3f6ee87d6e6937ec8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_148d6da41d3b2946fa16b4550e81766e34187862.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="af9665a44df26b4098e24c934c1109507845ef5e">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.44.2_b8ba1cd8873f4e840610b8b3c3dbca1ccb4dc6c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_bb8474e873fc4e8d7189f0569f507d9f879d2ece.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_ef8b7367ac0bce799caab1631bf68d147439bc9b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_1e1d393605c35ac59db43dc631453263c0f92d36.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_34c975c98c0c62a8352de8fc54a6cde7fa8189fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_2c1e2e9c4235403591ac18e459043f2bb3db6da3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6d0d5e86f5b7203834df01ed78ebfdd5cbf74d48">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-10.2.4_c45107bef9f4ce6268407cf5c426b99cb38eef36.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0_36b58642b85a3eb6cb467b1acc91648f9c5a4160.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dd1d0d84da2cff18f741c63a9c3af7d9aa89fdd6">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.2.4_c51cd35ff9cfb46a16c45002c8abe68b37f9a575.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5803db663655ef5cb38c6bcb17ba326fdb9edfbd">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.2.4_29a0377d47693089d8200be7639cce57b8cfd35a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_9d985a33eb864733b109d097a301b9a164e8419c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_1db24afa189a8701880a6c944925826c36576ce9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_ab989fb50189d9ae6e812d18f239215aeef7a5de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_bc3b7a0ef5143689f1fa32998918b037ddd9ba5f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0_f616954155ab37e99ff46bbc8e33a3b96373e441.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_faa4b6b36e212f6e0f00c21ce72e14df4cc2a1fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_59eba5723e2f9c7c9ccc7d7582f90e00339ee38e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9ed08fab37c3a572da1d9ed2bf2e36c8d3e2bc48">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.2.4_17ddab025f19cd430bdc09e5acb5199ef4c43592.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.2/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_5484ae4c7090e361592c88771f41c195b0f2b8ce.jar" />
+    </item>
+
+</items>

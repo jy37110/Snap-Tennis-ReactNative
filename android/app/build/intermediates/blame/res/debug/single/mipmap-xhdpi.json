@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    }
+]

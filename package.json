@@ -1,0 +1,38 @@
+{
+	"name": "nativeWebStorm",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest"
+	},
+	"dependencies": {
+		"@ava/babel-preset-stage-4": "^1.0.0",
+		"aws-api-gateway-client": "^0.2.7",
+		"aws-sdk": "^2.64.0",
+		"aws-sdk-react-native-core": "./aws-sdk/aws-sdk-react-native-core-0.0.2.tgz",
+		"aws-sdk-react-native-dynamodb": "./aws-sdk/aws-sdk-react-native-dynamodb-0.0.1.tgz",
+		"aws-sdk-react-native-lambda": "./aws-sdk/aws-sdk-react-native-lambda-0.0.1.tgz",
+		"aws-sdk-react-native-transfer-utility": "./aws-sdk/aws-sdk-react-native-transfer-utility-0.0.1.tgz",
+		"babel-cli": "^6.24.1",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-es2016": "^6.24.1",
+		"babel-preset-es2017": "^6.24.1",
+		"babel-preset-stage-0": "^6.24.1",
+		"react": "16.0.0-alpha.6",
+		"react-native": "0.44.2",
+		"react-native-map": "0.0.1",
+		"react-native-maps": "^0.15.2",
+		"react-navigation": "^1.0.0-beta.11"
+	},
+	"devDependencies": {
+		"babel-jest": "20.0.3",
+		"babel-plugin-transform-es5-property-mutators": "^6.24.1",
+		"babel-preset-react-native": "1.9.2",
+		"jest": "20.0.4",
+		"react-test-renderer": "16.0.0-alpha.6"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}

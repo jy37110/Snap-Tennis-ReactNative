@@ -6,5 +6,9 @@
     {
         "merged": "/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
         "source": "/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/chaogong/reactmaster/android/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/Users/chaogong/reactmaster/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     }
 ]

@@ -3,8 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>LastAccessedDate</key>
-	<date>2017-06-17T12:23:55Z</date>
+	<date>2017-06-20T01:14:03Z</date>
 	<key>WorkspacePath</key>
-	<string>/Users/chaogong/LocalDocuments/myCode/Native/reactmaster/ios/nativeWebStorm.xcodeproj</string>
+	<string>/Users/chaogong/reactmaster/ios/nativeWebStorm.xcodeproj</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+    <string>Need your position</string>
 </dict>
 </plist>

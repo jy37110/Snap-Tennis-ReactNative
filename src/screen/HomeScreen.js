@@ -4,61 +4,87 @@ import {
     StyleSheet,
     Text,
     View,
+    Image,
+    ScrollView,
     Button
 } from 'react-native';
+import MapView from 'react-native-maps';
 
 export default class HomeScreen extends React.Component {
+    constructor(props){
+        super(props);
+    }
     static navigationOptions = {
         title: 'Snap Tennis',
     };
     render() {
-
-        const buttons = [{
-                key: 1,
-                title: 'Get data from dynamo',
-                action: () => {navigate('DynamoData', { name: 'Jane' })},
-            },
-            {
-                key: 2,
-                title: 'Get data from lambda',
-                action: () => {navigate('LambdaData')},
-            },
+        const items = [
             {
                 key: 3,
-                title: 'User Profile',
+                title: 'One Off Match',
+                source: require('../image/profile.png'),
                 action: () => {},
             },
             {
                 key: 4,
                 title: 'Your Local Leagues',
+                source: require('../image/league.png'),
                 action: () => {},
             },
             {
                 key: 5,
                 title: 'Find a Tennis Court',
+                source: require('../image/map_court.png'),
                 action: () => {navigate('Map')},
             },
-            {
-                key: 6,
-                title: 'Updates',
-                action: () => {},
-            },
         ];
-
         const { navigate } = this.props.navigation;
-        const renderedButtons = buttons.map(b => {
-            return <Button key={b.key} title={b.title} onPress={b.action} style={this.styles.Buttons}/>;
+        const renderedButtons = items.map(b => {
+            return (
+                <View key={b.key} style={this.styles.ItemsContainer}>
+                    <Image
+                        style={this.styles.Icon}
+                        source={b.source}
+                        />
+                    <Text key={b.key} onPress={b.action} style={this.styles.Items}>{b.title}</Text>
+
+                </View>
+            )
         });
+        let markers = [{
+            coordinates:{latitude:-36.7271676,
+                longitude:174.6970001},
+            title:'Albany Domain',
+            subtitle:'Cost per hour: 0',
+        }];
         return (
             <View style={this.styles.Container}>
-
                 {renderedButtons}
-                <Text style={this.styles.Text}>
-                    Currently 1000 people have joined to this app! {'\n'}
-                    100 people have joined in your Albany region!
-                </Text>
+                <View style={this.styles.MapContainer}>
+                    <MapView
+                        style={this.styles.Map}
+                        region={{
+                            latitude: -36.732770,
+                            longitude: 174.701630,
+                            latitudeDelta: 0.0922,
+                            longitudeDelta: 0.0421,
+                        }}
+                        >
+                        <MapView.Marker
+                            coordinate={markers[0].coordinates}
+                            title={markers[0].title}
+                            description={markers[0].subtitle}
+                            />
+                    </MapView>
 
+                </View>
 
+                <View style={this.styles.TextContainer}>
+                    <Text style={this.styles.Text}>
+                        Currently 1000 people have joined to this app! {'\n'}
+                        100 people have joined in your Albany region!
+                    </Text>
+                </View>
             </View>
 
         );
@@ -72,23 +98,47 @@ export default class HomeScreen extends React.Component {
             backgroundColor: '#F5FCFF',
             //...StyleSheet.absoluteFillObject,
         },
-        Buttons:{
+        Items:{
             margin: 20,
+            color: 'rgb(120,120,120)',
+        },
+        ItemsContainer:{
+            borderBottomWidth: 1,
+            borderBottomColor: 'rgb(180,180,180)',
+            flexDirection:'row',
+            width: '90%',
+            //backgroundColor: 'rgb(200,200,200)',
+        },
+        Icon:{
+            width: 25,
+            height: 25,
+            marginTop: 16,
+            resizeMode: 'contain',
         },
         Text:{
+            alignItems: 'center',
+            color: 'rgb(120,120,120)',
             fontSize: 14,
             justifyContent: 'flex-end',
             margin: 20,
         },
+        TextContainer:{
+            flex: 1,
+            flexDirection: 'row',
+        },
         Map:{
             ...StyleSheet.absoluteFillObject,
+            width: '100%',
+            height: '100%',
         },
         MapContainer:{
-            ...StyleSheet.absoluteFillObject,
-            height: 400,
-            width: 400,
+            //...StyleSheet.absoluteFillObject,
+            marginTop: 10,
+            height: 230,
+            width: '90%',
             justifyContent: 'flex-end',
             alignItems: 'center',
+            backgroundColor: 'rgb(120,120,120)',
         }
     });
 }

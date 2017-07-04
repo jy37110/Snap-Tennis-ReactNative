@@ -2,340 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8b8c09d-b3ff-42c2-b906-d2f21e1947ca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/mapMarker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utility/dynamoDB.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/yoga.build/Objects-normal/x86_64/YGNodeList.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/yoga.build/Objects-normal/x86_64/Yoga.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/Logs/Build/1469B73E-47F6-4021-9DE7-8489472FF5E9.xcactivitylog" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/Logs/Build/61658B33-99B4-4A09-BAC3-966C15EA91DD.xcactivitylog" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1DPWQDEC6UA6F/Darwin-38I6DLZ5IH61J.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1DPWQDEC6UA6F/modules.idx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/AVFoundation-2W8OQOO5E005V.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/AVFoundation-2W8OQOO5E005V.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/AudioToolbox-29TRZLCW5QLKV.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/AudioToolbox-29TRZLCW5QLKV.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/AudioUnit-1R3FCTHQHAFWE.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/AudioUnit-1R3FCTHQHAFWE.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CFNetwork-3188M7OK0JW08.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CFNetwork-3188M7OK0JW08.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreAudio-DU322UQPMITA.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreAudio-DU322UQPMITA.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreFoundation-J9ZOXGK4ZTRR.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreFoundation-J9ZOXGK4ZTRR.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreGraphics-54UV9QOCX3ZY.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreGraphics-54UV9QOCX3ZY.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreImage-N94D31PLFESQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreImage-N94D31PLFESQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreLocation-2RB9TGORWT0YQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreLocation-2RB9TGORWT0YQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreMIDI-2OV5TK5CIMZXQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreMIDI-2OV5TK5CIMZXQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreMedia-3JTCZ41S8BKUD.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreMedia-3JTCZ41S8BKUD.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreText-3W9A51BO0R6G.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreText-3W9A51BO0R6G.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreVideo-1MLDN391V99P4.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/CoreVideo-1MLDN391V99P4.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/Darwin-38I6DLZ5IH61J.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/Darwin-38I6DLZ5IH61J.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/Dispatch-2LX9MWM6UEPQW.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/Dispatch-2LX9MWM6UEPQW.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/Foundation-3DFYNEBRQSXST.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/Foundation-3DFYNEBRQSXST.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/JavaScriptCore-N94D31PLFESQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/JavaScriptCore-N94D31PLFESQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/MachO-1BMJAO5Q3NM3O.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/MachO-1BMJAO5Q3NM3O.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/MediaToolbox-3N6MLXYI7H98P.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/MediaToolbox-3N6MLXYI7H98P.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/ObjectiveC-1RQA2RIXJIE19.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/ObjectiveC-1RQA2RIXJIE19.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/OpenGLES-JLMMBGEUW8IK.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/OpenGLES-JLMMBGEUW8IK.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/QuartzCore-23I9VTX2KZMTH.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/QuartzCore-23I9VTX2KZMTH.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/Security-27ZMYP8CODFT0.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/Security-27ZMYP8CODFT0.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/UIKit-1V5UHAPTOD24G.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/UIKit-1V5UHAPTOD24G.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/modules.idx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/os_object-38I6DLZ5IH61J.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1V9TB28PA2FEV/os_object-38I6DLZ5IH61J.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/Accelerate-1IKW7DALYIORV.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/Accelerate-1IKW7DALYIORV.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/AudioToolbox-29TRZLCW5QLKV.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/AudioToolbox-29TRZLCW5QLKV.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CFNetwork-3188M7OK0JW08.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CFNetwork-3188M7OK0JW08.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CoreAudio-DU322UQPMITA.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CoreAudio-DU322UQPMITA.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CoreFoundation-J9ZOXGK4ZTRR.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CoreFoundation-J9ZOXGK4ZTRR.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CoreGraphics-54UV9QOCX3ZY.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CoreGraphics-54UV9QOCX3ZY.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CoreImage-N94D31PLFESQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CoreImage-N94D31PLFESQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CoreLocation-2RB9TGORWT0YQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CoreLocation-2RB9TGORWT0YQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CoreMIDI-2OV5TK5CIMZXQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CoreMIDI-2OV5TK5CIMZXQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CoreText-3W9A51BO0R6G.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CoreText-3W9A51BO0R6G.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CoreVideo-1MLDN391V99P4.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/CoreVideo-1MLDN391V99P4.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/Darwin-38I6DLZ5IH61J.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/Darwin-38I6DLZ5IH61J.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/Dispatch-2LX9MWM6UEPQW.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/Dispatch-2LX9MWM6UEPQW.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/Foundation-3DFYNEBRQSXST.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/Foundation-3DFYNEBRQSXST.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/ImageIO-YVI44K06S0WO.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/ImageIO-YVI44K06S0WO.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/MachO-1BMJAO5Q3NM3O.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/MachO-1BMJAO5Q3NM3O.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/MobileCoreServices-N94D31PLFESQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/MobileCoreServices-N94D31PLFESQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/ObjectiveC-1RQA2RIXJIE19.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/ObjectiveC-1RQA2RIXJIE19.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/OpenGLES-JLMMBGEUW8IK.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/OpenGLES-JLMMBGEUW8IK.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/QuartzCore-23I9VTX2KZMTH.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/QuartzCore-23I9VTX2KZMTH.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/Security-27ZMYP8CODFT0.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/Security-27ZMYP8CODFT0.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/SystemConfiguration-354UAJE49HRJF.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/SystemConfiguration-354UAJE49HRJF.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/UIKit-1V5UHAPTOD24G.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/UIKit-1V5UHAPTOD24G.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/_Builtin_intrinsics-1NKGPDERPGHAD.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/_Builtin_intrinsics-1NKGPDERPGHAD.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/modules.idx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/os_object-38I6DLZ5IH61J.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/1VV67NB87QSZJ/os_object-38I6DLZ5IH61J.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/CFNetwork-3188M7OK0JW08.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/CFNetwork-3188M7OK0JW08.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/CoreFoundation-J9ZOXGK4ZTRR.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/CoreFoundation-J9ZOXGK4ZTRR.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/CoreGraphics-54UV9QOCX3ZY.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/CoreGraphics-54UV9QOCX3ZY.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/CoreImage-N94D31PLFESQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/CoreImage-N94D31PLFESQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/CoreText-3W9A51BO0R6G.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/CoreText-3W9A51BO0R6G.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/CoreVideo-1MLDN391V99P4.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/CoreVideo-1MLDN391V99P4.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/Darwin-38I6DLZ5IH61J.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/Darwin-38I6DLZ5IH61J.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/Dispatch-2LX9MWM6UEPQW.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/Dispatch-2LX9MWM6UEPQW.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/Foundation-3DFYNEBRQSXST.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/Foundation-3DFYNEBRQSXST.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/MachO-1BMJAO5Q3NM3O.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/MachO-1BMJAO5Q3NM3O.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/ObjectiveC-1RQA2RIXJIE19.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/ObjectiveC-1RQA2RIXJIE19.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/OpenGLES-JLMMBGEUW8IK.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/OpenGLES-JLMMBGEUW8IK.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/QuartzCore-23I9VTX2KZMTH.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/QuartzCore-23I9VTX2KZMTH.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/Security-27ZMYP8CODFT0.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/Security-27ZMYP8CODFT0.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/UIKit-1V5UHAPTOD24G.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/UIKit-1V5UHAPTOD24G.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/modules.idx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/os_object-38I6DLZ5IH61J.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/2F96KTU0VKVGC/os_object-38I6DLZ5IH61J.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/CFNetwork-3188M7OK0JW08.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/CFNetwork-3188M7OK0JW08.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/CoreFoundation-J9ZOXGK4ZTRR.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/CoreFoundation-J9ZOXGK4ZTRR.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/CoreGraphics-54UV9QOCX3ZY.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/CoreGraphics-54UV9QOCX3ZY.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/CoreImage-N94D31PLFESQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/CoreImage-N94D31PLFESQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/CoreText-3W9A51BO0R6G.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/CoreText-3W9A51BO0R6G.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/CoreVideo-1MLDN391V99P4.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/CoreVideo-1MLDN391V99P4.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/Darwin-38I6DLZ5IH61J.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/Darwin-38I6DLZ5IH61J.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/Dispatch-2LX9MWM6UEPQW.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/Dispatch-2LX9MWM6UEPQW.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/Foundation-3DFYNEBRQSXST.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/Foundation-3DFYNEBRQSXST.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/MachO-1BMJAO5Q3NM3O.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/MachO-1BMJAO5Q3NM3O.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/ObjectiveC-1RQA2RIXJIE19.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/ObjectiveC-1RQA2RIXJIE19.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/OpenGLES-JLMMBGEUW8IK.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/OpenGLES-JLMMBGEUW8IK.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/QuartzCore-23I9VTX2KZMTH.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/QuartzCore-23I9VTX2KZMTH.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/Security-27ZMYP8CODFT0.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/Security-27ZMYP8CODFT0.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/UIKit-1V5UHAPTOD24G.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/UIKit-1V5UHAPTOD24G.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/XCTest-1FJM61D2FSIU5.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/XCTest-1FJM61D2FSIU5.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/modules.idx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/os_object-38I6DLZ5IH61J.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3J4PW3G4334AN/os_object-38I6DLZ5IH61J.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/CFNetwork-3188M7OK0JW08.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/CFNetwork-3188M7OK0JW08.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/CoreFoundation-J9ZOXGK4ZTRR.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/CoreFoundation-J9ZOXGK4ZTRR.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/CoreGraphics-54UV9QOCX3ZY.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/CoreGraphics-54UV9QOCX3ZY.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/CoreImage-N94D31PLFESQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/CoreImage-N94D31PLFESQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/CoreLocation-2RB9TGORWT0YQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/CoreLocation-2RB9TGORWT0YQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/CoreText-3W9A51BO0R6G.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/CoreText-3W9A51BO0R6G.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/CoreVideo-1MLDN391V99P4.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/CoreVideo-1MLDN391V99P4.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/Darwin-38I6DLZ5IH61J.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/Darwin-38I6DLZ5IH61J.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/Dispatch-2LX9MWM6UEPQW.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/Dispatch-2LX9MWM6UEPQW.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/Foundation-3DFYNEBRQSXST.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/Foundation-3DFYNEBRQSXST.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/MachO-1BMJAO5Q3NM3O.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/MachO-1BMJAO5Q3NM3O.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/MapKit-THDG17AXS092.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/MapKit-THDG17AXS092.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/ObjectiveC-1RQA2RIXJIE19.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/ObjectiveC-1RQA2RIXJIE19.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/OpenGLES-JLMMBGEUW8IK.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/OpenGLES-JLMMBGEUW8IK.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/QuartzCore-23I9VTX2KZMTH.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/QuartzCore-23I9VTX2KZMTH.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/Security-27ZMYP8CODFT0.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/Security-27ZMYP8CODFT0.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/UIKit-1V5UHAPTOD24G.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/UIKit-1V5UHAPTOD24G.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/modules.idx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/os_object-38I6DLZ5IH61J.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/3L0UV5XUN8JJ6/os_object-38I6DLZ5IH61J.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/4RNJG2L6YIVD/Darwin-38I6DLZ5IH61J.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/4RNJG2L6YIVD/modules.idx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/AVFoundation-2W8OQOO5E005V.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/AVFoundation-2W8OQOO5E005V.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/AudioToolbox-29TRZLCW5QLKV.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/AudioToolbox-29TRZLCW5QLKV.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/AudioUnit-1R3FCTHQHAFWE.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/AudioUnit-1R3FCTHQHAFWE.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CFNetwork-3188M7OK0JW08.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CFNetwork-3188M7OK0JW08.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreAudio-DU322UQPMITA.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreAudio-DU322UQPMITA.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreFoundation-J9ZOXGK4ZTRR.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreFoundation-J9ZOXGK4ZTRR.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreGraphics-54UV9QOCX3ZY.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreGraphics-54UV9QOCX3ZY.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreImage-N94D31PLFESQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreImage-N94D31PLFESQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreLocation-2RB9TGORWT0YQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreLocation-2RB9TGORWT0YQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreMIDI-2OV5TK5CIMZXQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreMIDI-2OV5TK5CIMZXQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreMedia-3JTCZ41S8BKUD.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreMedia-3JTCZ41S8BKUD.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreText-3W9A51BO0R6G.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreText-3W9A51BO0R6G.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreVideo-1MLDN391V99P4.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/CoreVideo-1MLDN391V99P4.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/Darwin-38I6DLZ5IH61J.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/Darwin-38I6DLZ5IH61J.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/Dispatch-2LX9MWM6UEPQW.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/Dispatch-2LX9MWM6UEPQW.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/Foundation-3DFYNEBRQSXST.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/Foundation-3DFYNEBRQSXST.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/JavaScriptCore-N94D31PLFESQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/JavaScriptCore-N94D31PLFESQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/MachO-1BMJAO5Q3NM3O.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/MachO-1BMJAO5Q3NM3O.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/MediaToolbox-3N6MLXYI7H98P.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/MediaToolbox-3N6MLXYI7H98P.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/ObjectiveC-1RQA2RIXJIE19.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/ObjectiveC-1RQA2RIXJIE19.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/OpenGLES-JLMMBGEUW8IK.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/OpenGLES-JLMMBGEUW8IK.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/QuartzCore-23I9VTX2KZMTH.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/QuartzCore-23I9VTX2KZMTH.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/Security-27ZMYP8CODFT0.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/Security-27ZMYP8CODFT0.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/UIKit-1V5UHAPTOD24G.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/UIKit-1V5UHAPTOD24G.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/modules.idx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/os_object-38I6DLZ5IH61J.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/8LLUQBGHBDG2/os_object-38I6DLZ5IH61J.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/Accelerate-1IKW7DALYIORV.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/Accelerate-1IKW7DALYIORV.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/AudioToolbox-29TRZLCW5QLKV.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/AudioToolbox-29TRZLCW5QLKV.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CFNetwork-3188M7OK0JW08.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CFNetwork-3188M7OK0JW08.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CoreAudio-DU322UQPMITA.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CoreAudio-DU322UQPMITA.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CoreFoundation-J9ZOXGK4ZTRR.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CoreFoundation-J9ZOXGK4ZTRR.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CoreGraphics-54UV9QOCX3ZY.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CoreGraphics-54UV9QOCX3ZY.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CoreImage-N94D31PLFESQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CoreImage-N94D31PLFESQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CoreLocation-2RB9TGORWT0YQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CoreLocation-2RB9TGORWT0YQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CoreMIDI-2OV5TK5CIMZXQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CoreMIDI-2OV5TK5CIMZXQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CoreText-3W9A51BO0R6G.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CoreText-3W9A51BO0R6G.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CoreVideo-1MLDN391V99P4.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/CoreVideo-1MLDN391V99P4.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/Darwin-38I6DLZ5IH61J.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/Darwin-38I6DLZ5IH61J.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/Dispatch-2LX9MWM6UEPQW.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/Dispatch-2LX9MWM6UEPQW.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/Foundation-3DFYNEBRQSXST.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/Foundation-3DFYNEBRQSXST.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/ImageIO-YVI44K06S0WO.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/ImageIO-YVI44K06S0WO.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/JavaScriptCore-N94D31PLFESQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/JavaScriptCore-N94D31PLFESQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/MachO-1BMJAO5Q3NM3O.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/MachO-1BMJAO5Q3NM3O.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/MobileCoreServices-N94D31PLFESQ.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/MobileCoreServices-N94D31PLFESQ.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/ObjectiveC-1RQA2RIXJIE19.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/ObjectiveC-1RQA2RIXJIE19.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/OpenGLES-JLMMBGEUW8IK.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/OpenGLES-JLMMBGEUW8IK.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/QuartzCore-23I9VTX2KZMTH.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/QuartzCore-23I9VTX2KZMTH.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/Security-27ZMYP8CODFT0.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/Security-27ZMYP8CODFT0.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/SystemConfiguration-354UAJE49HRJF.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/SystemConfiguration-354UAJE49HRJF.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/UIKit-1V5UHAPTOD24G.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/UIKit-1V5UHAPTOD24G.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/_Builtin_intrinsics-1NKGPDERPGHAD.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/_Builtin_intrinsics-1NKGPDERPGHAD.pcm.timestamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/modules.idx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/os_object-38I6DLZ5IH61J.pcm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/ModuleCache/KVRSL6S3R2XM/os_object-38I6DLZ5IH61J.pcm.timestamp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/yoga.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/yoga.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Logs/Build/Cache.db" afterPath="$PROJECT_DIR$/ios/build/Logs/Build/Cache.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.ios.js" afterPath="$PROJECT_DIR$/index.ios.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/info.plist" afterPath="$PROJECT_DIR$/ios/build/info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/DynamoData.js" afterPath="$PROJECT_DIR$/src/screen/DynamoData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/HomeScreen.js" afterPath="$PROJECT_DIR$/src/screen/HomeScreen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/nativeWebStorm.xcodeproj/project.xcworkspace/xcuserdata/chaogong.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ios/nativeWebStorm.xcodeproj/project.xcworkspace/xcuserdata/chaogong.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/nativeWebStorm.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ios/nativeWebStorm.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/MapScreen.js" afterPath="$PROJECT_DIR$/src/screen/MapScreen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utility/dynamoDB.js" afterPath="$PROJECT_DIR$/src/utility/dynamoDB.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -353,11 +27,10 @@
       <file leaf-file-name="MapScreen.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/screen/MapScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1072">
-              <caret line="239" column="47" lean-forward="false" selection-start-line="239" selection-start-column="47" selection-end-line="239" selection-end-column="47" />
+            <state relative-caret-position="1560">
+              <caret line="104" column="4" lean-forward="false" selection-start-line="104" selection-start-column="4" selection-end-line="104" selection-end-column="4" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <marker date="1499145000000" expanded="true" signature="3745:3804" ph="..." />
               </folding>
             </state>
           </provider>
@@ -366,7 +39,7 @@
       <file leaf-file-name="mapMarker.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/mapMarker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="240">
               <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -390,7 +63,7 @@
       <file leaf-file-name="DynamoData.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/screen/DynamoData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
+            <state relative-caret-position="780">
               <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -402,8 +75,8 @@
       <file leaf-file-name="dynamoDB.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utility/dynamoDB.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="690">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -444,8 +117,8 @@
         <option value="$PROJECT_DIR$/index.ios.js" />
         <option value="$PROJECT_DIR$/src/screen/DynamoData.js" />
         <option value="$PROJECT_DIR$/src/screen/HomeScreen.js" />
-        <option value="$PROJECT_DIR$/src/utility/dynamoDB.js" />
         <option value="$PROJECT_DIR$/src/components/mapMarker.js" />
+        <option value="$PROJECT_DIR$/src/utility/dynamoDB.js" />
         <option value="$PROJECT_DIR$/src/screen/MapScreen.js" />
       </list>
     </option>
@@ -693,12 +366,12 @@
       <workItem from="1498982112029" duration="8168000" />
       <workItem from="1499004054548" duration="415000" />
       <workItem from="1499040987038" duration="19608000" />
-      <workItem from="1499129659015" duration="12351000" />
+      <workItem from="1499129659015" duration="17414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86102000" />
+    <option name="totallyTimeSpent" value="91165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3640" y="0" width="1080" height="1920" extended-state="6" />
@@ -731,7 +404,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -752,7 +425,6 @@
           <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <marker date="1499145000000" expanded="true" signature="3745:3804" ph="..." />
           </folding>
         </state>
       </provider>
@@ -801,7 +473,6 @@
           <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <marker date="1499145000000" expanded="true" signature="3745:3804" ph="..." />
           </folding>
         </state>
       </provider>
@@ -837,7 +508,6 @@
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <marker date="1499145000000" expanded="true" signature="3745:3804" ph="..." />
           </folding>
         </state>
       </provider>
@@ -883,7 +553,6 @@
           <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <marker date="1499145000000" expanded="true" signature="3745:3804" ph="..." />
           </folding>
         </state>
       </provider>
@@ -911,7 +580,6 @@
           <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="24" selection-end-column="47" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <marker date="1499145000000" expanded="true" signature="3745:3804" ph="..." />
           </folding>
         </state>
       </provider>
@@ -998,7 +666,6 @@
           <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <marker date="1499145000000" expanded="true" signature="3745:3804" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1041,7 +708,6 @@
           <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="24" selection-end-column="47" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <marker date="1499145000000" expanded="true" signature="3745:3804" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1113,16 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screen/DynamoData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/screen/HomeScreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1130,14 +786,6 @@
           <folding>
             <marker date="1498829827000" expanded="true" signature="4315:4327" ph="{&quot;width&quot;: '90%'...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utility/dynamoDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,9 +799,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.ios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/mapMarker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="240">
           <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -1161,21 +819,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screen/MapScreen.js">
+    <entry file="file://$PROJECT_DIR$/src/screen/DynamoData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1072">
-          <caret line="239" column="47" lean-forward="false" selection-start-line="239" selection-start-column="47" selection-end-line="239" selection-end-column="47" />
+        <state relative-caret-position="780">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <marker date="1499145000000" expanded="true" signature="3745:3804" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.ios.js">
+    <entry file="file://$PROJECT_DIR$/src/utility/dynamoDB.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        <state relative-caret-position="690">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screen/MapScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="104" column="4" lean-forward="false" selection-start-line="104" selection-start-column="4" selection-end-line="104" selection-end-column="4" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

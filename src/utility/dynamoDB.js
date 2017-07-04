@@ -9,7 +9,7 @@ export default class DynamoDB{
         });
         this.docClient = new AWS.DynamoDB.DocumentClient();
     }
-    scanVenue(obj, laFrom, laTo, loFrom, loTo){
+    scanNearbyVenue(obj){
         let params = {
             TableName:"NZVenues",
             ProjectionExpression:"#N, cost_per_hour, latitude, longitude, suburb",
@@ -18,26 +18,47 @@ export default class DynamoDB{
                 "#N": "name"
             },
             ExpressionAttributeValues: {
-                ":la1":(-36.7814943 + 0.15).toString(),
-                ":la2":(-36.7814943 - 0.15).toString(),
-                ":lo1":(174.70117935 - 0.15).toString(),
-                ":lo2":(174.70117935 + 0.15).toString(),
+                ":la1":(obj.state.userLocation.latitude + 0.1).toString(),
+                ":la2":(obj.state.userLocation.latitude - 0.1).toString(),
+                ":lo1":(obj.state.userLocation.longitude - 0.1).toString(),
+                ":lo2":(obj.state.userLocation.longitude + 0.1).toString(),
             }
         };
 
-        let scanResult;
-
+        let scanResult = [];
         let onScan = (err, data) => {
             if (err) {
                 scanResult = "Something wrong" + err;
             } else {
-                scanResult = data.Items;
+                //this.scan = data.Items;
+                data.Items.forEach((value) => {
+                    let temp = {
+                        title:value.name,
+                        suburb:value.suburb,
+                        latlng:{
+                            latitude:Number(value.latitude),
+                            longitude:Number(value.longitude),
+                        },
+                        description:value.cost_per_hour.toString()
+                    };
+                    obj.scan.push(temp);
+                });
+
+
+                // this.setState({
+                //     markers: this.state.markers.concat(markers)
+                // })
+
+
+                // this.setState({
+                //     scanResult:[this.state.scanResult, this.scan]
+                // });
             }
-            obj.setState({
-                scanResult:scanResult
-            });
+
+            // this.setState({
+            //     scanResult:this.scan
+            // });
         };
         this.docClient.scan(params, onScan);
     }
-
 }

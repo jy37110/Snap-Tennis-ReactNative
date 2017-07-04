@@ -8,11 +8,10 @@ import {
 } from 'react-native';
 
 let AWS = require('aws-sdk/dist/aws-sdk-react-native');
-
 AWS.config.update({
     region: "ap-southeast-2",
-    accessKeyId: "AKIAIUYAFSVXA5O3JHFA",
-    secretAccessKey: "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"
+    accessKeyId: "AKIAJIRM3S2OV5EJHKLA",
+    secretAccessKey: "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"
 });
 
 export default class DynamoData extends Component {
@@ -20,33 +19,40 @@ export default class DynamoData extends Component {
         super(props);
         this.state = {
             userId: '1',
-            userName: ''
+            userName:[]
         };
     }
 
     docClient = new AWS.DynamoDB.DocumentClient();
 
     readItem() {
-        let table = "User";
-        let id = this.state.userId;
-
         let params = {
-            TableName: table,
-            Key:{
-                "Id": id
+            TableName:"NZVenues",
+            ProjectionExpression:"#N, cost_per_hour, latitude, longitude",
+            FilterExpression: "latitude between :la1 and :la2 and longitude between :lo1 and :lo2",
+            ExpressionAttributeNames:{
+                "#N": "name"
+            },
+            ExpressionAttributeValues: {
+                ":la1":(-36.7814943 + 0.15).toString(),
+                ":la2":(-36.7814943 - 0.15).toString(),
+                ":lo1":(174.70117935 - 0.15).toString(),
+                ":lo2":(174.70117935 + 0.15).toString(),
             }
         };
-        this.docClient.get(params, (err, data) => {
+
+        let onScan = (err, data) => {
             if (err) {
-                this.setState({userName:"Something was wrong"});
+                this.setState({userName:"Something wrong" + err});
             } else {
-                if (JSON.stringify(data) === "{}"){
-                    this.setState({userName:"no user was found"});
-                } else {
-                    this.setState({userName:data.Item.Name});
-                }
+                this.setState({userName:"Right:" + JSON.stringify(data)});
+                // this.setState({userName:data.Items});
+                // alert(data.Items[0]);
             }
-        });
+        };
+
+        this.docClient.scan(params, onScan);
+
     }
 
     onPressGetUserName = () => {
@@ -75,9 +81,12 @@ export default class DynamoData extends Component {
                   color="#841584"
                   accessibilityLabel="Learn more about this purple button"
               />
-                <Text style={styles.instructions}>
+                <Text style={styles.instructions} numberOfLines={50}>
                     {this.state.userName}
                 </Text>
+                <View>
+
+                </View>
             </View>
         );
     }

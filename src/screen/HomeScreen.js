@@ -29,7 +29,7 @@ export default class HomeScreen extends React.Component {
                 key: 4,
                 title: 'Your Local Leagues',
                 source: require('../image/league.png'),
-                action: () => {},
+                action: () => {navigate('Test')},
             },
             {
                 key: 5,

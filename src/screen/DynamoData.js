@@ -18,8 +18,41 @@ export default class DynamoData extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            userId: '1',
-            userName:[]
+            userLocation:{
+                latitude: 0,
+                longitude: 0,
+                latitudeDelta: 0.15,
+                longitudeDelta: 0.15,
+            },
+            camera:{
+                latitude: 0,
+                longitude: 0,
+                latitudeDelta: 0.15,
+                longitudeDelta: 0.15,
+            },
+            // markers:[],
+            markers:[
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""}]
+
         };
     }
 
@@ -28,16 +61,18 @@ export default class DynamoData extends Component {
     readItem() {
         let params = {
             TableName:"NZVenues",
-            ProjectionExpression:"#N, cost_per_hour, latitude, longitude",
+            ProjectionExpression:"#N, cost_per_hour, latitude, longitude, suburb, access, " +
+            "average_rating, condition_description, designation, full_address, num_courts, #Reg",
             FilterExpression: "latitude between :la1 and :la2 and longitude between :lo1 and :lo2",
             ExpressionAttributeNames:{
-                "#N": "name"
+                "#N": "name",
+                "#Reg": "region"
             },
             ExpressionAttributeValues: {
-                ":la1":(-36.7814943 + 0.15).toString(),
-                ":la2":(-36.7814943 - 0.15).toString(),
-                ":lo1":(174.70117935 - 0.15).toString(),
-                ":lo2":(174.70117935 + 0.15).toString(),
+                ":la1":(this.state.userLocation.latitude + this.SEARCHING_RANGE).toString(),
+                ":la2":(this.state.userLocation.latitude - this.SEARCHING_RANGE).toString(),
+                ":lo1":(this.state.userLocation.longitude - this.SEARCHING_RANGE).toString(),
+                ":lo2":(this.state.userLocation.longitude + this.SEARCHING_RANGE).toString(),
             }
         };
 

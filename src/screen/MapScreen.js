@@ -6,60 +6,55 @@ import {
 let MapView = require('react-native-maps');
 let AWS = require('aws-sdk/dist/aws-sdk-react-native');
 
-
 export default class MapScreen extends Component {
     constructor(props){
         super(props);
-        navigator.geolocation.getCurrentPosition(this.getUserLocationSuccess, this.getUserLocationError, this.getUserLocationOptions);
+        this.getCurrentUserLocationSuccess = this.getCurrentUserLocationSuccess.bind(this);
+        navigator.geolocation.getCurrentPosition(this.getLatestUserLocationSuccess, this.getLatestUserLocationError, this.getLatestUserLocationOptions);
+        this.id = navigator.geolocation.watchPosition(this.getCurrentUserLocationSuccess, this.getCurrentUserLocationError, this.getCurrentUserLocationOptions);
         AWS.config.update({
             region: "ap-southeast-2",
             accessKeyId: "AKIAJIRM3S2OV5EJHKLA",
             secretAccessKey: "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"
         });
-        this.docClient = new AWS.DynamoDB.DocumentClient();
+        this.docClient = new AWS.DynamoDB.DocumentClient({dynamoDbCrc32:false});
         this.scan = [];
         this.SEARCHING_RANGE = 0.1;
         this.state = {
             userLocation:{
-                latitude: 37.78825,
-                longitude: -122.4324,
+                latitude: 0,
+                longitude: 0,
                 latitudeDelta: 0.15,
                 longitudeDelta: 0.15,
             },
             camera:{
-                latitude: 37.78825,
-                longitude: -122.4324,
+                latitude: 0,
+                longitude: 0,
                 latitudeDelta: 0.15,
                 longitudeDelta: 0.15,
             },
             // markers:[],
             markers:[
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-                {title:"name1", suburb:"northcode1", latlng:{latitude:-10, longitude:10,}, description:"0"},
-            ],
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""}]
         };
     }
 
@@ -67,16 +62,46 @@ export default class MapScreen extends Component {
         title: 'Find a Tennis Court',
     };
 
-    getUserLocationOptions = {
+    onRegionChange = (region) =>{
+        this.setState({camera:region})
+    };
+
+    getCurrentUserLocationSuccess(pos) {
+        let crd = pos.coords;
+        console.log('Congratulations, you reached the target');
+        navigator.geolocation.clearWatch(this.id);
+        this.setState({
+            userLocation:{
+                latitude: crd.latitude,
+                longitude: crd.longitude,
+                latitudeDelta: 0.15,
+                longitudeDelta: 0.15,
+            },
+            camera:{
+                latitude: crd.latitude,
+                longitude: crd.longitude,
+                latitudeDelta: 0.2,
+                longitudeDelta: 0.2,
+            },
+        });
+        this.scanNearbyVenue();
+
+    }
+    getCurrentUserLocationError(err) {
+        console.warn('ERROR(' + err.code + '): ' + err.message);
+    }
+    getCurrentUserLocationOptions = {
+        enableHighAccuracy: false,
+        timeout: 5000,
+        maximumAge: 0,
+    };
+
+    getLatestUserLocationOptions = {
         enableHighAccuracy: true,
         timeout: 5000,
     };
 
-    onRegionChange = (region) =>{
-      this.setState({camera:region})
-    };
-
-    getUserLocationSuccess = (pos) => {
+    getLatestUserLocationSuccess = (pos) => {
         let crd = pos.coords;
         this.setState({
             userLocation:{
@@ -91,7 +116,6 @@ export default class MapScreen extends Component {
                 latitudeDelta: 0.2,
                 longitudeDelta: 0.2,
             },
-            title:'Latitude: ' + crd.latitude + ' Longitude: ' + crd.longitude,
         });
         this.scanNearbyVenue();
         console.log('Your current position is:');
@@ -99,17 +123,19 @@ export default class MapScreen extends Component {
         console.log(`Longitude: ${crd.longitude}`);
     };
 
-    getUserLocationError = (err) => {
+    getLatestUserLocationError = (err) => {
         console.warn(`ERROR(${err.code}): ${err.message}`);
     };
-    
+
     scanNearbyVenue(){
         let params = {
             TableName:"NZVenues",
-            ProjectionExpression:"#N, cost_per_hour, latitude, longitude, suburb",
+            ProjectionExpression:"#N, cost_per_hour, latitude, longitude, suburb, access, " +
+            "average_rating, condition_description, designation, full_address, num_courts, #Reg",
             FilterExpression: "latitude between :la1 and :la2 and longitude between :lo1 and :lo2",
             ExpressionAttributeNames:{
-                "#N": "name"
+                "#N": "name",
+                "#Reg": "region"
             },
             ExpressionAttributeValues: {
                 ":la1":(this.state.userLocation.latitude + this.SEARCHING_RANGE).toString(),
@@ -118,20 +144,26 @@ export default class MapScreen extends Component {
                 ":lo2":(this.state.userLocation.longitude + this.SEARCHING_RANGE).toString(),
             }
         };
-
         let onScan = (err, data) => {
             if (err) {
                 this.scan = "Something wrong" + err;
             } else {
                 data.Items.forEach((value) => {
                         let  temp = {
-                        title:value.name,
-                        suburb:value.suburb,
-                        latlng:{
-                            latitude:Number(value.latitude),
-                            longitude:Number(value.longitude),
-                        },
-                        description:value.cost_per_hour.toString()
+                            name: value.name,
+                            suburb: value.suburb,
+                            latlng: {
+                                latitude: Number(value.latitude),
+                                longitude: Number(value.longitude)
+                            },
+                            costPerHour: value.cost_per_hour.toString(),
+                            access: value.access,
+                            averageRating: value.average_rating.toString(),
+                            condition: value.condition_description,
+                            designation: value.designation,
+                            address: value.full_address,
+                            numberOfCourts: value.num_courts.toString(),
+                            region: value.region,
                     };
                     this.scan.push(temp);
                 });
@@ -148,7 +180,9 @@ export default class MapScreen extends Component {
     // }
 
     render() {
+        const { navigate } = this.props.navigation;
         let markers = this.state.markers||[];
+        let userLocation = this.state.userLocation || {latitude:0, longitude:0};
         return (
             <View style={this.styles.MapContainer}>
                 <MapView
@@ -158,18 +192,32 @@ export default class MapScreen extends Component {
                 >
                     <View style={this.styles.MarkerWrapper}>
                         <MapView.Marker
-                            coordinate={this.state.userLocation}
+                            coordinate={userLocation}
                             title="Me"
-                            description={this.state.userLocation.latitude + ", " + this.state.userLocation.longitude}
+                            description={userLocation.latitude + ", " + userLocation.longitude}
                             pinColor="#00BFFF"
                         />
                         {markers.map((marker,i) =>(
                             <MapView.Marker
                                 key={i}
                                 coordinate={marker.latlng}
-                                title={marker.title}
-                                description={"Cost per hour: " + marker.description}
+                                title={marker.name}
+                                description={"Cost per hour: " + marker.costPerHour}
                                 pinColor="red"
+                                onCalloutPress={() => navigate('VenueDetail', {
+                                    latitude: marker.latlng.latitude,
+                                    longitude: marker.latlng.longitude,
+                                    name: marker.name,
+                                    numberOfCourts: marker.numberOfCourts,
+                                    access: marker.access,
+                                    averageRating: marker.averageRating,
+                                    condition: marker.condition,
+                                    costPerHour: marker.costPerHour,
+                                    designation: marker.designation,
+                                    suburb: marker.suburb,
+                                    region: marker.region,
+                                    address: marker.address,
+                                })}
                             >
                             </MapView.Marker>
                         ))}
@@ -189,13 +237,9 @@ export default class MapScreen extends Component {
             justifyContent: 'flex-end',
             alignItems: 'center',
         },
-        Marker:{
-
-        },
         MarkerWrapper:{
             height:50,
             width: 50,
         }
     });
-
 }

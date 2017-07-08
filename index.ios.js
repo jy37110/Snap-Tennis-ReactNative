@@ -8,10 +8,13 @@ import {
 import HomeScreen from "./src/screen/HomeScreen";
 import MapScreen from "./src/screen/MapScreen";
 import DynamoData from "./src/screen/DynamoData";
+import VenueDetail from './src/screen/VenueDetail';
+
 
 const App = StackNavigator({
     Home: { screen: HomeScreen },
     Map: { screen: MapScreen},
+    VenueDetail: { screen: VenueDetail},
     Test: {screen: DynamoData},
 });
 

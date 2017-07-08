@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import {
-    AppRegistry,
     StyleSheet,
     Text,
     View,
     Image,
-    ScrollView,
-    Button
 } from 'react-native';
 import MapView from 'react-native-maps';
 
-export default class HomeScreen extends React.Component {
+export default class HomeScreen extends Component {
     constructor(props){
         super(props);
     }
@@ -18,7 +15,7 @@ export default class HomeScreen extends React.Component {
         title: 'Snap Tennis',
     };
     render() {
-        const items = [
+        const screens = [
             {
                 key: 3,
                 title: 'One Off Match',
@@ -39,7 +36,7 @@ export default class HomeScreen extends React.Component {
             },
         ];
         const { navigate } = this.props.navigation;
-        const renderedButtons = items.map(b => {
+        const renderedButtons = screens.map(b => {
             return (
                 <View key={b.key} style={this.styles.ItemsContainer}>
                     <Image
@@ -47,7 +44,6 @@ export default class HomeScreen extends React.Component {
                         source={b.source}
                         />
                     <Text key={b.key} onPress={b.action} style={this.styles.Items}>{b.title}</Text>
-
                 </View>
             )
         });

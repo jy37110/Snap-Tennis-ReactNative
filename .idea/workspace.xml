@@ -2,97 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8b8c09d-b3ff-42c2-b906-d2f21e1947ca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/agenda/img/knob@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/img/next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/img/next@1.5x.android.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/img/next@2x.android.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/img/next@2x.ios.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/img/next@3x.android.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/img/next@4x.android.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/img/previous.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/img/previous@1.5x.android.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/img/previous@2x.android.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/img/previous@2x.ios.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/img/previous@3x.android.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/img/previous@4x.android.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/build/compiler.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/.eslintrc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/.nvmrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/spec/runner.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/spec/support/jasmine.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/agenda/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/agenda/reservation-list/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/agenda/reservation-list/style.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/agenda/style.android.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/agenda/style.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar-list/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar-list/style.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/day/basic/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/day/basic/style.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/day/interactive/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/day/interactive/style.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/header/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/header/style.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/style.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/calendar/updater.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/dateutils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/interface.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/src/style.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/react-native-calendars/yarn.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/GPL-LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/MIT-LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/README.mkd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/build/externs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/changelog.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/src/extras.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/src/xdate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/test/adding.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/test/constructors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/test/diffing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/test/formatting-extras.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/test/formatting.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/test/getters.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/test/nothing.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/test/old.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/test/parsing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/test/setters.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/test/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/test/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/test/utc-mode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/test/utilities.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/xdate/version.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/screen/RegisterLeague.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/Logs/Build/D633DE5A-22BF-43EF-BE1A-432454DCC251.xcactivitylog" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/Logs/Build/F1227794-112D-482F-8874-17265F8ACE1C.xcactivitylog" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/yoga.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/yoga.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Logs/Build/Cache.db" afterPath="$PROJECT_DIR$/ios/build/Logs/Build/Cache.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/nativeWebStorm.xcodeproj/project.xcworkspace/xcuserdata/chaogong.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ios/nativeWebStorm.xcodeproj/project.xcworkspace/xcuserdata/chaogong.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/screen/LeagueInfo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.android.js" afterPath="$PROJECT_DIR$/index.android.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.ios.js" afterPath="$PROJECT_DIR$/index.ios.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/info.plist" afterPath="$PROJECT_DIR$/ios/build/info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/CalendarScreen.js" afterPath="$PROJECT_DIR$/src/screen/CalendarScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/HomeScreen.js" afterPath="$PROJECT_DIR$/src/screen/HomeScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/MapScreen.js" afterPath="$PROJECT_DIR$/src/screen/MapScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/VenueDetail.js" afterPath="$PROJECT_DIR$/src/screen/VenueDetail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/RegisterLeague.js" afterPath="$PROJECT_DIR$/src/screen/RegisterLeague.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -110,7 +24,7 @@
       <file leaf-file-name="HomeScreen.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/screen/HomeScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
+            <state relative-caret-position="1395">
               <caret line="100" column="13" lean-forward="false" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
               <folding>
                 <marker date="1499947146000" expanded="true" signature="4278:4290" ph="{&quot;width&quot;: '90%'...}" />
@@ -122,9 +36,47 @@
       <file leaf-file-name="RegisterLeague.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/screen/RegisterLeague.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="945">
+              <caret line="162" column="27" lean-forward="false" selection-start-line="162" selection-start-column="27" selection-end-line="162" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LeagueInfo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/screen/LeagueInfo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="57" lean-forward="false" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapScreen.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/screen/MapScreen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="666">
+              <caret line="182" column="51" lean-forward="true" selection-start-line="182" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VenueDetail.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/screen/VenueDetail.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,9 +107,10 @@
         <option value="$PROJECT_DIR$/src/screen/CalendarScreen.js" />
         <option value="$PROJECT_DIR$/src/screen/MapScreen.js" />
         <option value="$PROJECT_DIR$/src/screen/VenueDetail.js" />
+        <option value="$PROJECT_DIR$/src/screen/HomeScreen.js" />
         <option value="$PROJECT_DIR$/index.ios.js" />
         <option value="$PROJECT_DIR$/index.android.js" />
-        <option value="$PROJECT_DIR$/src/screen/HomeScreen.js" />
+        <option value="$PROJECT_DIR$/src/screen/LeagueInfo.js" />
         <option value="$PROJECT_DIR$/src/screen/RegisterLeague.js" />
       </list>
     </option>
@@ -183,7 +136,7 @@
     <option name="x" value="3640" />
     <option name="y" value="-257" />
     <option name="width" value="1080" />
-    <option name="height" value="1918" />
+    <option name="height" value="1920" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -425,26 +378,28 @@
       <workItem from="1499920734779" duration="178000" />
       <workItem from="1499936091660" duration="138000" />
       <workItem from="1499936307348" duration="3908000" />
-      <workItem from="1499999899655" duration="3008000" />
+      <workItem from="1499999899655" duration="3193000" />
+      <workItem from="1500003525301" duration="7976000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129551000" />
+    <option name="totallyTimeSpent" value="137712000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3640" y="-257" width="1080" height="1918" extended-state="6" />
+    <frame x="3640" y="-257" width="1080" height="1920" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22851747" sideWeight="0.425" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22851747" sideWeight="0.42322096" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5032787" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12363239" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22851747" sideWeight="0.575" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1237678" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22851747" sideWeight="0.576779" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.043141592" sideWeight="0.4967213" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -473,22 +428,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/screen/HomeScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-          <folding>
-            <marker date="1499947146000" expanded="true" signature="4278:4290" ph="{&quot;width&quot;: '90%'...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/screen/MapScreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -525,7 +470,7 @@
         <state relative-caret-position="195">
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -572,7 +517,7 @@
         <state relative-caret-position="195">
           <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -599,7 +544,7 @@
         <state relative-caret-position="210">
           <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="24" selection-end-column="47" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -685,7 +630,7 @@
         <state relative-caret-position="90">
           <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -729,7 +674,7 @@
         <state relative-caret-position="210">
           <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="24" selection-end-column="47" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -836,10 +781,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screen/HomeScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="100" column="13" lean-forward="false" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
+          <folding>
+            <marker date="1499947146000" expanded="true" signature="4278:4290" ph="{&quot;width&quot;: '90%'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.android.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="45" lean-forward="false" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
@@ -848,56 +810,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.ios.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="20" selection-end-column="45" />
+        <state relative-caret-position="330">
+          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/screen/VenueDetail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+        <state relative-caret-position="285">
+          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/screen/MapScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        <state relative-caret-position="666">
+          <caret line="182" column="51" lean-forward="true" selection-start-line="182" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screen/HomeScreen.js">
+    <entry file="file://$PROJECT_DIR$/src/screen/LeagueInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="100" column="13" lean-forward="false" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
+        <state relative-caret-position="345">
+          <caret line="23" column="57" lean-forward="false" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
           <folding>
-            <marker date="1499947146000" expanded="true" signature="4278:4290" ph="{&quot;width&quot;: '90%'...}" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/screen/RegisterLeague.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="945">
+          <caret line="162" column="27" lean-forward="false" selection-start-line="162" selection-start-column="27" selection-end-line="162" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

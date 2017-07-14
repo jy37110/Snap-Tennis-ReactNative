@@ -18,7 +18,7 @@ const App = StackNavigator({
     Home: {screen: HomeScreen},
     Map: {screen: MapScreen},
     VenueDetail: {screen: VenueDetail},
-    Test: {screen: CalendarScreen},
+    CalendarPage: {screen: CalendarScreen},
     RegisterLeague: {screen: RegisterLeague},
     LeagueInfo: {screen: LeagueInfo},
 });

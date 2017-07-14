@@ -61,14 +61,14 @@ export default class VenueDetail extends Component {
         },
         attributeName:{
             marginLeft: 30,
-            width: 150,
+            flex:0.4,
             fontSize: 13,
             fontWeight:'bold',
             color: 'rgb(80,80,80)',
         },
         attributeValue:{
             marginLeft: 0,
-            width: 180,
+            flex:0.6,
             fontSize: 13,
             color: 'rgb(80,80,80)',
 

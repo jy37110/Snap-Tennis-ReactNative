@@ -6,21 +6,10 @@ import {
     ScrollView,
     FlatList,
 } from 'react-native';
-let AWS = require('aws-sdk/dist/aws-sdk-react-native');
 
 export default class VenueDetail extends Component {
     constructor(props){
         super(props);
-        AWS.config.update({
-            region: "ap-southeast-2",
-            accessKeyId: "AKIAJIRM3S2OV5EJHKLA",
-            secretAccessKey: "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"
-        });
-        this.docClient = new AWS.DynamoDB.DocumentClient();
-        this.scan = [];
-        this.state = {
-        };
-
     }
 
     static navigationOptions = {
@@ -79,7 +68,7 @@ export default class VenueDetail extends Component {
         },
         attributeValue:{
             marginLeft: 0,
-            width: 200,
+            width: 180,
             fontSize: 13,
             color: 'rgb(80,80,80)',
 

@@ -26,7 +26,7 @@ export default class HomeScreen extends Component {
                 key: 4,
                 title: 'Your Local Leagues',
                 source: require('../image/league.png'),
-                action: () => {navigate('Test')},
+                action: () => {navigate('RegisterLeague')},
             },
             {
                 key: 5,

@@ -19,7 +19,7 @@ export default class MapScreen extends Component {
         });
         this.docClient = new AWS.DynamoDB.DocumentClient({dynamoDbCrc32:false});
         this.scan = [];
-        this.SEARCHING_RANGE = 0.1;
+        this.SEARCHING_RANGE = 0.15;
         this.state = {
             userLocation:{
                 latitude: 0,

@@ -8,12 +8,17 @@ import {
 import HomeScreen from "./src/screen/HomeScreen";
 import MapScreen from "./src/screen/MapScreen";
 import VenueDetail from './src/screen/VenueDetail';
+import CalendarScreen from './src/screen/CalendarScreen';
+import RegisterLeague from './src/screen/RegisterLeague';
+
 
 
 const App = StackNavigator({
-    Home: { screen: HomeScreen },
-    Map: { screen: MapScreen},
-    VenueDetail: { screen: VenueDetail},
+    Home: {screen: HomeScreen},
+    Map: {screen: MapScreen},
+    VenueDetail: {screen: VenueDetail},
+    Test: {screen: CalendarScreen},
+    RegisterLeague: {screen: RegisterLeague},
 });
 
 export default class nativeWebStorm extends Component {

@@ -12,6 +12,8 @@ import VenueDetail from './src/screen/VenueDetail';
 import CalendarScreen from './src/screen/CalendarScreen';
 import RegisterLeague from './src/screen/RegisterLeague';
 import LeagueInfo from './src/screen/LeagueInfo';
+import { MenuContext } from 'react-native-popup-menu';
+
 
 
 const App = StackNavigator({
@@ -26,7 +28,9 @@ const App = StackNavigator({
 export default class nativeWebStorm extends Component {
   render() {
     return (
-        <App />
+        <MenuContext>
+            <App />
+        </MenuContext>
     );
   }
 }

@@ -4,15 +4,17 @@ import {
     Text,
     View,
     ScrollView,
-    Dimensions,
     FlatList,
+    Image,
+    Button,
+    Platform,
 } from 'react-native';
 import { Calendar, CalendarList, Agenda } from 'react-native-calendars';
 
 export default class CalendarScreen extends Component {
     constructor(props){
         super(props);
-        this.screenWidth = Dimensions.get('window').width;
+        this.handleCreateNewSchedule = this.handleCreateNewSchedule.bind(this);
         this.state = {
             selectedDate:""
         };
@@ -21,6 +23,10 @@ export default class CalendarScreen extends Component {
     static navigationOptions = {
         title: 'Calendar',
     };
+
+    handleCreateNewSchedule (){
+        alert("Create new schedule was clicked")
+    }
 
     render() {
         return (
@@ -72,30 +78,44 @@ export default class CalendarScreen extends Component {
                     <View style={this.styles.scheduleEachRowContainer}>
                         <Text style={this.styles.scheduleBodyTitleText}>Schedule Time:</Text>
                         <Text style={this.styles.scheduleBodyContentText}>06:00-22:00</Text>
+                        <Image
+                            style={this.styles.icon}
+                            source={require('../image/menu.png')}
+                        />
                     </View>
                     <View style={this.styles.scheduleEachRowContainer}>
                         <Text style={this.styles.scheduleBodyTitleText}>Schedule Location:</Text>
                         <Text style={this.styles.scheduleBodyContentText}
                               numberOfLines={3}
                         >
-                            Albany Domain slk;d jflska jdfl ksjdf lksjkdlf
+                            Albany Domain
                         </Text>
                     </View>
                     <View style={this.styles.playerContainer}>
                         <Text style={this.styles.Player1TitleText}>Player1:</Text>
-                        <Text style={this.styles.Player1ContentText}>Yuki</Text>
+                        <Text style={this.styles.Player1ContentText}>Chao</Text>
                         <Text style={this.styles.Player2TitleText}>Player2:</Text>
-                        <Text style={this.styles.Player2ContentText}>Chao</Text>
+                        <Text style={this.styles.Player2ContentText}>Vacancy</Text>
                     </View>
                 </View>
-                <Text>{this.screenWidth}</Text>
+
+                <View style={this.styles.createScheduleButtonContainer}>
+                    <Button
+                        onPress={this.handleCreateNewSchedule}
+                        title="CREATE NEW SCHEDULE"
+                        color={Platform.select({ios:"white", android:"grey"})}
+                        accessibilityLabel="Learn more about this purple button"
+                    />
+                </View>
+
+
 
             </ScrollView>
         )
     }
     styles = StyleSheet.create({
         calendarContainer:{
-
+            padding:10,
         },
         calendar:{
         },
@@ -106,7 +126,6 @@ export default class CalendarScreen extends Component {
             textAlign:'center',
             fontSize: 18,
         },
-
         scheduleContainer:{
             borderWidth:2,
             borderColor:"grey",
@@ -121,8 +140,12 @@ export default class CalendarScreen extends Component {
             flexDirection:"row",
             justifyContent:"flex-start",
         },
+        icon:{
+            width: 20,
+            height: 20,
+            resizeMode: 'contain',
+        },
         scheduleBodyTitleText:{
-            // flex:0.35,
             width:130,
             fontSize:13,
             color:"black",
@@ -140,7 +163,6 @@ export default class CalendarScreen extends Component {
             justifyContent:"space-between",
         },
         Player1TitleText:{
-            // flex:0.15,
             fontSize:13,
             color:"red",
             fontWeight:"bold",
@@ -148,10 +170,8 @@ export default class CalendarScreen extends Component {
         Player1ContentText:{
             fontSize:13,
             color:"red",
-            // flex:0.2,
         },
         Player2TitleText:{
-            // flex:0.15,
             fontSize:13,
             color:"blue",
             fontWeight:"bold",
@@ -159,7 +179,12 @@ export default class CalendarScreen extends Component {
         Player2ContentText:{
             fontSize:13,
             color:"blue",
-            // flex:0.2,
+        },
+        createScheduleButtonContainer:{
+            backgroundColor:"grey",
+            marginTop:10,
+            borderWidth:2,
+            borderColor:"grey",
         },
     });
 }

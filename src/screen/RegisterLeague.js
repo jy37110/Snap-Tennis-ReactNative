@@ -4,7 +4,6 @@ import {
     Text,
     View,
     Switch,
-    TouchableHighlight,
     ScrollView,
 } from 'react-native';
 

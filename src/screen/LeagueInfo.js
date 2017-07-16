@@ -5,7 +5,6 @@ import {
     View,
     ScrollView,
     Image,
-    FlatList,
 } from 'react-native';
 
 export default class LeagueInfo extends Component {

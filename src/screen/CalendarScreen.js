@@ -1,29 +1,91 @@
 import React, { Component } from 'react';
 import {
     StyleSheet,
-    Text,
     View,
     ScrollView,
-    FlatList,
-    Image,
     Button,
     Platform,
 } from 'react-native';
-import {
-    Menu,
-    MenuOptions,
-    MenuOption,
-    MenuTrigger,
-} from 'react-native-popup-menu';
-import { Calendar, CalendarList, Agenda } from 'react-native-calendars';
+
+import EachScheduleView from '../components/EachScheduleView'
+import { Calendar } from 'react-native-calendars';
 
 export default class CalendarScreen extends Component {
     constructor(props){
         super(props);
         this.handleCreateNewSchedule = this.handleCreateNewSchedule.bind(this);
-        this.renderSchedule = this.renderSchedule.bind(this);
+        this.handleRequestSchedule = this.handleRequestSchedule.bind(this);
+        this.handleEditSchedule = this.handleEditSchedule.bind(this);
+        this.handleCancelSchedule = this.handleCancelSchedule.bind(this);
+        this.handleConfirmSchedule = this.handleConfirmSchedule.bind(this);
         this.state = {
             selectedDate:"",
+            scheduleList:[
+                {
+                    date:"2017-7-21",
+                    schedule:{
+                        time:"08:00-10:00",
+                        location:"Finlayson Community House Reserve",
+                        status:"Waiting for player2",
+                        player1:"Chao",
+                        player2:"Vacancy",
+                        option:{
+                            request:false,
+                            edit:true,
+                            cancel:true,
+                            confirm:false,
+                        }
+                    }
+                },
+                {
+                    date:"2017-7-21",
+                    schedule:{
+                        time:"13:00-15:00",
+                        location:"Albany Domain",
+                        status:"Waiting for confirm",
+                        player1:"Chao",
+                        player2:"Tony",
+                        option:{
+                            request:false,
+                            edit:true,
+                            cancel:true,
+                            confirm:true,
+                        }
+                    }
+                },
+                {
+                    date:"2017-7-21",
+                    schedule:{
+                        time:"15:00-17:00",
+                        location:"Albany Domain",
+                        status:"Confirmed",
+                        player1:"Tom",
+                        player2:"Tony",
+                        option:{
+                            request:false,
+                            edit:false,
+                            cancel:false,
+                            confirm:false,
+                        }
+                    }
+                },
+                {
+                    date:"2017-7-26",
+                    schedule:{
+                        time:"08:00-10:00",
+                        location:"Finlayson Community House Reserve",
+                        status:"Waiting for player2",
+                        player1:"Yuki",
+                        player2:"Vacancy",
+                        option:{
+                            request:true,
+                            edit:false,
+                            cancel:false,
+                            confirm:false,
+                        }
+                    }
+                }
+            ]
         };
     }
 
@@ -34,157 +96,20 @@ export default class CalendarScreen extends Component {
     handleCreateNewSchedule (){
         alert("Create new schedule was clicked")
     }
-
-    renderSchedule(){
-        if(this.state.selectedDate === "2017-7-21"){
-            return(
-            <View>
-                <View style={this.styles.scheduleContainer}>
-                    <View style={this.styles.scheduleEachRowContainer}>
-                        <Text style={this.styles.scheduleBodyTitleText}>Time:</Text>
-                        <Text style={this.styles.scheduleBodyContentText}>08:00-10:00</Text>
-
-                        <Menu>
-                            <MenuTrigger>
-                                <Image
-                                    style={this.styles.icon}
-                                    source={require('../image/menu.png')}
-                                />
-                            </MenuTrigger>
-                            <MenuOptions>
-                                <MenuOption onSelect={() => alert(`Send Request`)} disabled={true} text='I want to play with Chao' />
-                                <MenuOption onSelect={() => alert(`Go to edit page`)} disabled={false} text='Make a change' />
-                                <MenuOption onSelect={() => alert(`Send cancel request`)} disabled={false} text='I want to cancel' />
-                                <MenuOption onSelect={() => alert(`Not called`)} disabled={true} text='I want to confirm' />
-                            </MenuOptions>
-                        </Menu>
-
-                    </View>
-                    <View style={this.styles.scheduleEachRowContainer}>
-                        <Text style={this.styles.scheduleBodyTitleText}>Location:</Text>
-                        <Text style={this.styles.scheduleBodyContentText}
-                              numberOfLines={3}
-                        >
-                            Finlayson Community House Reserve
-                        </Text>
-                    </View>
-
-                    <View style={this.styles.scheduleEachRowContainer}>
-                        <Text style={this.styles.scheduleBodyTitleText}>Status:</Text>
-                        <Text style={this.styles.scheduleBodyContentText}
-                              numberOfLines={3}
-                        >
-                            Waiting for player2
-                        </Text>
-                    </View>
-
-                    <View style={this.styles.playerContainer}>
-                        <Text style={this.styles.Player1TitleText}>Player1:</Text>
-                        <Text style={this.styles.Player1ContentText}>Chao</Text>
-                        <Text style={this.styles.Player2TitleText}>Player2:</Text>
-                        <Text style={this.styles.Player2ContentText}>Vacancy</Text>
-                    </View>
-                </View>
-
-
-                <View style={this.styles.scheduleContainer}>
-                    <View style={this.styles.scheduleEachRowContainer}>
-                        <Text style={this.styles.scheduleBodyTitleText}>Time:</Text>
-                        <Text style={this.styles.scheduleBodyContentText}>13:00-15:00</Text>
-
-                        <Menu>
-                            <MenuTrigger>
-                                <Image
-                                    style={this.styles.icon}
-                                    source={require('../image/menu.png')}
-                                />
-                            </MenuTrigger>
-                            <MenuOptions>
-                                <MenuOption onSelect={() => alert(`Send Request`)} disabled={true} text='I want to play with Chao' />
-                                <MenuOption onSelect={() => alert(`Go to edit page`)} disabled={false} text='Make a change' />
-                                <MenuOption onSelect={() => alert(`Send cancel request`)} disabled={false} text='I want to cancel' />
-                                <MenuOption onSelect={() => alert(`Not called`)} disabled={false} text='I want to confirm' />
-                            </MenuOptions>
-                        </Menu>
-
-                    </View>
-                    <View style={this.styles.scheduleEachRowContainer}>
-                        <Text style={this.styles.scheduleBodyTitleText}>Location:</Text>
-                        <Text style={this.styles.scheduleBodyContentText}
-                              numberOfLines={3}
-                        >
-                            Albany Domain
-                        </Text>
-                    </View>
-                    <View style={this.styles.scheduleEachRowContainer}>
-                        <Text style={this.styles.scheduleBodyTitleText}>Status:</Text>
-                        <Text style={this.styles.scheduleBodyContentText}
-                              numberOfLines={3}
-                        >
-                            Waiting for confirm
-                        </Text>
-                    </View>
-                    <View style={this.styles.playerContainer}>
-                        <Text style={this.styles.Player1TitleText}>Player1:</Text>
-                        <Text style={this.styles.Player1ContentText}>Chao</Text>
-                        <Text style={this.styles.Player2TitleText}>Player2:</Text>
-                        <Text style={this.styles.Player2ContentText}>Tony</Text>
-                    </View>
-                </View>
-
-
-                <View style={this.styles.scheduleContainer}>
-                    <View style={this.styles.scheduleEachRowContainer}>
-                        <Text style={this.styles.scheduleBodyTitleText}>Time:</Text>
-                        <Text style={this.styles.scheduleBodyContentText}>15:00-17:00</Text>
-
-                        <Menu>
-                            <MenuTrigger>
-                                <Image
-                                    style={this.styles.icon}
-                                    source={require('../image/menu.png')}
-                                />
-                            </MenuTrigger>
-                            <MenuOptions>
-                                <MenuOption onSelect={() => alert(`Send Request`)} disabled={true} text='I want to play with Tom' />
-                                <MenuOption onSelect={() => alert(`Go to edit page`)} disabled={true} text='Make a change' />
-                                <MenuOption onSelect={() => alert(`Send cancel request`)} disabled={true} text='I want to cancel' />
-                                <MenuOption onSelect={() => alert(`Not called`)} disabled={true} text='I want to confirm' />
-                            </MenuOptions>
-                        </Menu>
-
-                    </View>
-                    <View style={this.styles.scheduleEachRowContainer}>
-                        <Text style={this.styles.scheduleBodyTitleText}>Location:</Text>
-                        <Text style={this.styles.scheduleBodyContentText}
-                              numberOfLines={3}
-                        >
-                            Albany Domain
-                        </Text>
-                    </View>
-                    <View style={this.styles.scheduleEachRowContainer}>
-                        <Text style={this.styles.scheduleBodyTitleText}>Status:</Text>
-                        <Text style={this.styles.scheduleBodyContentText}
-                              numberOfLines={3}
-                        >
-                            Confirmed
-                        </Text>
-                    </View>
-                    <View style={this.styles.playerContainer}>
-                        <Text style={this.styles.Player1TitleText}>Player1:</Text>
-                        <Text style={this.styles.Player1ContentText}>Tom</Text>
-                        <Text style={this.styles.Player2TitleText}>Player2:</Text>
-                        <Text style={this.styles.Player2ContentText}>Tony</Text>
-                    </View>
-                </View>
-
-            </View>
-            )
-        }
+    handleRequestSchedule(){
+        alert("Go to request page")
+    }
+    handleEditSchedule(){
+        alert("Go to edit page")
+    }
+    handleCancelSchedule(){
+        alert("Send a cancel request")
+    }
+    handleConfirmSchedule(){
+        alert("Send a confirm request")
     }
 
     render() {
-        let renderSchedule = this.state.renderSchedule;
         return (
             <ScrollView style={this.styles.calendarContainer}>
                 <Calendar style={this.styles.calendar}
@@ -225,49 +150,32 @@ export default class CalendarScreen extends Component {
                               // '2017-07-22': [{startingDay: true, color: 'yellow'}, {endingDay: true, color: 'yellow'}],
                               // '2017-07-26': [{startingDay: true, color: 'grey'}, {endingDay: true, color: 'grey', textColor: 'white'}],
                               '2017-07-21': [{startingDay: true, color: 'orange'}, {endingDay: true, color: 'orange'}],
+                              '2017-07-26': [{startingDay: true, color: 'orange'}, {endingDay: true, color: 'orange'}],
+
                               // '2017-07-19': [{startingDay: true, color: 'blue'}, {endingDay: true, color: 'blue', textColor: 'white'}],
                           }}
                           markingType={'interactive'}
                 />
-                {/*<Text style={this.styles.text}>{this.state.selectedDate}</Text>*/}
-                {/*<View style={this.styles.scheduleContainer}>*/}
-                    {/*<View style={this.styles.scheduleEachRowContainer}>*/}
-                        {/*<Text style={this.styles.scheduleBodyTitleText}>Schedule Time:</Text>*/}
-                        {/*<Text style={this.styles.scheduleBodyContentText}>06:00-22:00</Text>*/}
 
-                        {/*<Menu>*/}
-                            {/*<MenuTrigger>*/}
-                                {/*<Image*/}
-                                    {/*style={this.styles.icon}*/}
-                                    {/*source={require('../image/menu.png')}*/}
-                                {/*/>*/}
-                            {/*</MenuTrigger>*/}
-                            {/*<MenuOptions>*/}
-                                {/*<MenuOption onSelect={() => alert(`Send Request`)} disabled={true} text='I want to play with Chao' />*/}
-                                {/*<MenuOption onSelect={() => alert(`Go to edit page`)} disabled={false} text='Make a change' />*/}
-                                {/*<MenuOption onSelect={() => alert(`Send cancel request`)} disabled={false} text='I want to cancel' />*/}
-                                {/*<MenuOption onSelect={() => alert(`Not called`)} disabled={true} text='I want to confirm' />*/}
-                            {/*</MenuOptions>*/}
-                        {/*</Menu>*/}
-
-                    {/*</View>*/}
-                    {/*<View style={this.styles.scheduleEachRowContainer}>*/}
-                        {/*<Text style={this.styles.scheduleBodyTitleText}>Schedule Location:</Text>*/}
-                        {/*<Text style={this.styles.scheduleBodyContentText}*/}
-                              {/*numberOfLines={3}*/}
-                        {/*>*/}
-                            {/*Albany Domain*/}
-                        {/*</Text>*/}
-                    {/*</View>*/}
-                    {/*<View style={this.styles.playerContainer}>*/}
-                        {/*<Text style={this.styles.Player1TitleText}>Player1:</Text>*/}
-                        {/*<Text style={this.styles.Player1ContentText}>Chao</Text>*/}
-                        {/*<Text style={this.styles.Player2TitleText}>Player2:</Text>*/}
-                        {/*<Text style={this.styles.Player2ContentText}>Vacancy</Text>*/}
-                    {/*</View>*/}
-                {/*</View>*/}
-
-                {this.renderSchedule()}
+                {this.state.scheduleList.map((eachSchedule,i) =>{
+                    if(this.state.selectedDate === eachSchedule.date){
+                        return(
+                            <EachScheduleView
+                                key={i}
+                                time={eachSchedule.schedule.time}
+                                location={eachSchedule.schedule.location}
+                                status={eachSchedule.schedule.status}
+                                player1={eachSchedule.schedule.player1}
+                                player2={eachSchedule.schedule.player2}
+                                option={eachSchedule.schedule.option}
+                                requestCallBack={this.handleRequestSchedule}
+                                editCallBack={this.handleEditSchedule}
+                                cancelCallBack={this.handleCancelSchedule}
+                                confirmCallBack={this.handleConfirmSchedule}
+                            />
+                        )
+                    }
+                })}
 
                 <View style={this.styles.createScheduleButtonContainer}>
                     <Button
@@ -293,61 +201,6 @@ export default class CalendarScreen extends Component {
         text:{
             textAlign:'center',
             fontSize: 18,
-        },
-        scheduleContainer:{
-            marginTop:10,
-            borderWidth:2,
-            borderColor:"grey",
-            padding:5,
-            flex:1,
-            flexDirection:"column",
-            backgroundColor:"white",
-        },
-        scheduleEachRowContainer:{
-            marginTop:2,
-            flex:1,
-            flexDirection:"row",
-            justifyContent:"flex-start",
-        },
-        icon:{
-            width: 22,
-            height: 17,
-            resizeMode: 'contain',
-        },
-        scheduleBodyTitleText:{
-            width:70,
-            fontSize:13,
-            color:"black",
-            fontWeight:"bold",
-        },
-        scheduleBodyContentText:{
-            fontSize:13,
-            color:"grey",
-            flex:0.8,
-        },
-        playerContainer:{
-            marginTop:2,
-            flex:1,
-            flexDirection:"row",
-            justifyContent:"space-between",
-        },
-        Player1TitleText:{
-            fontSize:13,
-            color:"red",
-            fontWeight:"bold",
-        },
-        Player1ContentText:{
-            fontSize:13,
-            color:"red",
-        },
-        Player2TitleText:{
-            fontSize:13,
-            color:"blue",
-            fontWeight:"bold",
-        },
-        Player2ContentText:{
-            fontSize:13,
-            color:"blue",
         },
         createScheduleButtonContainer:{
             backgroundColor:"grey",

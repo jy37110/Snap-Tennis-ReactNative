@@ -11,6 +11,7 @@ import VenueDetail from './src/screen/VenueDetail';
 import CalendarScreen from './src/screen/CalendarScreen';
 import RegisterLeague from './src/screen/RegisterLeague';
 import LeagueInfo from './src/screen/LeagueInfo';
+import LeagueInfoVenueMap from './src/screen/LeagueInfoVenueMap';
 import { MenuContext } from 'react-native-popup-menu';
 
 
@@ -23,6 +24,7 @@ const App = StackNavigator({
     CalendarPage: {screen: CalendarScreen},
     RegisterLeague: {screen: RegisterLeague},
     LeagueInfo: {screen: LeagueInfo},
+    LeagueInfoVenueMap: {screen: LeagueInfoVenueMap}
 
 });
 

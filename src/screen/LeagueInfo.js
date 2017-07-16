@@ -57,7 +57,7 @@ export default class LeagueInfo extends Component {
                             return(
                                 <Text key={i}
                                       style={this.styles.eachLineOfContent}
-                                      onPress={()=>{alert("My name is: " + item)}}
+                                      onPress={()=>{navigate("LeagueInfoVenueMap",{venueName:item})}}
                                 >{item}</Text>
                             )
                         })}

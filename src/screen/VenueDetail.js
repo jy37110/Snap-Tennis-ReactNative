@@ -13,7 +13,7 @@ export default class VenueDetail extends Component {
     }
 
     static navigationOptions = {
-        title: 'Back',
+        title: 'Venue Details',
     };
 
     render() {

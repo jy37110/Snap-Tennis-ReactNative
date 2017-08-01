@@ -14,9 +14,9 @@ export default class RegisterLeague extends Component {
         this.state = {
             ongoingLeague:[
                 {
-                    id:'efaa0eb1-362c-4e3b-a514-16be15599be0', city:"Auckland", endDate:"2017-07-30 02:51:25.772839",
+                    id:'efaa0eb1-362c-4e3b-a514-16be15599be0', city:"Auckland", endDate:"2017-08-30 02:51:25.772839",
                     players:["36b5246d-13cd-498a-9797-14dcec784950","62c88ffd-019b-4bbb-8d17-69427c669ae5"],
-                    startDate:"2017-07-13 02:51:25.772828", suburbs:["Albany Domain"],
+                    startDate:"2017-08-03 02:51:25.772828", suburbs:["Albany Domain"],
                 },
                 {
                     id:'d4e503e8-e686-4146-8a2c-eb141333a22c', city:"Auckland", endDate:"2017-08-05 03:05:05.459131",
@@ -230,6 +230,5 @@ export default class RegisterLeague extends Component {
             flex:0.3,
             textAlign:'center',
         },
-
     });
 }

@@ -11,7 +11,7 @@ export default class LeagueInfo extends Component {
     constructor(props){
         super(props);
         this.userId = "62c88ffd-019b-4bbb-8d17-69427c669ae5";
-        this.params = this.props.navigation.state;
+        this.params = this.props.navigation.state.params;
         this.state = {
             switchValue: "No",
         }
@@ -36,10 +36,10 @@ export default class LeagueInfo extends Component {
                     </View>
                     <View style={this.styles.dateContainer}>
                         <Text style={this.styles.headerText}>
-                            {this.params.params.startDate.substr(0,10)}
+                            {this.params.startDate.substr(0,10)}
                         </Text>
                         <Text style={this.styles.headerText}>
-                            {this.params.params.endDate.substr(0,10)}
+                            {this.params.endDate.substr(0,10)}
                         </Text>
                     </View>
                 </View>
@@ -53,7 +53,7 @@ export default class LeagueInfo extends Component {
                         <Text style={this.styles.bodyTitleText}>Venues List:</Text>
                     </View>
                     <View style={this.styles.eachContentContainer}>
-                        {this.params.params.suburbs.map((item, i) => {
+                        {this.params.suburbs.map((item, i) => {
                             return(
                                 <Text key={i}
                                       style={this.styles.eachLineOfContent}
@@ -74,7 +74,7 @@ export default class LeagueInfo extends Component {
                         <Text style={this.styles.bodyTitleText}>League Players List:</Text>
                     </View>
                     <View style={this.styles.eachContentContainer}>
-                        {this.params.params.players.map((item, i) => {
+                        {this.params.players.map((item, i) => {
                             return(
                                 <Text key={i}
                                       style={this.styles.eachLineOfContent}

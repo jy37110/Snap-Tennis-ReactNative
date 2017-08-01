@@ -5,6 +5,7 @@ import {
     View,
     Image,
 } from 'react-native';
+import DynamoDb from '../utility/DynamoDb';
 import {
     Menu,
     MenuOptions,
@@ -15,15 +16,31 @@ import {
 export default class EachScheduleView extends Component {
     constructor(props) {
         super(props);
+        this.getPlayer1NameCallback = this.getPlayer1NameCallback.bind(this);
+        this.getPlayer2NameCallback = this.getPlayer2NameCallback.bind(this);
+        this.dbInstance = new DynamoDb();
+        this.state={
+            player1Name:"",
+            player2Name:""
+        };
+        this.dbInstance.getUserName(this.props.player1, this.getPlayer1NameCallback);
+        this.dbInstance.getUserName(this.props.player2, this.getPlayer2NameCallback);
+    }
+
+    getPlayer1NameCallback(name){
+        this.setState({player1Name:name})
+    }
+
+    getPlayer2NameCallback(name){
+        this.setState({player2Name:name})
     }
 
     render(){
         return(
             <View style={this.styles.scheduleContainer}>
                 <View style={this.styles.scheduleEachRowContainer}>
-                    <Text style={this.styles.scheduleBodyTitleText}>Time:</Text>
-                    <Text style={this.styles.scheduleBodyContentText}>{this.props.time}</Text>
-
+                    <Text style={this.styles.scheduleBodyTitleText}>Date:</Text>
+                    <Text style={this.styles.scheduleBodyContentText}>{this.props.date}</Text>
                     <Menu>
                         <MenuTrigger>
                             <Image
@@ -32,13 +49,16 @@ export default class EachScheduleView extends Component {
                             />
                         </MenuTrigger>
                         <MenuOptions>
-                            <MenuOption onSelect={this.props.requestCallBack} disabled={!this.props.option.request} text={'I want to play with '+ this.props.player1} />
+                            <MenuOption onSelect={this.props.createCallBack} disabled={!this.props.option.create} text={'Create a new schedule'} />
+                            <MenuOption onSelect={this.props.requestCallBack} disabled={!this.props.option.request} text={'I want to play with '+ this.state.player1Name} />
                             <MenuOption onSelect={this.props.editCallBack} disabled={!this.props.option.edit} text='Make a change' />
                             <MenuOption onSelect={this.props.cancelCallBack} disabled={!this.props.option.cancel} text='I want to cancel' />
-                            <MenuOption onSelect={this.props.confirmCallBack} disabled={!this.props.option.confirm} text='I want to confirm' />
                         </MenuOptions>
                     </Menu>
-
+                </View>
+                <View style={this.styles.scheduleEachRowContainer}>
+                    <Text style={this.styles.scheduleBodyTitleText}>Time:</Text>
+                    <Text style={this.styles.scheduleBodyContentText}>{this.props.time}</Text>
                 </View>
                 <View style={this.styles.scheduleEachRowContainer}>
                     <Text style={this.styles.scheduleBodyTitleText}>Location:</Text>
@@ -60,9 +80,9 @@ export default class EachScheduleView extends Component {
 
                 <View style={this.styles.playerContainer}>
                     <Text style={this.styles.Player1TitleText}>Player1:</Text>
-                    <Text style={this.styles.Player1ContentText}>{this.props.player1}</Text>
+                    <Text style={this.styles.Player1ContentText}>{this.state.player1Name !== "" ? this.state.player1Name : "Vacancy"}</Text>
                     <Text style={this.styles.Player2TitleText}>Player2:</Text>
-                    <Text style={this.styles.Player2ContentText}>{this.props.player2}</Text>
+                    <Text style={this.styles.Player2ContentText}>{this.state.player2Name !== "" ? this.state.player2Name : "Vacancy"}</Text>
                 </View>
             </View>
         )

@@ -7,9 +7,9 @@
 		"test": "jest"
 	},
 	"dependencies": {
-		"@ava/babel-preset-stage-4": "^1.0.0",
+		"@ava/babel-preset-stage-4": "^1.1.0",
 		"aws-api-gateway-client": "^0.2.7",
-		"aws-sdk": "^2.64.0",
+		"aws-sdk": "^2.92.0",
 		"aws-sdk-react-native-core": "./aws-sdk/aws-sdk-react-native-core-0.0.2.tgz",
 		"aws-sdk-react-native-dynamodb": "./aws-sdk/aws-sdk-react-native-dynamodb-0.0.1.tgz",
 		"aws-sdk-react-native-lambda": "./aws-sdk/aws-sdk-react-native-lambda-0.0.1.tgz",
@@ -21,11 +21,11 @@
 		"babel-preset-stage-0": "^6.24.1",
 		"react": "16.0.0-alpha.6",
 		"react-native": "0.44.2",
-		"react-native-calendars": "^1.4.0",
+		"react-native-calendars": "^1.5.5",
 		"react-native-map": "0.0.1",
-		"react-native-maps": "^0.15.2",
+		"react-native-maps": "^0.15.3",
 		"react-native-popup-menu": "^0.8.0",
-		"react-navigation": "^1.0.0-beta.11"
+		"react-navigation": "^1.0.0-beta.12"
 	},
 	"devDependencies": {
 		"babel-jest": "20.0.3",

@@ -91,7 +91,7 @@ export default class CalendarScreen extends Component {
         return user2 === "-1" ? "Waiting for player2" : "Confirmed"
     }
     getOptions(user1,user2){
-        let create = false;
+        let create = true;
         let request = false;
         let edit = false;
         let cancel = false;
@@ -123,7 +123,12 @@ export default class CalendarScreen extends Component {
     };
 
     handleCreateNewSchedule (){
-        alert("Create new schedule was clicked")
+        const { navigate } = this.props.navigation;
+        navigate("CreateSchedule",{
+            selectedDate:this.state.selectedDate,
+            leagueId:this.leagueId,
+            venueList:this.params.venueList,
+        })
     }
     handleRequestSchedule(){
         alert("Go to request page")

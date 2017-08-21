@@ -12,6 +12,7 @@ import CalendarScreen from './src/screen/CalendarScreen';
 import RegisterLeague from './src/screen/RegisterLeague';
 import LeagueInfo from './src/screen/LeagueInfo';
 import LeagueInfoVenueMap from './src/screen/LeagueInfoVenueMap';
+import CreateSchedule from './src/screen/CreateSchedule';
 import { MenuContext } from 'react-native-popup-menu';
 
 
@@ -24,8 +25,8 @@ const App = StackNavigator({
     CalendarPage: {screen: CalendarScreen},
     RegisterLeague: {screen: RegisterLeague},
     LeagueInfo: {screen: LeagueInfo},
-    LeagueInfoVenueMap: {screen: LeagueInfoVenueMap}
-
+    LeagueInfoVenueMap: {screen: LeagueInfoVenueMap},
+    CreateSchedule: {screen: CreateSchedule},
 });
 
 export default class nativeWebStorm extends Component {

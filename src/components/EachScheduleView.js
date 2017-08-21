@@ -103,8 +103,8 @@ export default class EachScheduleView extends Component {
             justifyContent:"flex-start",
         },
         icon:{
-            width: 22,
-            height: 17,
+            width: 28,
+            height: 20,
             resizeMode: 'contain',
         },
         scheduleBodyTitleText:{

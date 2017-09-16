@@ -32,7 +32,7 @@ export default class ScheduleOperation extends Component {
 
     render() {
         return (
-            <ScrollView style={this.styles.schedule()}>
+            <ScrollView style={this.styles.schedule}>
                 <View style={this.styles.scheduleEachRowContainer}>
                     <Text style={this.styles.scheduleBodyTitleText}>Time:</Text>
                     <Text style={this.styles.scheduleBodyContentText}>{this.props.time}</Text>
@@ -48,6 +48,7 @@ export default class ScheduleOperation extends Component {
         },
         text:{
 
-        }
+        },
+        schedule:{}
     });
 }

@@ -14,15 +14,15 @@ export default class RegisterLeague extends Component {
         this.state = {
             ongoingLeague:[
                 {
-                    id:'efaa0eb1-362c-4e3b-a514-16be15599be0', city:"Auckland", endDate:"2017-08-30 02:51:25.772839",
+                    id:'efaa0eb1-362c-4e3b-a514-16be15599be0', city:"Auckland", endDate:"2017-10-15 02:51:25.772839",
                     players:["36b5246d-13cd-498a-9797-14dcec784950","62c88ffd-019b-4bbb-8d17-69427c669ae5"],
-                    startDate:"2017-08-03 02:51:25.772828", suburbs:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"],
+                    startDate:"2017-09-15 02:51:25.772828", suburbs:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"],
                     venueList:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"]
                 },
                 {
-                    id:'d4e503e8-e686-4146-8a2c-eb141333a22c', city:"Auckland", endDate:"2017-08-05 03:05:05.459131",
+                    id:'d4e503e8-e686-4146-8a2c-eb141333a22c', city:"Auckland", endDate:"2017-10-10 03:05:05.459131",
                     players:["33a12b21-aeda-4f3a-9758-a46b729a1f3f","62c88ffd-019b-4bbb-8d17-69427c669ae5"],
-                    startDate:"2017-07-22 03:05:05.459119", suburbs:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"],
+                    startDate:"2017-09-10 03:05:05.459119", suburbs:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"],
                 }
             ],
             completeLeague:[

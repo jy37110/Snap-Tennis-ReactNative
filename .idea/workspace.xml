@@ -2,162 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8b8c09d-b3ff-42c2-b906-d2f21e1947ca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/ScheduleOperation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/screen/CreateSchedule.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/generated/source/r/release/android/support/v4/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/generated/source/r/release/com/google/android/gms/base/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/generated/source/r/release/com/google/android/gms/maps/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/generated/source/r/release/com/google/android/gms/tasks/R.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/tasks/_react-native-maps_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/tasks/_react-native-maps_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/tasks/_react-native-maps_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/tasks/_react-native-maps_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/tasks/_react-native-maps_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/tasks/_react-native-maps_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/exploded-aar/nativeWebStorm/react-native-maps/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/exploded-aar/nativeWebStorm/react-native-maps/unspecified/jars/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/nativeWebStorm-react-native-maps-unspecified_b6abd055eb54461bb50fc425ec70b2d92ba1c4b5.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/nativeWebStorm-react-native-maps-unspecified_b6abd055eb54461bb50fc425ec70b2d92ba1c4b5.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/android/app/build/outputs/apk/app-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapManager.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapMarker.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapMarker.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapModule$1$1.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapModule$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapModule$1.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapModule$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapModule.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapModule.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapUrlTile$AIRMapUrlTileProvider.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapUrlTile$AIRMapUrlTileProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapUrlTile.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapUrlTile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$1.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$10.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$11.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$12.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$13.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$14.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$2.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$3.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$4.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$5.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$6.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$7.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$8.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$9.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/AirMapView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/LatLngBoundsUtils.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/airbnb/android/react/maps/LatLngBoundsUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/google/android/gms/R$attr.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/google/android/gms/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/google/android/gms/R$color.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/google/android/gms/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/google/android/gms/R$drawable.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/google/android/gms/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/google/android/gms/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/google/android/gms/R$integer.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/google/android/gms/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/google/android/gms/R$string.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/google/android/gms/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/google/android/gms/R$styleable.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/google/android/gms/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/google/android/gms/R.class" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/classes/release/com/google/android/gms/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/yoga.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/yoga.build/dgph" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.android.js" afterPath="$PROJECT_DIR$/index.android.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.ios.js" afterPath="$PROJECT_DIR$/index.ios.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/generated/source/r/release/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/generated/source/r/release/com/google/android/gms/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-af.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-af.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-am.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-am.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ar.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ar.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-az.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-az.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-be.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-be.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-bg.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-bg.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-bn.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-bn.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-bs.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-bs.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ca.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ca.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-cs.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-cs.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-da.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-da.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-de.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-de.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-el.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-el.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-en-rGB.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-en-rGB.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-es-rUS.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-es-rUS.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-es.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-es.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-et.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-et.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-eu.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-eu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-fa.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-fa.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-fi.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-fi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-fr-rCA.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-fr-rCA.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-fr.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-fr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-gl.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-gl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-gu.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-gu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-hi.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-hi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-hr.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-hr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-hu.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-hu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-hy.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-hy.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-in.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-in.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-is.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-is.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-it.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-it.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-iw.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-iw.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ja.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ja.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ka.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ka.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-kk.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-kk.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-km.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-km.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-kn.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-kn.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ko.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ko.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ky.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ky.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-lo.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-lo.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-lt.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-lt.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-lv.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-lv.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-mk.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-mk.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ml.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ml.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-mn.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-mn.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-mr.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-mr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ms.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ms.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-my.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-my.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-nb.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-nb.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ne.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ne.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-nl.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-nl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-pa.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-pa.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-pl.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-pl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-pt-rBR.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-pt-rBR.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-pt-rPT.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-pt-rPT.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ro.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ro.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ru.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ru.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-si.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-si.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-sk.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-sk.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-sl.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-sl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-sq.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-sq.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-sr.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-sr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-sv.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-sv.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-sw.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-sw.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ta.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ta.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-te.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-te.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-th.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-th.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-tl.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-tl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-tr.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-tr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-uk.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-uk.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ur.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-ur.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-uz.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-uz.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-vi.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-vi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-zh-rCN.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-zh-rCN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-zh-rHK.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-zh-rHK.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-zh-rTW.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-zh-rTW.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-zu.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values-zu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/single/color.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/single/color.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/single/drawable-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/single/drawable-mdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/single/drawable-xhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/single/drawable-xxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/single/drawable.json" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/blame/res/release/single/drawable.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/bundles/release/AndroidManifest.xml" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/bundles/release/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/bundles/release/R.txt" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/bundles/release/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/incremental/mergeReleaseAssets/merger.xml" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/incremental/mergeReleaseAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/incremental/mergeReleaseResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/incremental/mergeReleaseResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/incremental/mergeReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/incremental/mergeReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/incremental/mergeReleaseShaders/merger.xml" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/incremental/mergeReleaseShaders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/incremental/packageReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/res/merged/release/values/values.xml" afterPath="$PROJECT_DIR$/node_modules/react-native-maps/lib/android/build/intermediates/res/merged/release/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/EachScheduleView.js" afterPath="$PROJECT_DIR$/src/components/EachScheduleView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/CalendarScreen.js" afterPath="$PROJECT_DIR$/src/screen/CalendarScreen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/info.plist" afterPath="$PROJECT_DIR$/ios/build/info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/ScheduleOperation.js" afterPath="$PROJECT_DIR$/src/components/ScheduleOperation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/CreateSchedule.js" afterPath="$PROJECT_DIR$/src/screen/CreateSchedule.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/RegisterLeague.js" afterPath="$PROJECT_DIR$/src/screen/RegisterLeague.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -175,8 +26,8 @@
       <file leaf-file-name="RegisterLeague.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/screen/RegisterLeague.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            <state relative-caret-position="195">
+              <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -187,8 +38,8 @@
       <file leaf-file-name="LeagueInfo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/screen/LeagueInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="42" selection-end-column="31" />
+            <state relative-caret-position="-195">
+              <caret line="40" column="61" lean-forward="false" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -199,8 +50,8 @@
       <file leaf-file-name="CalendarScreen.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/screen/CalendarScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="129" column="44" lean-forward="false" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
+            <state relative-caret-position="711">
+              <caret line="245" column="8" lean-forward="true" selection-start-line="245" selection-start-column="8" selection-end-line="251" selection-end-column="10" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -208,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateSchedule.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CreateSchedule.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/screen/CreateSchedule.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="876">
+              <caret line="99" column="16" lean-forward="false" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -220,23 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScheduleOperation.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ScheduleOperation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ScheduleOperation.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
-              <caret line="34" column="53" lean-forward="false" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EachScheduleView.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/EachScheduleView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="61" column="23" lean-forward="false" selection-start-line="58" selection-start-column="16" selection-end-line="61" selection-end-column="23" />
+              <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -278,10 +117,10 @@
         <option value="$PROJECT_DIR$/src/components/EachScheduleView.js" />
         <option value="$PROJECT_DIR$/index.android.js" />
         <option value="$PROJECT_DIR$/index.ios.js" />
-        <option value="$PROJECT_DIR$/src/screen/RegisterLeague.js" />
         <option value="$PROJECT_DIR$/src/screen/CalendarScreen.js" />
-        <option value="$PROJECT_DIR$/src/screen/CreateSchedule.js" />
+        <option value="$PROJECT_DIR$/src/screen/RegisterLeague.js" />
         <option value="$PROJECT_DIR$/src/components/ScheduleOperation.js" />
+        <option value="$PROJECT_DIR$/src/screen/CreateSchedule.js" />
       </list>
     </option>
   </component>
@@ -306,11 +145,10 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="600" />
-    <option name="y" value="23" />
-    <option name="width" value="1080" />
-    <option name="height" value="976" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="1920" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -330,7 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -365,6 +202,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -462,9 +300,23 @@
       <node-interpreter value="project" />
       <envs />
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="npm.start" />
+      <item index="1" class="java.lang.String" itemvalue="npm.test" />
+    </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="npm.start" />
+        <item index="1" class="java.lang.String" itemvalue="npm.test" />
       </list>
     </recent_temporary>
   </component>
@@ -514,22 +366,27 @@
       <workItem from="1501654837937" duration="2099000" />
       <workItem from="1501752697182" duration="588000" />
       <workItem from="1503311239690" duration="5000" />
+      <workItem from="1505440707006" duration="8878000" />
+      <workItem from="1505552219476" duration="2348000" />
+      <workItem from="1505554854425" duration="97000" />
+      <workItem from="1505554964105" duration="4106000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213456000" />
+    <option name="totallyTimeSpent" value="228885000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="600" y="23" width="1080" height="976" extended-state="0" />
+    <frame x="1920" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22777778" sideWeight="0.39823008" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27239582" sideWeight="0.7550586" order="0" side_tool="false" content_ui="combo" x="632" y="229" width="246" height="404" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5032787" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22777778" sideWeight="0.6017699" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08928572" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27239582" sideWeight="0.24494143" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08834951" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49611652" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.043141592" sideWeight="0.4967213" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -561,20 +418,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/screen/MapScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/screen/DynamoData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.ios.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -804,27 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screen/LeagueInfoVenueMap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/screen/MapScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="133" column="29" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utility/DynamoDb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.android.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -840,10 +662,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screen/DynamoData.js">
+    <entry file="file://$PROJECT_DIR$/src/utility/DynamoDb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="117" column="16" lean-forward="true" selection-start-line="112" selection-start-column="14" selection-end-line="117" selection-end-column="16" />
+        <state relative-caret-position="465">
+          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/EachScheduleView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screen/LeagueInfoVenueMap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -854,6 +690,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/screen/DynamoData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="117" column="16" lean-forward="true" selection-start-line="112" selection-start-column="14" selection-end-line="117" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screen/MapScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-818">
+          <caret line="133" column="29" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/screen/HomeScreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -861,50 +711,298 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screen/LeagueInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="42" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/screen/RegisterLeague.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        <state relative-caret-position="195">
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screen/CreateSchedule.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <marker date="1505555425000" expanded="true" signature="188:1111" ph="{&quot;@ava/babel-preset-stage-4&quot;: &quot;^1.1.0&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="1133:1326" ph="{&quot;babel-jest&quot;: &quot;20.0.3&quot;...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screen/CalendarScreen.js">
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="129" column="44" lean-forward="false" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
+        <state relative-caret-position="-27090">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <marker date="1505555425000" expanded="true" signature="234497:234501" ph="{&quot;version&quot;: &quot;0.15.3&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="234532:234717" ph="{&quot;version&quot;: &quot;0.8.0&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="234746:234980" ph="{&quot;version&quot;: &quot;0.0.67&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="234942:234976" ph="{&quot;prop-types&quot;: &quot;15.5.10&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="235004:235426" ph="{&quot;version&quot;: &quot;1.0.0-beta.12&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="235204:235422" ph="{&quot;clamp&quot;: &quot;1.0.1&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="235445:235796" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/react-proxy/-/react-proxy-1.1.8.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="235595:235792" ph="{&quot;lodash&quot;: &quot;https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="235823:236179" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/react-test-renderer/-/react-test-renderer-16.0.0-alpha.6.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="236014:236175" ph="{&quot;fbjs&quot;: &quot;https://registry.npmjs.org/fbjs/-/fbjs-0.8.12.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="236204:236354" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/react-timer-mixin/-/react-timer-mixin-0.13.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="236381:236711" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/react-transform-hmr/-/react-transform-hmr-1.0.4.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="236547:236707" ph="{&quot;global&quot;: &quot;https://registry.npmjs.org/global/-/global-4.3.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="236727:237171" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/read-pkg/-/read-pkg-1.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="236871:237167" ph="{&quot;load-json-file&quot;: &quot;https://registry.npmjs.org/load-json-file/-/load-json-file-1.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="237190:237498" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/read-pkg-up/-/read-pkg-up-1.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="237340:237494" ph="{&quot;find-up&quot;: &quot;https://registry.npmjs.org/find-up/-/find-up-1.1.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="237680:238307" ph="{&quot;core-util-is&quot;: &quot;https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="238327:238823" ph="{&quot;version&quot;: &quot;2.1.0&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="238516:238819" ph="{&quot;graceful-fs&quot;: &quot;https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.1.11.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="238840:239292" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/readline2/-/readline2-1.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="238986:239288" ph="{&quot;code-point-at&quot;: &quot;https://registry.npmjs.org/code-point-at/-/code-point-at-1.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="239307:239437" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/rebound/-/rebound-0.0.13.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="239455:239590" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/regenerate/-/regenerate-1.3.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="239617:239770" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.9.6.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="239799:240230" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/regenerator-transform/-/regenerator-transform-0.9.11.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="239970:240226" ph="{&quot;babel-runtime&quot;: &quot;https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.23.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="240249:240596" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/regex-cache/-/regex-cache-0.4.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="240399:240592" ph="{&quot;is-equal-shallow&quot;: &quot;https://registry.npmjs.org/is-equal-shallow/-/is-equal-shallow-0.1.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="240616:241020" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/regexpu-core/-/regexpu-core-2.0.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="240768:241016" ph="{&quot;regenerate&quot;: &quot;https://registry.npmjs.org/regenerate/-/regenerate-1.3.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="241036:241167" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/regjsgen/-/regjsgen-0.2.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="241186:241584" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/regjsparser/-/regjsparser-0.1.5.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="241429:241580" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="241444:241575" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/jsesc/-/jsesc-0.5.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="241617:241782" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/remove-trailing-separator/-/remove-trailing-separator-1.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="241804:241947" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/repeat-element/-/repeat-element-1.1.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="241968:242109" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/repeat-string/-/repeat-string-1.6.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="242126:242360" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/repeating/-/repeating-2.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="242272:242356" ph="{&quot;is-finite&quot;: &quot;https://registry.npmjs.org/is-finite/-/is-finite-1.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="242379:242516" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/replace-ext/-/replace-ext-0.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="242531:244661" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/request/-/request-2.81.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="242674:244494" ph="{&quot;aws-sign2&quot;: &quot;https://registry.npmjs.org/aws-sign2/-/aws-sign2-0.6.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="244515:244657" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="244527:244652" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/qs/-/qs-6.4.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="244864:245021" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/require-main-filename/-/require-main-filename-1.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="245036:245285" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/resolve/-/resolve-1.3.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="245194:245281" ph="{&quot;path-parse&quot;: &quot;https://registry.npmjs.org/path-parse/-/path-parse-1.0.5.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="245306:245784" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/response-time/-/response-time-2.3.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="245460:245611" ph="{&quot;depd&quot;: &quot;https://registry.npmjs.org/depd/-/depd-1.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="245632:245780" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="245646:245775" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/depd/-/depd-1.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="245806:246123" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/restore-cursor/-/restore-cursor-1.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="245962:246119" ph="{&quot;exit-hook&quot;: &quot;https://registry.npmjs.org/exit-hook/-/exit-hook-1.1.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="246142:246383" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/right-align/-/right-align-0.1.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="246292:246379" ph="{&quot;align-text&quot;: &quot;https://registry.npmjs.org/align-text/-/align-text-0.1.4.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="246397:246610" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/rimraf/-/rimraf-2.6.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="246537:246606" ph="{&quot;glob&quot;: &quot;https://registry.npmjs.org/glob/-/glob-7.1.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="246622:246745" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/rndm/-/rndm-1.2.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="246762:246981" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/run-async/-/run-async-0.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="246908:246977" ph="{&quot;once&quot;: &quot;https://registry.npmjs.org/once/-/once-1.4.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="246996:247125" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/rx-lite/-/rx-lite-3.1.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="247144:247281" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="247293:248424" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/sane/-/sane-1.4.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="247429:247885" ph="{&quot;exec-sh&quot;: &quot;https://registry.npmjs.org/exec-sh/-/exec-sh-0.2.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="247906:248420" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="247920:248159" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/bser/-/bser-1.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="248062:248153" ph="{&quot;node-int64&quot;: &quot;https://registry.npmjs.org/node-int64/-/node-int64-0.4.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="248180:248415" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/fb-watchman/-/fb-watchman-1.9.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="248336:248409" ph="{&quot;bser&quot;: &quot;https://registry.npmjs.org/bser/-/bser-1.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="248435:248556" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/sax/-/sax-1.1.6.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="248570:248697" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/semver/-/semver-5.3.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="248709:250567" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/send/-/send-0.13.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="248846:249727" ph="{&quot;debug&quot;: &quot;https://registry.npmjs.org/debug/-/debug-2.2.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="249748:250563" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="249763:249980" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/debug/-/debug-2.2.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="249907:249974" ph="{&quot;ms&quot;: &quot;https://registry.npmjs.org/ms/-/ms-0.7.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="249994:250123" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/depd/-/depd-1.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="250137:250266" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/mime/-/mime-1.3.4.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="250278:250403" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/ms/-/ms-0.7.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="250421:250558" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/statuses/-/statuses-1.2.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="250588:251179" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/serve-favicon/-/serve-favicon-2.3.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="250742:251012" ph="{&quot;etag&quot;: &quot;https://registry.npmjs.org/etag/-/etag-1.7.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="251033:251175" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="251045:251170" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/ms/-/ms-0.7.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="251198:252289" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/serve-index/-/serve-index-1.7.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="251348:251890" ph="{&quot;accepts&quot;: &quot;https://registry.npmjs.org/accepts/-/accepts-1.2.13.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="251911:252285" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="251926:252143" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/debug/-/debug-2.2.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="252070:252137" ph="{&quot;ms&quot;: &quot;https://registry.npmjs.org/ms/-/ms-0.7.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="252155:252280" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/ms/-/ms-0.7.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="252309:252697" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/serve-static/-/serve-static-1.10.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="252462:252693" ph="{&quot;escape-html&quot;: &quot;https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="252717:252856" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/set-blocking/-/set-blocking-2.0.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="252882:253078" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="253098:253237" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="253256:253743" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/shell-quote/-/shell-quote-1.6.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="253406:253739" ph="{&quot;array-filter&quot;: &quot;https://registry.npmjs.org/array-filter/-/array-filter-0.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="253761:253912" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/shellwords/-/shellwords-0.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="253932:255100" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/simple-plist/-/simple-plist-0.2.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="254084:254341" ph="{&quot;bplist-creator&quot;: &quot;https://registry.npmjs.org/bplist-creator/-/bplist-creator-0.0.7.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="254362:255096" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="254381:254520" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/base64-js/-/base64-js-1.1.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="254535:254930" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/plist/-/plist-2.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="254679:254924" ph="{&quot;base64-js&quot;: &quot;https://registry.npmjs.org/base64-js/-/base64-js-1.1.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="254950:255091" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/xmlbuilder/-/xmlbuilder-8.2.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="255113:255238" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/slash/-/slash-1.0.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="255251:255376" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/slide/-/slide-1.1.6.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="255388:255598" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/sntp/-/sntp-1.0.9.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="255524:255594" ph="{&quot;hoek&quot;: &quot;https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="255616:255751" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/source-map/-/source-map-0.5.6.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="255777:256033" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/source-map-support/-/source-map-support-0.4.15.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="255942:256029" ph="{&quot;source-map&quot;: &quot;https://registry.npmjs.org/source-map/-/source-map-0.5.6.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="256049:256180" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/sparkles/-/sparkles-1.0.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="256200:256461" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/spdx-correct/-/spdx-correct-1.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="256352:256457" ph="{&quot;spdx-license-ids&quot;: &quot;https://registry.npmjs.org/spdx-license-ids/-/spdx-license-ids-1.2.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="256490:256647" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/spdx-expression-parse/-/spdx-expression-parse-1.0.4.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="256836:256987" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.0.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="257000:258027" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/sshpk/-/sshpk-1.13.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="257139:257833" ph="{&quot;asn1&quot;: &quot;https://registry.npmjs.org/asn1/-/asn1-0.2.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="257854:258023" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="257875:258018" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/assert-plus/-/assert-plus-1.0.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="258052:258201" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/stacktrace-parser/-/stacktrace-parser-0.1.4.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="258217:258348" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/statuses/-/statuses-1.3.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="258370:258513" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/stream-buffers/-/stream-buffers-2.2.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="258535:259695" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/stream-counter/-/stream-counter-0.2.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="258691:258794" ph="{&quot;readable-stream&quot;: &quot;https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.14.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="258815:259691" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="258832:258967" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="258992:259511" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.14.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="259157:259505" ph="{&quot;core-util-is&quot;: &quot;https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="259535:259686" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="259717:259967" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/string_decoder/-/string_decoder-1.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="259873:259963" ph="{&quot;safe-buffer&quot;: &quot;https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="259988:260249" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/string-length/-/string-length-1.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="260158:260245" ph="{&quot;strip-ansi&quot;: &quot;https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="260269:260724" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/string-width/-/string-width-1.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="260421:260720" ph="{&quot;code-point-at&quot;: &quot;https://registry.npmjs.org/code-point-at/-/code-point-at-1.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="260744:260883" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/stringstream/-/stringstream-0.0.5.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="260901:261140" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="261049:261136" ph="{&quot;ansi-regex&quot;: &quot;https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="261157:261385" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/strip-bom/-/strip-bom-2.0.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="261303:261381" ph="{&quot;is-utf8&quot;: &quot;https://registry.npmjs.org/is-utf8/-/is-utf8-0.2.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="261407:261550" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/supports-color/-/supports-color-2.0.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="261569:261722" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/symbol-tree/-/symbol-tree-3.2.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="261734:262203" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/temp/-/temp-0.8.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="261870:262024" ph="{&quot;os-tmpdir&quot;: &quot;https://registry.npmjs.org/os-tmpdir/-/os-tmpdir-1.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="262045:262199" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="262061:262194" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/rimraf/-/rimraf-2.2.8.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="262223:262844" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/test-exclude/-/test-exclude-4.1.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="262391:262840" ph="{&quot;arrify&quot;: &quot;https://registry.npmjs.org/arrify/-/arrify-1.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="262858:263115" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/throat/-/throat-3.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="262998:263111" ph="{&quot;double-ended-queue&quot;: &quot;https://registry.npmjs.org/double-ended-queue/-/double-ended-queue-2.1.0-0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="263130:263259" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/through/-/through-2.3.8.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="263275:263593" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/through2/-/through2-2.0.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="263419:263589" ph="{&quot;readable-stream&quot;: &quot;https://registry.npmjs.org/readable-stream/-/readable-stream-2.2.10.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="263611:263746" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/time-stamp/-/time-stamp-1.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="263758:263881" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/tmpl/-/tmpl-1.0.4.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="263907:264058" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/to-fast-properties/-/to-fast-properties-1.0.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="264070:264280" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/topo/-/topo-1.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="264206:264276" ph="{&quot;hoek&quot;: &quot;https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="264300:264537" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.3.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="264452:264533" ph="{&quot;punycode&quot;: &quot;https://registry.npmjs.org/punycode/-/punycode-1.4.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="264549:264688" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="264706:264841" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/trim-right/-/trim-right-1.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="264855:264982" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/tsscmp/-/tsscmp-1.0.5.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="265002:265248" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/tunnel-agent/-/tunnel-agent-0.6.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="265154:265244" ph="{&quot;safe-buffer&quot;: &quot;https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="265265:265420" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="265438:265693" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/type-check/-/type-check-0.3.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="265602:265689" ph="{&quot;prelude-ls&quot;: &quot;https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.1.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="265708:266318" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/type-is/-/type-is-1.6.15.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="265851:266024" ph="{&quot;media-typer&quot;: &quot;https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="266045:266314" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="266065:266309" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/mime-types/-/mime-types-2.1.15.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="266220:266303" ph="{&quot;mime-db&quot;: &quot;https://registry.npmjs.org/mime-db/-/mime-db-1.27.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="266336:266471" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="266491:266631" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/ua-parser-js/-/ua-parser-js-0.7.12.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="266648:267800" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/uglify-js/-/uglify-js-2.7.5.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="266794:267129" ph="{&quot;async&quot;: &quot;https://registry.npmjs.org/async/-/async-0.2.10.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="267150:267796" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="267165:267297" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/async/-/async-0.2.10.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="267312:267791" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/yargs/-/yargs-3.10.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="267457:267785" ph="{&quot;camelcase&quot;: &quot;https://registry.npmjs.org/camelcase/-/camelcase-1.2.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="267828:267983" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="267999:268240" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/uid-safe/-/uid-safe-2.1.4.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="268143:268236" ph="{&quot;random-bytes&quot;: &quot;https://registry.npmjs.org/random-bytes/-/random-bytes-1.0.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="268254:268381" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/ultron/-/ultron-1.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="268395:268522" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/unpipe/-/unpipe-1.0.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="268533:268962" ph="{&quot;version&quot;: &quot;0.10.3&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="268693:268751" ph="{&quot;punycode&quot;: &quot;1.3.2&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="268772:268958" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="268790:268953" ph="{&quot;version&quot;: &quot;1.3.2&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="268982:269145" ph="{&quot;version&quot;: &quot;2.0.8&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="269162:269319" ph="{&quot;version&quot;: &quot;1.1.1&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="269341:269484" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="269503:269640" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="269652:269775" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/uuid/-/uuid-3.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="269790:269991" ph="{&quot;version&quot;: &quot;2.1.1&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="269956:269987" ph="{&quot;user-home&quot;: &quot;1.1.1&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="270027:270423" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/validate-npm-package-license/-/validate-npm-package-license-3.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="270211:270419" ph="{&quot;spdx-correct&quot;: &quot;https://registry.npmjs.org/spdx-correct/-/spdx-correct-1.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="270435:270558" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/vary/-/vary-1.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="270572:270803" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/verror/-/verror-1.3.6.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="270712:270799" ph="{&quot;extsprintf&quot;: &quot;https://registry.npmjs.org/extsprintf/-/extsprintf-1.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="270816:270941" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/vhost/-/vhost-3.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="270954:271338" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/vinyl/-/vinyl-0.5.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="271092:271334" ph="{&quot;clone&quot;: &quot;https://registry.npmjs.org/clone/-/clone-1.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="271352:271581" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/walker/-/walker-1.0.7.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="271492:271577" ph="{&quot;makeerror&quot;: &quot;https://registry.npmjs.org/makeerror/-/makeerror-1.0.11.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="271594:271720" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/watch/-/watch-0.10.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="271746:271913" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-4.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="271936:272408" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/whatwg-encoding/-/whatwg-encoding-1.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="272110:272198" ph="{&quot;iconv-lite&quot;: &quot;https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.13.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="272219:272404" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="272239:272399" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.13.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="272428:272567" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-1.1.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="272585:273157" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/whatwg-url/-/whatwg-url-4.8.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="272749:272924" ph="{&quot;tr46&quot;: &quot;https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="272945:273153" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="272973:273148" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="273170:273385" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/which/-/which-1.2.14.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="273309:273381" ph="{&quot;isexe&quot;: &quot;https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="273405:273544" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/which-module/-/which-module-1.0.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="273563:273700" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/window-size/-/window-size-0.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="273716:273847" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/wordwrap/-/wordwrap-1.0.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="273866:274159" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/worker-farm/-/worker-farm-1.3.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="274016:274155" ph="{&quot;errno&quot;: &quot;https://registry.npmjs.org/errno/-/errno-0.1.4.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="274176:274501" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-2.1.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="274322:274497" ph="{&quot;string-width&quot;: &quot;https://registry.npmjs.org/string-width/-/string-width-1.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="274515:274642" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="274667:275076" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/write-file-atomic/-/write-file-atomic-1.3.4.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="274829:275072" ph="{&quot;graceful-fs&quot;: &quot;https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.1.11.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="275086:275545" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/ws/-/ws-1.1.4.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="275218:275366" ph="{&quot;options&quot;: &quot;https://registry.npmjs.org/options/-/options-0.0.6.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="275387:275541" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="275403:275536" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/ultron/-/ultron-1.0.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="275558:275925" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/xcode/-/xcode-0.9.3.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="275696:275921" ph="{&quot;pegjs&quot;: &quot;https://registry.npmjs.org/pegjs/-/pegjs-0.10.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="275938:276087" ph="{&quot;version&quot;: &quot;0.8.2&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="276113:276280" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/xml-name-validator/-/xml-name-validator-2.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="276294:276869" ph="{&quot;version&quot;: &quot;0.4.17&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="276460:276553" ph="{&quot;sax&quot;: &quot;https://registry.npmjs.org/sax/-/sax-1.1.6.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="276574:276865" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="276594:276860" ph="{&quot;version&quot;: &quot;4.2.1&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="276774:276854" ph="{&quot;lodash&quot;: &quot;https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="276887:277291" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/xmlbuilder/-/xmlbuilder-4.0.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="277035:277111" ph="{&quot;lodash&quot;: &quot;https://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="277132:277287" ph="{...}" />
+            <marker date="1505555425000" expanded="true" signature="277148:277282" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="277305:277515" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/xmldoc/-/xmldoc-0.4.0.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="277445:277511" ph="{&quot;sax&quot;: &quot;https://registry.npmjs.org/sax/-/sax-1.1.6.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="277529:277657" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/xmldom/-/xmldom-0.1.27.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="277670:277795" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/xpipe/-/xpipe-1.0.5.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="277808:277933" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="277945:278068" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/y18n/-/y18n-3.2.1.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="278083:278212" ph="{&quot;version&quot;: &quot;https://registry.npmjs.org/yallist/-/yallist-2.1.2.tgz&quot;...}" />
+            <marker date="1505555425000" expanded="true" signature="278363:279491" ph="{&quot;camelcase&quot;: &quot;https://registry.npmjs.org/camelcase/-/camelcase-3.0.0.tgz&quot;...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/EachScheduleView.js">
+    <entry file="file://$PROJECT_DIR$/src/screen/LeagueInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="61" column="23" lean-forward="false" selection-start-line="58" selection-start-column="16" selection-end-line="61" selection-end-column="23" />
+        <state relative-caret-position="-195">
+          <caret line="40" column="61" lean-forward="false" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -914,7 +1012,27 @@
     <entry file="file://$PROJECT_DIR$/src/components/ScheduleOperation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="34" column="53" lean-forward="false" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+          <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screen/CalendarScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="245" column="8" lean-forward="true" selection-start-line="245" selection-start-column="8" selection-end-line="251" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screen/CreateSchedule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="876">
+          <caret line="99" column="16" lean-forward="false" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

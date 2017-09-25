@@ -19,6 +19,8 @@ export default class CalendarScreen extends Component {
         this.handleRequestSchedule = this.handleRequestSchedule.bind(this);
         this.handleEditSchedule = this.handleEditSchedule.bind(this);
         this.handleCancelSchedule = this.handleCancelSchedule.bind(this);
+        this.handleResultSchedule = this.handleResultSchedule.bind(this);
+        this.handleReviewSchedule = this.handleReviewSchedule.bind(this);
         this.getScheduleFromDynamo = this.getScheduleFromDynamo.bind(this);
         this.refreshContent = this.refreshContent.bind(this);
         this.dbInstance = new DynamoDb();
@@ -123,11 +125,14 @@ export default class CalendarScreen extends Component {
             edit = false;
             cancel = false;
         }
+        if(user1 === this.userId) request = false;
         return{
             create:create,
             request:request,
             edit:edit,
-            cancel:cancel
+            cancel:cancel,
+            result:false,
+            review:false,
         }
     }
 
@@ -153,6 +158,12 @@ export default class CalendarScreen extends Component {
     handleCancelSchedule(){
         alert("Send a cancel request")
     }
+    handleResultSchedule(){
+        alert("Go to result page")
+    }
+    handleReviewSchedule(){
+        alert("Go to review page")
+    }
     renderEmptySchedule(){
         if (this.hasSchedule === false){
             return(
@@ -168,6 +179,8 @@ export default class CalendarScreen extends Component {
                     requestCallBack={this.handleRequestSchedule}
                     editCallBack={this.handleEditSchedule}
                     cancelCallBack={this.handleCancelSchedule}
+                    resultCallBack={this.handleResultSchedule}
+                    reviewCallBack={this.handleReviewSchedule}
                 />
             )
         }
@@ -225,6 +238,8 @@ export default class CalendarScreen extends Component {
                                 requestCallBack={this.handleRequestSchedule}
                                 editCallBack={this.handleEditSchedule}
                                 cancelCallBack={this.handleCancelSchedule}
+                                resultCallBack={this.handleResultSchedule}
+                                reviewCallBack={this.handleReviewSchedule}
                             />
                         )
                     }

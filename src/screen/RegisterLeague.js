@@ -23,6 +23,7 @@ export default class RegisterLeague extends Component {
                     id:'d4e503e8-e686-4146-8a2c-eb141333a22c', city:"Auckland", endDate:"2017-10-10 03:05:05.459131",
                     players:["33a12b21-aeda-4f3a-9758-a46b729a1f3f","62c88ffd-019b-4bbb-8d17-69427c669ae5"],
                     startDate:"2017-09-10 03:05:05.459119", suburbs:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"],
+                    venueList:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"]
                 }
             ],
             completeLeague:[

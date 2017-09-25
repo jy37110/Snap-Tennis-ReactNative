@@ -53,7 +53,7 @@ export default class LeagueInfo extends Component {
                         <Text style={this.styles.bodyTitleText}>Venues List:</Text>
                     </View>
                     <View style={this.styles.eachContentContainer}>
-                        {this.params.suburbs.map((item, i) => {
+                        {this.params.venueList.map((item, i) => {
                             return(
                                 <Text key={i}
                                       style={this.styles.eachLineOfContent}

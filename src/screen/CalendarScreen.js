@@ -20,6 +20,7 @@ export default class CalendarScreen extends Component {
         this.handleEditSchedule = this.handleEditSchedule.bind(this);
         this.handleCancelSchedule = this.handleCancelSchedule.bind(this);
         this.getScheduleFromDynamo = this.getScheduleFromDynamo.bind(this);
+        this.refreshContent = this.refreshContent.bind(this);
         this.dbInstance = new DynamoDb();
         this.dbContext = this.dbInstance.getDbContext();
         this.scan = [];
@@ -34,6 +35,18 @@ export default class CalendarScreen extends Component {
             markDates:{},
             scheduleList:[{}]
         };
+        this.getScheduleFromDynamo();
+    }
+
+    refreshContent(){
+        this.scan = [];
+        this.hasSchedule = false;
+        this.currentDate = this.getCurrentDate();
+        this.setState({
+            selectedDate:this.currentDate,
+            markDates:{},
+            scheduleList:[{}]
+        });
         this.getScheduleFromDynamo();
     }
 
@@ -125,6 +138,7 @@ export default class CalendarScreen extends Component {
     handleCreateNewSchedule (){
         const { navigate } = this.props.navigation;
         navigate("CreateSchedule",{
+            onGoBack:() => this.refreshContent(),
             selectedDate:this.state.selectedDate,
             leagueId:this.leagueId,
             venueList:this.params.venueList,

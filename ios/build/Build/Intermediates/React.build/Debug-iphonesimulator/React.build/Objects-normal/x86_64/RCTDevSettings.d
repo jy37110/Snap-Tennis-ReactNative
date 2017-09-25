@@ -1,23 +1,23 @@
 dependencies: \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/Modules/RCTDevSettings.mm \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/Modules/RCTDevSettings.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/Base/RCTBridge.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/Base/RCTBridgeModule.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/Base/RCTFrameUpdate.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/Base/RCTInvalidating.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/Modules/JSCSamplingProfiler.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/Base/RCTBridge+Private.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/Base/RCTEventDispatcher.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/Base/RCTLog.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/Base/RCTAssert.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/Base/RCTUtils.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/Profiler/RCTProfile.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/DevSupport/RCTPackagerClientResponder.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/DevSupport/RCTReloadPackagerMethod.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/node_modules/react-native/React/DevSupport/RCTSamplingProfilerPackagerMethod.h
+  /Users/chaogong/reactmaster/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/chaogong/reactmaster/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/chaogong/reactmaster/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/Modules/JSCSamplingProfiler.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/DevSupport/RCTPackagerClientResponder.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/DevSupport/RCTReloadPackagerMethod.h \
+  /Users/chaogong/reactmaster/node_modules/react-native/React/DevSupport/RCTSamplingProfilerPackagerMethod.h

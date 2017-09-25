@@ -1,3 +1,2 @@
-dependencies: \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/ios/nativeWebStorm/main.m \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/ios/nativeWebStorm/AppDelegate.h
+dependencies: /Users/chaogong/reactmaster/ios/nativeWebStorm/main.m \
+  /Users/chaogong/reactmaster/ios/nativeWebStorm/AppDelegate.h

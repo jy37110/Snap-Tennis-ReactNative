@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/ios/nativeWebStormTests/nativeWebStormTests.m \
+  /Users/chaogong/reactmaster/ios/nativeWebStormTests/nativeWebStormTests.m \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIRemote.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIKeyboardKeys.h \
@@ -35,14 +35,14 @@ dependencies: \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestErrors.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestDefines.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
-  /Users/chaogong/LocalDocuments/myCode/Native/nativeWebStorm/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h
+  /Users/chaogong/reactmaster/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/chaogong/reactmaster/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/chaogong/reactmaster/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/chaogong/reactmaster/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/chaogong/reactmaster/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/chaogong/reactmaster/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/chaogong/reactmaster/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/chaogong/reactmaster/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/chaogong/reactmaster/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/chaogong/reactmaster/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/chaogong/reactmaster/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h

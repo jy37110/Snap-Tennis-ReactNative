@@ -6,31 +6,84 @@ import {
     Switch,
     ScrollView,
 } from 'react-native';
+import DynamoDb from '../utility/DynamoDb';
 
 export default class RegisterLeague extends Component {
     constructor(props){
         super(props);
         this.userId = "62c88ffd-019b-4bbb-8d17-69427c669ae5";
+        this.getLeaguesFromDynamo = this.getLeaguesFromDynamo.bind(this);
+        this.dbInstance = new DynamoDb();
+        this.dbContext = this.dbInstance.getDbContext();
+        this.scan = [];
         this.state = {
             ongoingLeague:[
-                {
-                    id:'efaa0eb1-362c-4e3b-a514-16be15599be0', city:"Auckland", endDate:"2017-10-15 02:51:25.772839",
-                    players:["36b5246d-13cd-498a-9797-14dcec784950","62c88ffd-019b-4bbb-8d17-69427c669ae5"],
-                    startDate:"2017-09-15 02:51:25.772828", suburbs:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"],
-                    venueList:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"]
-                },
-                {
-                    id:'d4e503e8-e686-4146-8a2c-eb141333a22c', city:"Auckland", endDate:"2017-10-10 03:05:05.459131",
-                    players:["33a12b21-aeda-4f3a-9758-a46b729a1f3f","62c88ffd-019b-4bbb-8d17-69427c669ae5"],
-                    startDate:"2017-09-10 03:05:05.459119", suburbs:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"],
-                    venueList:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"]
-                }
+                // {
+                //     id:'efaa0eb1-362c-4e3b-a514-16be15599be0', city:"Auckland", endDate:"2017-10-15 02:51:25.772839",
+                //     players:["36b5246d-13cd-498a-9797-14dcec784950","62c88ffd-019b-4bbb-8d17-69427c669ae5"],
+                //     startDate:"2017-09-15 02:51:25.772828", suburbs:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"],
+                //     venueList:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"]
+                // },
+                // {
+                //     id:'d4e503e8-e686-4146-8a2c-eb141333a22c', city:"Auckland", endDate:"2017-10-10 03:05:05.459131",
+                //     players:["33a12b21-aeda-4f3a-9758-a46b729a1f3f","62c88ffd-019b-4bbb-8d17-69427c669ae5"],
+                //     startDate:"2017-09-10 03:05:05.459119", suburbs:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"],
+                //     venueList:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"]
+                // }
             ],
             completeLeague:[
                 {id:'7c22869c-f29a-4453-b1ab-c8650623c8a7', description:"Auckland, closed 30 Thu Mar 00"}
             ],
             switchValue: "No",
-        }
+        };
+        this.getLeaguesFromDynamo();
+    }
+
+    getLeaguesFromDynamo(){
+        let params = {
+            TableName:"NZSinglesLeagueRound",
+            ProjectionExpression:"league_id, city, capabilities, end_date, player_reg_uuids, players, start_date, #st, suburbs",
+            // FilterExpression: 'players = :userId',
+            FilterExpression: 'contains(players,:userId)',
+            ExpressionAttributeNames:{
+                "#st": "status"
+            },
+            ExpressionAttributeValues: {
+                ":userId":this.userId,
+            }
+        };
+        let onScan = (err, data) => {
+            if (err) {
+                alert("err:" + err)
+            } else {
+                //alert(JSON.stringify(data.Items[0]));
+                data.Items.forEach((eachLeague) => {
+                    let venues = [];
+                    Object.values(eachLeague.suburbs).forEach((venue) =>{
+                        venue.values.forEach((i) =>{
+                            venues.push(i)
+                        })
+                    });
+                    let  temp = {
+                        id: eachLeague.league_id,
+                        city: eachLeague.city,
+                        endDate: eachLeague.end_date,
+                        players: eachLeague.players,
+                        startDate: eachLeague.start_date,
+                        suburbs: Object.keys(eachLeague.suburbs),
+                        venueList: venues,
+                    };
+                    this.scan.push(temp);
+                });
+                //alert(JSON.stringify(this.scan));
+                this.setState(
+                    {
+                        ongoingLeague:this.scan,
+                    }
+                );
+            }
+        };
+        this.dbContext.scan(params, onScan);
     }
 
     static navigationOptions = {
@@ -38,7 +91,6 @@ export default class RegisterLeague extends Component {
     };
 
     render() {
-
         const { navigate } = this.props.navigation;
         return (
             <ScrollView style={this.styles.RegisterLeagueContainer}>
@@ -96,6 +148,8 @@ export default class RegisterLeague extends Component {
                                 style={this.styles.text}
                                 key={i}
                                 onPress={()=>{navigate("LeagueInfo",this.state.ongoingLeague[i])}}
+                                //onPress={()=>{alert(JSON.stringify(this.state.ongoingLeague[i]))}}
+
                             >
                                 {"(" + (i+1).toString() + ") " + leagueDescription}
                             </Text>

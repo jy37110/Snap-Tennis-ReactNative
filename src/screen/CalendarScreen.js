@@ -71,7 +71,9 @@ export default class CalendarScreen extends Component {
         let onScan = (err, data) => {
             if (err) {
                 this.scan = "Something wrong" + err;
+                alert("err: " + err);
             } else {
+                //alert("sucess: " + JSON.stringify(data));
                 let markDates = {};
                 data.Items.forEach((value) => {
                     let  temp = {
@@ -114,9 +116,14 @@ export default class CalendarScreen extends Component {
             create = true;
             request = true;
         }
-        if (this.userId === user1 || this.userId === user2) {
+        if (this.userId === user1) {
             create = true;
             edit = true;
+            cancel = true;
+        }
+        if (this.userId === user2){
+            create = true;
+            edit = false;
             cancel = true;
         }
         if (user1 === "" && user2 === ""){

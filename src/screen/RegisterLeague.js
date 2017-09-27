@@ -15,25 +15,11 @@ export default class RegisterLeague extends Component {
         this.getLeaguesFromDynamo = this.getLeaguesFromDynamo.bind(this);
         this.dbInstance = new DynamoDb();
         this.dbContext = this.dbInstance.getDbContext();
-        this.scan = [];
+        this.scanOngoingLeagues = [];
+        this.scanCopleteLeagues = [];
         this.state = {
-            ongoingLeague:[
-                // {
-                //     id:'efaa0eb1-362c-4e3b-a514-16be15599be0', city:"Auckland", endDate:"2017-10-15 02:51:25.772839",
-                //     players:["36b5246d-13cd-498a-9797-14dcec784950","62c88ffd-019b-4bbb-8d17-69427c669ae5"],
-                //     startDate:"2017-09-15 02:51:25.772828", suburbs:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"],
-                //     venueList:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"]
-                // },
-                // {
-                //     id:'d4e503e8-e686-4146-8a2c-eb141333a22c', city:"Auckland", endDate:"2017-10-10 03:05:05.459131",
-                //     players:["33a12b21-aeda-4f3a-9758-a46b729a1f3f","62c88ffd-019b-4bbb-8d17-69427c669ae5"],
-                //     startDate:"2017-09-10 03:05:05.459119", suburbs:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"],
-                //     venueList:["Albany Domain","Malcolm Hahn Memorial Reserve","Totara Park"]
-                // }
-            ],
-            completeLeague:[
-                {id:'7c22869c-f29a-4453-b1ab-c8650623c8a7', description:"Auckland, closed 30 Thu Mar 00"}
-            ],
+            ongoingLeague:[],
+            completeLeague:[],
             switchValue: "No",
         };
         this.getLeaguesFromDynamo();
@@ -56,7 +42,8 @@ export default class RegisterLeague extends Component {
             if (err) {
                 alert("err:" + err)
             } else {
-                //alert(JSON.stringify(data.Items[0]));
+                let tempEndDate;
+                let today = new Date();
                 data.Items.forEach((eachLeague) => {
                     let venues = [];
                     Object.values(eachLeague.suburbs).forEach((venue) =>{
@@ -73,12 +60,15 @@ export default class RegisterLeague extends Component {
                         suburbs: Object.keys(eachLeague.suburbs),
                         venueList: venues,
                     };
-                    this.scan.push(temp);
+                    tempEndDate = new Date(temp.endDate.substr(0,10));
+                    if(tempEndDate < today) this.scanCopleteLeagues.push(temp);
+                    else this.scanOngoingLeagues.push(temp);
                 });
-                //alert(JSON.stringify(this.scan));
+
                 this.setState(
                     {
-                        ongoingLeague:this.scan,
+                        ongoingLeague:this.scanOngoingLeagues,
+                        completeLeague:this.scanCopleteLeagues,
                     }
                 );
             }
@@ -148,8 +138,6 @@ export default class RegisterLeague extends Component {
                                 style={this.styles.text}
                                 key={i}
                                 onPress={()=>{navigate("LeagueInfo",this.state.ongoingLeague[i])}}
-                                //onPress={()=>{alert(JSON.stringify(this.state.ongoingLeague[i]))}}
-
                             >
                                 {"(" + (i+1).toString() + ") " + leagueDescription}
                             </Text>
@@ -162,12 +150,13 @@ export default class RegisterLeague extends Component {
                         {this.state.completeLeague.length > 0 ? "Your completed leagues:" : "Currently no completed leagues"}
                     </Text>
                     {this.state.completeLeague.map((eachLeague, i) =>{
+                        let leagueDescription = eachLeague.city + ", closed " + eachLeague.endDate.substr(0,10);
                         return(
                             <Text
                                 style={this.styles.text}
                                 key={i}
                             >
-                                {"(" + (i+1).toString() + ") " + eachLeague.description}
+                                {"(" + (i+1).toString() + ") " + leagueDescription}
                             </Text>
                         )
                     })}

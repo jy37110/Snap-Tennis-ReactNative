@@ -59,34 +59,49 @@ export default class CalendarScreen extends Component {
         return today;
     }
 
-    getStatus(user1,user2){
+    getStatus(user1,user2,isPastSchedule){
         if(user1 === "-1" || user1 ==="") return "Something wrong";
-        return user2 === "-1" ? "Waiting for player2" : "Confirmed"
+        if (isPastSchedule){
+            return "Finished"
+        } else {
+            return user2 === "-1" ? "Waiting for player2" : "Confirmed"
+        }
     }
-    getOptions(user1,user2){
-        let create = true;
+    getOptions(user1,user2,isPastSchedule){
+        let create = false;
         let request = false;
         let edit = false;
         let cancel = false;
-        if (user2 !== this.userId && user2 === "-1") {
+        let result = false;
+        let review = false;
+        if (user2 !== this.userId && user2 === "-1" && !isPastSchedule) {
             create = true;
             request = true;
         }
-        if (this.userId === user1) {
+        if (this.userId === user1 && !isPastSchedule) {
             create = true;
             edit = true;
             cancel = true;
         }
-        if (this.userId === user2){
+        if (this.userId === user2 && !isPastSchedule){
             create = true;
             edit = false;
             cancel = true;
         }
         if (user1 === "" && user2 === ""){
-            create = true;
+            create = !isPastSchedule;
             request = false;
             edit = false;
             cancel = false;
+        }
+        if (isPastSchedule){
+            if ((this.userId === user1 || this.userId === user2) && user2 !== "-1"){
+                result = true;
+                review = true;
+            }
+            if (user2 === "-1" && this.userId === user1){
+                cancel = true;
+            }
         }
         if(user1 === this.userId) request = false;
         return{
@@ -94,8 +109,8 @@ export default class CalendarScreen extends Component {
             request:request,
             edit:edit,
             cancel:cancel,
-            result:false,
-            review:false,
+            result:result,
+            review:review,
         }
     }
 
@@ -123,7 +138,6 @@ export default class CalendarScreen extends Component {
     };
 
     handleEditSchedule = (scheduleId) => {
-        // alert("scheduleId: " + scheduleId);
         const { navigate } = this.props.navigation;
         navigate("EditSchedule",{
             onGoBack:() => this.refreshContent(),
@@ -158,6 +172,9 @@ export default class CalendarScreen extends Component {
 
     renderEmptySchedule(){
         if (this.hasSchedule === false){
+            let scheduleDate = new Date(this.state.selectedDate.replace(/-/g, "/") + "23:59:59");
+            let currentDate = new Date();
+            let isPastSchedule = scheduleDate < currentDate.getTime();
             return(
                 <EachScheduleView
                     date={this.state.selectedDate}
@@ -166,7 +183,7 @@ export default class CalendarScreen extends Component {
                     status={"Waiting for a new schedule"}
                     player1={""}
                     player2={""}
-                    option={this.getOptions("","")}
+                    option={this.getOptions("","",isPastSchedule)}
                     createCallBack={this.handleCreateNewSchedule}
                     requestCallBack={this.handleRequestSchedule}
                     editCallBack={this.handleEditSchedule}
@@ -240,14 +257,13 @@ export default class CalendarScreen extends Component {
 
                 {this.renderEmptySchedule()}
 
-                <View style={this.styles.createScheduleButtonContainer}>
-                    <Button
-                        onPress={this.handleCreateNewSchedule}
-                        title="CREATE NEW SCHEDULE"
-                        color={Platform.select({ios:"white", android:"grey"})}
-                        accessibilityLabel="Learn more about this purple button"
-                    />
-                </View>
+                {/*<View style={this.styles.createScheduleButtonContainer}>*/}
+                    {/*<Button*/}
+                        {/*onPress={this.handleCreateNewSchedule}*/}
+                        {/*title="CREATE NEW SCHEDULE"*/}
+                        {/*color={Platform.select({ios:"white", android:"grey"})}*/}
+                    {/*/>*/}
+                {/*</View>*/}
 
             </ScrollView>
         )
@@ -281,8 +297,13 @@ export default class CalendarScreen extends Component {
                 alert("err: " + err);
             } else {
                 let markDates = {};
+                let isPastSchedule = false;
                 data.Items.forEach((value) => {
-                    let  temp = {
+                    let scheduleDateStr = value.upcoming_date.substr(0,4) + "/" + value.upcoming_date.substr(4,2) + "/" + value.upcoming_date.substr(6,2);
+                    let scheduleDate = new Date(scheduleDateStr + " " + value.time_to);
+                    let currentDate = new Date();
+                    isPastSchedule = scheduleDate < currentDate.getTime();
+                    let temp = {
                         upcomingDate: value.upcoming_date.substr(0,4) + "-" + value.upcoming_date.substr(4,2) + "-" + value.upcoming_date.substr(6,2),
                         scheduleId: value.schedule_id,
                         suburb: value.suburb,
@@ -293,15 +314,19 @@ export default class CalendarScreen extends Component {
                         user1Id: value.user1_id,
                         user2Id: value.user2_id,
                         venueName: value.venue_name,
-                        status:this.getStatus(value.user1_id,value.user2_id),
-                        option:this.getOptions(value.user1_id,value.user2_id)
+                        status:this.getStatus(value.user1_id,value.user2_id,isPastSchedule),
+                        option:this.getOptions(value.user1_id,value.user2_id,isPastSchedule)
                     };
                     this.scan.push(temp);
                     let checkRepeatDate = Object.keys(markDates);
-                    if (temp.user2Id === "-1"){
-                        markDates[temp.upcomingDate] = [{startingDay: true, color: 'green'}, {endingDay: true, color: 'green'}]
-                    } else if (temp.user2Id !== "-1" && !checkRepeatDate.includes(temp.upcomingDate)){
-                        markDates[temp.upcomingDate] = [{startingDay: true, color: 'orange'}, {endingDay: true, color: 'orange'}]
+                    if (isPastSchedule){
+                        markDates[temp.upcomingDate] = [{startingDay: true, color: 'grey'}, {endingDay: true, color: 'grey'}]
+                    } else {
+                        if (temp.user2Id === "-1"){
+                            markDates[temp.upcomingDate] = [{startingDay: true, color: 'green'}, {endingDay: true, color: 'green'}]
+                        } else if (temp.user2Id !== "-1" && !checkRepeatDate.includes(temp.upcomingDate)){
+                            markDates[temp.upcomingDate] = [{startingDay: true, color: 'orange'}, {endingDay: true, color: 'orange'}]
+                        }
                     }
                 });
                 this.setState(

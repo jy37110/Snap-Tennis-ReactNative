@@ -98,16 +98,22 @@ export default class CreateSchedule extends Component {
     validate(){
         let msg = "";
         let pass = true;
-        if (this.state.venueSelected === "") {
-            msg = "Please select a venue by click the venue in the venue list";
-            pass = false;
-        }
-        if (this.state.timeFromPickedStr === "Click me to select time" || this.state.timeToPickedStr ==="Click me to select time"){
-            msg = "Please select a time range that you wish to play";
+        let selectedStartDateTime = new Date(this.selectedDate.replace(/-/g,"/") + " " + this.state.timeFromPickedStr24);
+        let currentDate = new Date();
+        if (selectedStartDateTime <= currentDate.getTime()){
+            msg = "The date and time that you have selected is pasted.";
             pass = false;
         }
         if (this.state.timeTo <= this.state.timeFrom){
             msg = "The time range you selected is not valid.";
+            pass = false;
+        }
+        if (this.state.venueSelected === "") {
+            msg = "Please select a venue by click the venue in the venue list";
+            pass = false;
+        }
+        if (this.state.timeFromPickedStr === "Click me to select time" || this.state.timeToPickedStr === "Click me to select time"){
+            msg = "Please select a time range that you wish to play";
             pass = false;
         }
         this.setState({
@@ -225,7 +231,6 @@ export default class CreateSchedule extends Component {
                         onPress={this.handleCreateNewScheduleSubmit}
                         title="SUBMIT"
                         color={Platform.select({ios:"white", android:"grey"})}
-                        // accessibilityLabel="Learn more about this purple button"
                     />
                 </View>
 

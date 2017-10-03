@@ -29,7 +29,6 @@ export default class RegisterLeague extends Component {
         let params = {
             TableName:"NZSinglesLeagueRound",
             ProjectionExpression:"league_id, city, capabilities, end_date, player_reg_uuids, players, start_date, #st, suburbs",
-            // FilterExpression: 'players = :userId',
             FilterExpression: 'contains(players,:userId)',
             ExpressionAttributeNames:{
                 "#st": "status"
@@ -155,6 +154,7 @@ export default class RegisterLeague extends Component {
                             <Text
                                 style={this.styles.text}
                                 key={i}
+                                onPress={()=>{navigate("LeagueInfo",this.state.completeLeague[i])}}
                             >
                                 {"(" + (i+1).toString() + ") " + leagueDescription}
                             </Text>

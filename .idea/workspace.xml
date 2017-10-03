@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8b8c09d-b3ff-42c2-b906-d2f21e1947ca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/screen/EditSchedule.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.android.js" afterPath="$PROJECT_DIR$/index.android.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.ios.js" afterPath="$PROJECT_DIR$/index.ios.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/EachScheduleView.js" afterPath="$PROJECT_DIR$/src/components/EachScheduleView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/CalendarScreen.js" afterPath="$PROJECT_DIR$/src/screen/CalendarScreen.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/CreateSchedule.js" afterPath="$PROJECT_DIR$/src/screen/CreateSchedule.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utility/LeagueScheduleOperation.js" afterPath="$PROJECT_DIR$/src/utility/LeagueScheduleOperation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/RegisterLeague.js" afterPath="$PROJECT_DIR$/src/screen/RegisterLeague.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,33 +17,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="LeagueScheduleOperation.js" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/utility/LeagueScheduleOperation.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="643">
-                    <caret line="81" column="35" lean-forward="false" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RegisterLeague.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RegisterLeague.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/screen/RegisterLeague.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+            <state relative-caret-position="701">
+              <caret line="159" column="35" lean-forward="true" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -68,7 +44,7 @@
       <file leaf-file-name="EachScheduleView.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/EachScheduleView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
+            <state relative-caret-position="705">
               <caret line="47" column="69" lean-forward="true" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -80,8 +56,8 @@
       <file leaf-file-name="CalendarScreen.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/screen/CalendarScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="133" column="34" lean-forward="false" selection-start-line="133" selection-start-column="34" selection-end-line="133" selection-end-column="34" />
+            <state relative-caret-position="4650">
+              <caret line="310" column="51" lean-forward="true" selection-start-line="310" selection-start-column="51" selection-end-line="310" selection-end-column="51" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -92,22 +68,10 @@
       <file leaf-file-name="CreateSchedule.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/screen/CreateSchedule.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="145" column="4" lean-forward="true" selection-start-line="145" selection-start-column="4" selection-end-line="168" selection-end-column="6" />
+            <state relative-caret-position="2348">
+              <caret line="233" column="0" lean-forward="false" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditSchedule.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/screen/EditSchedule.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,17 +107,18 @@
         <option value="$PROJECT_DIR$/src/screen/VenueDetail.js" />
         <option value="$PROJECT_DIR$/src/screen/LeagueInfoVenueMap.js" />
         <option value="$PROJECT_DIR$/src/components/ScheduleOperation.js" />
-        <option value="$PROJECT_DIR$/src/screen/RegisterLeague.js" />
         <option value="$PROJECT_DIR$/src/utility/UserService.js" />
         <option value="$PROJECT_DIR$/src/utility/DynamoDb.js" />
         <option value="$PROJECT_DIR$/src/screen/LeagueInfo.js" />
         <option value="$PROJECT_DIR$/src/components/EachScheduleView.js" />
         <option value="$PROJECT_DIR$/index.android.js" />
         <option value="$PROJECT_DIR$/index.ios.js" />
-        <option value="$PROJECT_DIR$/src/screen/CalendarScreen.js" />
-        <option value="$PROJECT_DIR$/src/screen/CreateSchedule.js" />
         <option value="$PROJECT_DIR$/src/utility/LeagueScheduleOperation.js" />
         <option value="$PROJECT_DIR$/src/screen/EditSchedule.js" />
+        <option value="$PROJECT_DIR$/src/utility/TimeConverter.js" />
+        <option value="$PROJECT_DIR$/src/screen/CreateSchedule.js" />
+        <option value="$PROJECT_DIR$/src/screen/CalendarScreen.js" />
+        <option value="$PROJECT_DIR$/src/screen/RegisterLeague.js" />
       </list>
     </option>
   </component>
@@ -410,12 +375,12 @@
       <workItem from="1506237969136" duration="26030000" />
       <workItem from="1506500857552" duration="76000" />
       <workItem from="1506500936217" duration="13864000" />
-      <workItem from="1506987773211" duration="13344000" />
+      <workItem from="1506987773211" duration="23790000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284021000" />
+    <option name="totallyTimeSpent" value="294467000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -453,13 +418,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/android/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/android/gradle.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -731,39 +689,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screen/LeagueInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utility/UserService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/screen/RegisterLeague.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/EachScheduleView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="47" column="69" lean-forward="true" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,26 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screen/CalendarScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="133" column="34" lean-forward="false" selection-start-line="133" selection-start-column="34" selection-end-line="133" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/screen/CreateSchedule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="145" column="4" lean-forward="true" selection-start-line="145" selection-start-column="4" selection-end-line="168" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/screen/EditSchedule.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -820,6 +730,62 @@
         <state relative-caret-position="643">
           <caret line="81" column="35" lean-forward="false" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utility/TimeConverter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/EachScheduleView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="69" lean-forward="true" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screen/CreateSchedule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2348">
+          <caret line="233" column="0" lean-forward="false" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screen/CalendarScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4650">
+          <caret line="310" column="51" lean-forward="true" selection-start-line="310" selection-start-column="51" selection-end-line="310" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screen/LeagueInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screen/RegisterLeague.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="701">
+          <caret line="159" column="35" lean-forward="true" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

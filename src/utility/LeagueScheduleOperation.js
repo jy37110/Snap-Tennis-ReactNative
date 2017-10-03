@@ -78,4 +78,14 @@ export default class LeagueScheduleOperation{
         };
         this.dbContext.scan(params, callback);
     }
+
+    editSchedule(params, callback){
+        this.dbContext.update(params, function(err,date){
+            if(err){
+                alert("err: " + err);
+            } else {
+                callback();
+            }
+        })
+    }
 }

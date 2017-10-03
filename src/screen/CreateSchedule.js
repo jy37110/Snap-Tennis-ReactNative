@@ -44,7 +44,7 @@ export default class CreateSchedule extends Component {
     }
 
     static navigationOptions = {
-        title: 'New Schedule',
+        title: "Create Schedule",
     };
 
     handleCreateNewScheduleSubmit (){
@@ -143,7 +143,7 @@ export default class CreateSchedule extends Component {
         }.bind(this));
     }
 
-    submitToDynamo = () => {
+    submitToDynamo() {
         let params = {
             TableName:"NZSinglesLeagueRoundMatchSchedule",
             Item:{
@@ -172,7 +172,7 @@ export default class CreateSchedule extends Component {
         return (
             <ScrollView style={this.styles.calendarContainer}>
                 <Text style={this.styles.text}>
-                    To register a new schedule. Please select the time and the venue that you would like to play.
+                    {this.params.description}
                 </Text>
 
                 <View style={this.styles.scheduleContainer}>

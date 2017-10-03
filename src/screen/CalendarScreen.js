@@ -110,8 +110,10 @@ export default class CalendarScreen extends Component {
             selectedDate:this.state.selectedDate,
             leagueId:this.leagueId,
             venueList:this.params.venueList,
+            description:"To register a new schedule. Please select the time and the venue that you would like to play.",
         })
     }
+
     handleRequestSchedule = (scheduleId) => {
         let requestOnSuccess = () => {
             alert("Your request is successful");
@@ -119,9 +121,20 @@ export default class CalendarScreen extends Component {
         };
         this.scheduleOperation.requestSchedule(scheduleId, this.userId, requestOnSuccess);
     };
-    handleEditSchedule(){
-        alert("Go to edit page")
-    }
+
+    handleEditSchedule = (scheduleId) => {
+        // alert("scheduleId: " + scheduleId);
+        const { navigate } = this.props.navigation;
+        navigate("EditSchedule",{
+            onGoBack:() => this.refreshContent(),
+            selectedDate:this.state.selectedDate,
+            leagueId:this.leagueId,
+            venueList:this.params.venueList,
+            description:"To edit your schedule. Please select the time and the venue that you would like to play.",
+            scheduleId:scheduleId,
+        })
+    };
+
     handleCancelSchedule = (scheduleId, p1, p2) => {
         let deleteOnSuccess = () => {
             alert("Schedule has been deleted successfully");
@@ -134,12 +147,15 @@ export default class CalendarScreen extends Component {
             this.scheduleOperation.deleteScheduleForUser2(scheduleId, deleteOnSuccess);
         }
     };
+
     handleResultSchedule(){
         alert("Go to result page")
     }
+
     handleReviewSchedule(){
         alert("Go to review page")
     }
+
     renderEmptySchedule(){
         if (this.hasSchedule === false){
             return(

@@ -65,4 +65,17 @@ export default class LeagueScheduleOperation{
             }
         })
     }
+
+    loadSchedule(leagueId, callback){
+        let params = {
+            TableName:"NZSinglesLeagueRoundMatchSchedule",
+            ProjectionExpression:"schedule_id, latitude, longitude, suburb, time_from, " +
+            "time_to, upcoming_date, user1_id, user2_id, venue_name",
+            FilterExpression: 'league_id = :leagueId',
+            ExpressionAttributeValues: {
+                ":leagueId":leagueId,
+            }
+        };
+        this.dbContext.scan(params, callback);
+    }
 }

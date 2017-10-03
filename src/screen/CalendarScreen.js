@@ -22,8 +22,6 @@ export default class CalendarScreen extends Component {
         this.handleCancelSchedule = this.handleCancelSchedule.bind(this);
         this.handleResultSchedule = this.handleResultSchedule.bind(this);
         this.handleReviewSchedule = this.handleReviewSchedule.bind(this);
-        this.getScheduleFromDynamo = this.getScheduleFromDynamo.bind(this);
-        this.deleteScheduleFromDynamo = this.deleteScheduleFromDynamo.bind(this);
         this.refreshContent = this.refreshContent.bind(this);
         this.scheduleOperation = new LeagueScheduleOperation();
         this.dbInstance = new DynamoDb();
@@ -40,7 +38,7 @@ export default class CalendarScreen extends Component {
             markDates:{},
             scheduleList:[{}]
         };
-        this.getScheduleFromDynamo();
+        this.getSchedule();
     }
 
     refreshContent(){
@@ -52,7 +50,7 @@ export default class CalendarScreen extends Component {
             markDates:{},
             scheduleList:[{}]
         });
-        this.getScheduleFromDynamo();
+        this.getSchedule();
     }
 
     getCurrentDate(){
@@ -260,22 +258,12 @@ export default class CalendarScreen extends Component {
         },
     });
 
-    getScheduleFromDynamo(){
-        let params = {
-            TableName:"NZSinglesLeagueRoundMatchSchedule",
-            ProjectionExpression:"schedule_id, latitude, longitude, suburb, time_from, " +
-            "time_to, upcoming_date, user1_id, user2_id, venue_name",
-            FilterExpression: 'league_id = :leagueId',
-            ExpressionAttributeValues: {
-                ":leagueId":this.leagueId,
-            }
-        };
+    getSchedule = () => {
         let onScan = (err, data) => {
             if (err) {
                 this.scan = "Something wrong" + err;
                 alert("err: " + err);
             } else {
-                //alert("sucess: " + JSON.stringify(data));
                 let markDates = {};
                 data.Items.forEach((value) => {
                     let  temp = {
@@ -293,7 +281,12 @@ export default class CalendarScreen extends Component {
                         option:this.getOptions(value.user1_id,value.user2_id)
                     };
                     this.scan.push(temp);
-                    markDates[temp.upcomingDate] = [{startingDay: true, color: 'orange'}, {endingDay: true, color: 'orange'}]
+                    let checkRepeatDate = Object.keys(markDates);
+                    if (temp.user2Id === "-1"){
+                        markDates[temp.upcomingDate] = [{startingDay: true, color: 'green'}, {endingDay: true, color: 'green'}]
+                    } else if (temp.user2Id !== "-1" && !checkRepeatDate.includes(temp.upcomingDate)){
+                        markDates[temp.upcomingDate] = [{startingDay: true, color: 'orange'}, {endingDay: true, color: 'orange'}]
+                    }
                 });
                 this.setState(
                     {
@@ -302,23 +295,6 @@ export default class CalendarScreen extends Component {
                     },);
             }
         };
-        this.dbContext.scan(params, onScan);
+        this.scheduleOperation.loadSchedule(this.leagueId,onScan);
     }
-
-    deleteScheduleFromDynamo(scheduleId){
-        let params = {
-            TableName: "NZSinglesLeagueRoundMatchSchedule",
-            Key:{
-                "schedule_id": scheduleId
-            },
-        };
-        this.dbContext.delete(params, function (err,data){
-            if (err){
-                alert("err: " + err);
-            } else {
-                alert("sucess" + JSON.stringify(data));
-            }
-        })
-    }
-
 }

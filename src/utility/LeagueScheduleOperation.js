@@ -30,6 +30,24 @@ export default class LeagueScheduleOperation{
         })
     }
 
+    deleteScheduleForUser2(scheduleId, callback){
+        let params = {
+            TableName:"NZSinglesLeagueRoundMatchSchedule",
+            Key:{schedule_id:scheduleId},
+            UpdateExpression:"set user2_id = :u2",
+            ExpressionAttributeValues:{
+                ":u2": "-1"
+            }
+        };
+        this.dbContext.update(params, function(err,date){
+            if(err){
+                alert("err: " + err);
+            } else {
+                callback();
+            }
+        })
+    }
+
     requestSchedule(scheduleId, player2Id, callback){
         let params = {
             TableName:"NZSinglesLeagueRoundMatchSchedule",

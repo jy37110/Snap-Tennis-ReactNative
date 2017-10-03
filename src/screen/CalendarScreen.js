@@ -124,12 +124,17 @@ export default class CalendarScreen extends Component {
     handleEditSchedule(){
         alert("Go to edit page")
     }
-    handleCancelSchedule = (scheduleId) => {
+    handleCancelSchedule = (scheduleId, p1, p2) => {
         let deleteOnSuccess = () => {
             alert("Schedule has been deleted successfully");
             this.refreshContent();
         };
-        this.scheduleOperation.deleteSchedule(scheduleId, deleteOnSuccess);
+        if(this.userId === p1){
+            this.scheduleOperation.deleteSchedule(scheduleId, deleteOnSuccess);
+        }
+        if (this.userId === p2){
+            this.scheduleOperation.deleteScheduleForUser2(scheduleId, deleteOnSuccess);
+        }
     };
     handleResultSchedule(){
         alert("Go to result page")

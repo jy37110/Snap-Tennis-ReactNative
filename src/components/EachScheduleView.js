@@ -52,7 +52,7 @@ export default class EachScheduleView extends Component {
                             <MenuOption onSelect={this.props.createCallBack} disabled={!this.props.option.create} text={'Create a new schedule'} />
                             <MenuOption onSelect={() => this.props.requestCallBack(this.props.id)} disabled={!this.props.option.request} text={'I want to play with '+ this.state.player1Name} />
                             <MenuOption onSelect={this.props.editCallBack} disabled={!this.props.option.edit} text='Make a change' />
-                            <MenuOption onSelect={() => this.props.cancelCallBack(this.props.id)} disabled={!this.props.option.cancel} text='I want to cancel' />
+                            <MenuOption onSelect={() => this.props.cancelCallBack(this.props.id, this.props.player1, this.props.player2)} disabled={!this.props.option.cancel} text='I want to cancel' />
                             <MenuOption onSelect={this.props.resultCallBack} disabled={!this.props.option.result} text='I want to see result' />
                             <MenuOption onSelect={this.props.reviewCallBack} disabled={!this.props.option.review} text='I want to review opponent' />
                         </MenuOptions>

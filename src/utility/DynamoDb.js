@@ -12,24 +12,4 @@ export default class DynamoDb{
     getDbContext(){
         return this.docClient;
     }
-
-    getUserName(userId, callback) {
-        if (userId !== ""){
-            let params = {
-                TableName:"NZUser",
-                Key:{"user_id":userId}
-            };
-            this.docClient.get(params,function(err,data){
-                if(err){
-                    alert(err);
-                } else {
-                    if(Object.keys(data).length === 0) {
-                        callback("")
-                    } else {
-                        callback(data.Item.first_name)
-                    }
-                }
-            })
-        }
-    }
 }

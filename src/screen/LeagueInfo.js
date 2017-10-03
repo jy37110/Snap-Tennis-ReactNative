@@ -6,6 +6,8 @@ import {
     ScrollView,
     Image,
 } from 'react-native';
+import DynamoDb from "../utility/DynamoDb";
+import UserService from "../utility/UserService";
 
 export default class LeagueInfo extends Component {
     constructor(props){
@@ -14,8 +16,22 @@ export default class LeagueInfo extends Component {
         this.params = this.props.navigation.state.params;
         this.state = {
             switchValue: "No",
-        }
+            playerNameList: [],
+        };
+        this.playerNameArr = [];
+        let userServiceInstance = new UserService();
+        this.params.players.map((playerId) => {
+            userServiceInstance.getUserFullName(playerId,this.getPlayerNameCallBack)
+        });
+
     }
+
+    getPlayerNameCallBack = (name) => {
+        this.playerNameArr.push(name);
+        this.setState({
+            playerNameList:this.playerNameArr
+        })
+    };
 
     static navigationOptions = {
         title: 'My Leagues',
@@ -74,7 +90,7 @@ export default class LeagueInfo extends Component {
                         <Text style={this.styles.bodyTitleText}>League Players List:</Text>
                     </View>
                     <View style={this.styles.eachContentContainer}>
-                        {this.params.players.map((item, i) => {
+                        {this.state.playerNameList.map((item, i) => {
                             return(
                                 <Text key={i}
                                       style={this.styles.eachLineOfContent}

@@ -22,6 +22,7 @@ export default class CalendarScreen extends Component {
         this.handleResultSchedule = this.handleResultSchedule.bind(this);
         this.handleReviewSchedule = this.handleReviewSchedule.bind(this);
         this.getScheduleFromDynamo = this.getScheduleFromDynamo.bind(this);
+        this.deleteScheduleFromDynamo = this.deleteScheduleFromDynamo.bind(this);
         this.refreshContent = this.refreshContent.bind(this);
         this.dbInstance = new DynamoDb();
         this.dbContext = this.dbInstance.getDbContext();
@@ -56,51 +57,6 @@ export default class CalendarScreen extends Component {
         let d = new Date();
         let today = d.getFullYear() + "-" + ((d.getMonth() + 1) < 10 ? "0" + (d.getMonth() + 1).toString() : d.getMonth() + 1) + "-" + (d.getDate() < 10 ? "0" + d.getDate() : d.getDate());
         return today;
-    }
-
-    getScheduleFromDynamo(){
-        let params = {
-            TableName:"NZSinglesLeagueRoundMatchSchedule",
-            ProjectionExpression:"schedule_id, latitude, longitude, suburb, time_from, " +
-            "time_to, upcoming_date, user1_id, user2_id, venue_name",
-            FilterExpression: 'league_id = :leagueId',
-            ExpressionAttributeValues: {
-                ":leagueId":this.leagueId,
-            }
-        };
-        let onScan = (err, data) => {
-            if (err) {
-                this.scan = "Something wrong" + err;
-                alert("err: " + err);
-            } else {
-                //alert("sucess: " + JSON.stringify(data));
-                let markDates = {};
-                data.Items.forEach((value) => {
-                    let  temp = {
-                        upcomingDate: value.upcoming_date.substr(0,4) + "-" + value.upcoming_date.substr(4,2) + "-" + value.upcoming_date.substr(6,2),
-                        scheduleId: value.schedule_id,
-                        suburb: value.suburb,
-                        latitude: value.latitude,
-                        longitude: value.longitude,
-                        timeFrom: value.time_from,
-                        timeTo: value.time_to,
-                        user1Id: value.user1_id,
-                        user2Id: value.user2_id,
-                        venueName: value.venue_name,
-                        status:this.getStatus(value.user1_id,value.user2_id),
-                        option:this.getOptions(value.user1_id,value.user2_id)
-                    };
-                    this.scan.push(temp);
-                    markDates[temp.upcomingDate] = [{startingDay: true, color: 'orange'}, {endingDay: true, color: 'orange'}]
-                });
-                this.setState(
-                    {
-                        scheduleList:this.scan,
-                        markDates:markDates
-                    },);
-            }
-        };
-        this.dbContext.scan(params, onScan);
     }
 
     getStatus(user1,user2){
@@ -162,9 +118,9 @@ export default class CalendarScreen extends Component {
     handleEditSchedule(){
         alert("Go to edit page")
     }
-    handleCancelSchedule(){
-        alert("Send a cancel request")
-    }
+    handleCancelSchedule = (scheduleId) => {
+        alert("Send a cancel request" + scheduleId)
+    };
     handleResultSchedule(){
         alert("Go to result page")
     }
@@ -228,12 +184,12 @@ export default class CalendarScreen extends Component {
                           markingType={'interactive'}
                 />
 
-                {this.state.scheduleList.map((eachSchedule,i) => {
+                {this.state.scheduleList.map((eachSchedule) => {
                     if(this.state.selectedDate === eachSchedule.upcomingDate){
                         this.hasSchedule = true;
                         return(
                             <EachScheduleView
-                                key={i}
+                                key={eachSchedule.scheduleId}
                                 date={eachSchedule.upcomingDate}
                                 time={eachSchedule.timeFrom + "-" + eachSchedule.timeTo}
                                 location={eachSchedule.venueName}
@@ -287,4 +243,66 @@ export default class CalendarScreen extends Component {
             marginBottom:30,
         },
     });
+
+    getScheduleFromDynamo(){
+        let params = {
+            TableName:"NZSinglesLeagueRoundMatchSchedule",
+            ProjectionExpression:"schedule_id, latitude, longitude, suburb, time_from, " +
+            "time_to, upcoming_date, user1_id, user2_id, venue_name",
+            FilterExpression: 'league_id = :leagueId',
+            ExpressionAttributeValues: {
+                ":leagueId":this.leagueId,
+            }
+        };
+        let onScan = (err, data) => {
+            if (err) {
+                this.scan = "Something wrong" + err;
+                alert("err: " + err);
+            } else {
+                //alert("sucess: " + JSON.stringify(data));
+                let markDates = {};
+                data.Items.forEach((value) => {
+                    let  temp = {
+                        upcomingDate: value.upcoming_date.substr(0,4) + "-" + value.upcoming_date.substr(4,2) + "-" + value.upcoming_date.substr(6,2),
+                        scheduleId: value.schedule_id,
+                        suburb: value.suburb,
+                        latitude: value.latitude,
+                        longitude: value.longitude,
+                        timeFrom: value.time_from,
+                        timeTo: value.time_to,
+                        user1Id: value.user1_id,
+                        user2Id: value.user2_id,
+                        venueName: value.venue_name,
+                        status:this.getStatus(value.user1_id,value.user2_id),
+                        option:this.getOptions(value.user1_id,value.user2_id)
+                    };
+                    this.scan.push(temp);
+                    markDates[temp.upcomingDate] = [{startingDay: true, color: 'orange'}, {endingDay: true, color: 'orange'}]
+                });
+                this.setState(
+                    {
+                        scheduleList:this.scan,
+                        markDates:markDates
+                    },);
+            }
+        };
+        this.dbContext.scan(params, onScan);
+    }
+
+    deleteScheduleFromDynamo(scheduleId){
+        let params = {
+            TableName: "NZSinglesLeagueRoundMatchSchedule",
+            Key:{
+                "schedule_id": scheduleId
+            },
+        };
+        this.dbContext.delete(params, function (err,data){
+            if (err){
+                alert("err: " + err);
+            } else {
+                alert("sucess" + JSON.stringify(data));
+            }
+        })
+    }
+
 }

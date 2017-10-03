@@ -5,26 +5,26 @@ import {
     View,
     Image,
 } from 'react-native';
-import DynamoDb from '../utility/DynamoDb';
 import {
     Menu,
     MenuOptions,
     MenuOption,
     MenuTrigger,
 } from 'react-native-popup-menu';
+import UserService from "../utility/UserService";
 
 export default class EachScheduleView extends Component {
     constructor(props) {
         super(props);
         this.getPlayer1NameCallback = this.getPlayer1NameCallback.bind(this);
         this.getPlayer2NameCallback = this.getPlayer2NameCallback.bind(this);
-        this.dbInstance = new DynamoDb();
-        this.state={
+        let userServiceInstance = new UserService();
+        this.state = {
             player1Name:"",
             player2Name:""
         };
-        this.dbInstance.getUserName(this.props.player1, this.getPlayer1NameCallback);
-        this.dbInstance.getUserName(this.props.player2, this.getPlayer2NameCallback);
+        userServiceInstance.getUserName(this.props.player1, this.getPlayer1NameCallback);
+        userServiceInstance.getUserName(this.props.player2, this.getPlayer2NameCallback);
     }
 
     getPlayer1NameCallback(name){

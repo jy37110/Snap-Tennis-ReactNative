@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import TimePicker from 'react-native-modal-datetime-picker';
 import DynamoDb from '../utility/DynamoDb';
+import LeagueScheduleOperation from "../utility/LeagueScheduleOperation";
 
 export default class CreateSchedule extends Component {
     constructor(props){
@@ -142,7 +143,7 @@ export default class CreateSchedule extends Component {
         }.bind(this));
     }
 
-    submitToDynamo(){
+    submitToDynamo = () => {
         let params = {
             TableName:"NZSinglesLeagueRoundMatchSchedule",
             Item:{
@@ -159,15 +160,13 @@ export default class CreateSchedule extends Component {
                 "venue_name":this.state.venueSelected,
             }
         };
-        this.dbContext.put(params,function(err, data){
-            if(err){
-                alert("err: " + err)
-            } else {
-                this.params.onGoBack();
-                this.props.navigation.goBack();
-            }
-        }.bind(this));
-    }
+        let submitOnSuccess = () => {
+            this.params.onGoBack();
+            this.props.navigation.goBack();
+        };
+        let scheduleOperationInstance = new LeagueScheduleOperation();
+        scheduleOperationInstance.createSchedule(params, submitOnSuccess)
+    };
 
     render() {
         return (

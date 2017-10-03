@@ -7,7 +7,8 @@ import {
     Platform,
 } from 'react-native';
 import DynamoDb from '../utility/DynamoDb';
-import EachScheduleView from '../components/EachScheduleView'
+import EachScheduleView from '../components/EachScheduleView';
+import LeagueScheduleOperation from "../utility/LeagueScheduleOperation";
 import { Calendar } from 'react-native-calendars';
 
 export default class CalendarScreen extends Component {
@@ -119,7 +120,12 @@ export default class CalendarScreen extends Component {
         alert("Go to edit page")
     }
     handleCancelSchedule = (scheduleId) => {
-        alert("Send a cancel request" + scheduleId)
+        let deleteOnSuccess = () => {
+            alert("Schedule has been deleted successfully");
+            this.refreshContent();
+        };
+        let scheduleOperation = new LeagueScheduleOperation();
+        scheduleOperation.deleteSchedule(scheduleId, deleteOnSuccess);
     };
     handleResultSchedule(){
         alert("Go to result page")
@@ -190,6 +196,7 @@ export default class CalendarScreen extends Component {
                         return(
                             <EachScheduleView
                                 key={eachSchedule.scheduleId}
+                                id={eachSchedule.scheduleId}
                                 date={eachSchedule.upcomingDate}
                                 time={eachSchedule.timeFrom + "-" + eachSchedule.timeTo}
                                 location={eachSchedule.venueName}

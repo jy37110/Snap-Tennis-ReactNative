@@ -6,7 +6,6 @@ import {
     ScrollView,
     Image,
 } from 'react-native';
-import DynamoDb from "../utility/DynamoDb";
 import UserService from "../utility/UserService";
 
 export default class LeagueInfo extends Component {
@@ -23,7 +22,6 @@ export default class LeagueInfo extends Component {
         this.params.players.map((playerId) => {
             userServiceInstance.getUserFullName(playerId,this.getPlayerNameCallBack)
         });
-
     }
 
     getPlayerNameCallBack = (name) => {

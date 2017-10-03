@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8b8c09d-b3ff-42c2-b906-d2f21e1947ca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utility/LeagueScheduleOperation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/EachScheduleView.js" afterPath="$PROJECT_DIR$/src/components/EachScheduleView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/CalendarScreen.js" afterPath="$PROJECT_DIR$/src/screen/CalendarScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/CreateSchedule.js" afterPath="$PROJECT_DIR$/src/screen/CreateSchedule.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screen/LeagueInfo.js" afterPath="$PROJECT_DIR$/src/screen/LeagueInfo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utility/LeagueScheduleOperation.js" afterPath="$PROJECT_DIR$/src/utility/LeagueScheduleOperation.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +24,8 @@
             <file leaf-file-name="LeagueScheduleOperation.js" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/utility/LeagueScheduleOperation.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="465">
-                    <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+                  <state relative-caret-position="600">
+                    <caret line="40" column="10" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
                     <folding />
                   </state>
                 </provider>
@@ -66,8 +63,8 @@
       <file leaf-file-name="CalendarScreen.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/screen/CalendarScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="365">
+              <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -78,8 +75,8 @@
       <file leaf-file-name="EachScheduleView.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/EachScheduleView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="54" column="95" lean-forward="false" selection-start-line="54" selection-start-column="95" selection-end-line="54" selection-end-column="95" />
+            <state relative-caret-position="576">
+              <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -396,12 +393,12 @@
       <workItem from="1506237969136" duration="26030000" />
       <workItem from="1506500857552" duration="76000" />
       <workItem from="1506500936217" duration="13864000" />
-      <workItem from="1506987773211" duration="5967000" />
+      <workItem from="1506987773211" duration="7530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276644000" />
+    <option name="totallyTimeSpent" value="278207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -778,8 +775,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/EachScheduleView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="54" column="95" lean-forward="false" selection-start-line="54" selection-start-column="95" selection-end-line="54" selection-end-column="95" />
+        <state relative-caret-position="576">
+          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -788,16 +785,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utility/LeagueScheduleOperation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        <state relative-caret-position="600">
+          <caret line="40" column="10" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/screen/CalendarScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        <state relative-caret-position="365">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

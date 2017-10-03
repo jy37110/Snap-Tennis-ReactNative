@@ -29,4 +29,22 @@ export default class LeagueScheduleOperation{
             }
         })
     }
+
+    requestSchedule(scheduleId, player2Id, callback){
+        let params = {
+            TableName:"NZSinglesLeagueRoundMatchSchedule",
+            Key:{schedule_id:scheduleId},
+            UpdateExpression:"set user2_id = :u2",
+            ExpressionAttributeValues:{
+                ":u2": player2Id
+            }
+        };
+        this.dbContext.update(params, function(err,date){
+            if(err){
+                alert("err: " + err);
+            } else {
+                callback();
+            }
+        })
+    }
 }

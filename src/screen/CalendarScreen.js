@@ -25,6 +25,7 @@ export default class CalendarScreen extends Component {
         this.getScheduleFromDynamo = this.getScheduleFromDynamo.bind(this);
         this.deleteScheduleFromDynamo = this.deleteScheduleFromDynamo.bind(this);
         this.refreshContent = this.refreshContent.bind(this);
+        this.scheduleOperation = new LeagueScheduleOperation();
         this.dbInstance = new DynamoDb();
         this.dbContext = this.dbInstance.getDbContext();
         this.scan = [];
@@ -113,9 +114,13 @@ export default class CalendarScreen extends Component {
             venueList:this.params.venueList,
         })
     }
-    handleRequestSchedule(){
-        alert("Go to request page")
-    }
+    handleRequestSchedule = (scheduleId) => {
+        let requestOnSuccess = () => {
+            alert("Your request is successful");
+            this.refreshContent();
+        };
+        this.scheduleOperation.requestSchedule(scheduleId, this.userId, requestOnSuccess);
+    };
     handleEditSchedule(){
         alert("Go to edit page")
     }
@@ -124,8 +129,7 @@ export default class CalendarScreen extends Component {
             alert("Schedule has been deleted successfully");
             this.refreshContent();
         };
-        let scheduleOperation = new LeagueScheduleOperation();
-        scheduleOperation.deleteSchedule(scheduleId, deleteOnSuccess);
+        this.scheduleOperation.deleteSchedule(scheduleId, deleteOnSuccess);
     };
     handleResultSchedule(){
         alert("Go to result page")

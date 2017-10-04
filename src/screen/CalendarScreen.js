@@ -163,11 +163,13 @@ export default class CalendarScreen extends Component {
     };
 
     handleResultSchedule(){
-        alert("Go to result page")
+        const { navigate } = this.props.navigation;
+        navigate("LeagueResult",{leagueId:this.leagueId})
     }
 
     handleReviewSchedule(){
-        alert("Go to review page")
+        const { navigate } = this.props.navigation;
+        navigate("LeagueReview",{leagueId:this.leagueId})
     }
 
     renderEmptySchedule(){

@@ -22,6 +22,9 @@ export default class LeagueInfo extends Component {
         this.params.players.map((playerId) => {
             userServiceInstance.getUserFullName(playerId,this.getPlayerNameCallBack)
         });
+        let currentDate = new Date();
+        let leagueEndDate = new Date(this.params.endDate.substr(0,10).replace(/-/g,"/") + " 23:59:59");
+        this.isCompletedLeague = currentDate > leagueEndDate;
     }
 
     getPlayerNameCallBack = (name) => {
@@ -33,6 +36,25 @@ export default class LeagueInfo extends Component {
 
     static navigationOptions = {
         title: 'My Leagues',
+    };
+
+    renderSchedule = () => {
+        const { navigate } = this.props.navigation;
+        if (!this.isCompletedLeague){
+            return(
+                <View style={this.styles.eachTitleContainer}>
+                    <View style={this.styles.eachTitle}>
+                        <Image
+                            style={this.styles.icon}
+                            source={require('../image/calender.png')}
+                        />
+                        <Text style={this.styles.bodyTitleText}
+                              onPress={()=>{navigate("CalendarPage",this.params)}}
+                        >Schedule Match</Text>
+                    </View>
+                </View>
+            )
+        }
     };
 
     render() {
@@ -96,21 +118,10 @@ export default class LeagueInfo extends Component {
                                 >{item}</Text>
                             )
                         })}
-
                     </View>
                 </View>
 
-                <View style={this.styles.eachTitleContainer}>
-                    <View style={this.styles.eachTitle}>
-                        <Image
-                            style={this.styles.icon}
-                            source={require('../image/calender.png')}
-                        />
-                        <Text style={this.styles.bodyTitleText}
-                              onPress={()=>{navigate("CalendarPage",this.params)}}
-                        >Schedule Match</Text>
-                    </View>
-                </View>
+                {this.renderSchedule()}
 
                 <View style={this.styles.eachTitleContainer}>
                     <View style={this.styles.eachTitle}>
@@ -119,14 +130,10 @@ export default class LeagueInfo extends Component {
                             source={require('../image/league.png')}
                         />
                         <Text style={this.styles.bodyTitleText}
-                              onPress={()=>{alert("Go to the match results")}}
+                              onPress={()=>{navigate("LeagueResult",{leagueId:this.params.id})}}
                         >Match Results</Text>
                     </View>
                 </View>
-
-
-
-
 
             </ScrollView>
         )

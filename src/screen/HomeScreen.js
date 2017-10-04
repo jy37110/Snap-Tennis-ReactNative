@@ -34,6 +34,12 @@ export default class HomeScreen extends Component {
                 source: require('../image/map_court.png'),
                 action: () => {navigate('Map')},
             },
+            {
+                key: 6,
+                title: 'Develop entry',
+                source: require('../image/map_court.png'),
+                action: () => {navigate('LeagueReview',{leagueId:"efaa0eb1-362c-4e3b-a514-16be15599be0"})},
+            },
         ];
         const { navigate } = this.props.navigation;
         const renderedButtons = screens.map(b => {

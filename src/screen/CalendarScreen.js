@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import {
     StyleSheet,
-    View,
     ScrollView,
     Button,
-    Platform,
 } from 'react-native';
 import DynamoDb from '../utility/DynamoDb';
 import EachScheduleView from '../components/EachScheduleView';
@@ -42,6 +40,10 @@ export default class CalendarScreen extends Component {
         this.getSchedule();
     }
 
+    static navigationOptions = {
+        title: 'Calendar',
+    };
+
     refreshContent(){
         this.scan = [];
         this.hasSchedule = false;
@@ -58,80 +60,6 @@ export default class CalendarScreen extends Component {
         let today = d.getFullYear() + "-" + ((d.getMonth() + 1) < 10 ? "0" + (d.getMonth() + 1).toString() : d.getMonth() + 1) + "-" + (d.getDate() < 10 ? "0" + d.getDate() : d.getDate());
         return today;
     }
-
-    getStatus(user1,user2,isPastSchedule,reviewStatus){
-        let status = "";
-        if (isPastSchedule){
-            if (user1 === "" && user2 === "") status = "Invalid";
-            else if (user2 === "-1") status = "Expired";
-            else if (reviewStatus === "no review") status = "Ready for review";
-            else if (reviewStatus === "review finished") status = "Finished";
-            else if (reviewStatus === "wait for opponent review") status = "Waiting for opponent review";
-            else if (reviewStatus === "wait for my review") status = "Ready for review o";
-            else status = "Unknown status";
-        } else {
-            if (user1 === "" && user2 === "") status = "Waiting for new player";
-            else if (user2 === '-1') status = "Waiting for player2";
-            else status = "Confirmed Match";
-        }
-        return status;
-    }
-    getOptions(user1,user2,isPastSchedule,reviewStatus,scheduleList){
-        let playerHasBeenMatchedBefore = false;       //Handle players can only play with others for one time in one single league.
-        if (user1 !== "" && user2 === "-1"){
-            scheduleList.Items.forEach((schedule) =>{
-                if (schedule.user1_id === user1 && schedule.user2_id === this.userId) playerHasBeenMatchedBefore = true;
-            })
-        }
-
-        let create = false;
-        let request = false;
-        let edit = false;
-        let cancel = false;
-        let result = false;
-        let review = false;
-
-        if (isPastSchedule){
-            if ((this.userId === user1 || this.userId === user2) && user2 !== "-1"){
-                result = true;
-                review = true;
-            }
-            if (user2 === "-1" && this.userId === user1){
-                cancel = true;
-            }
-            if (reviewStatus === "review finished" || reviewStatus === "wait for opponent review") review = false;
-        } else {
-            create = true;
-            if (this.userId !== user1 && user2 === "-1" && !playerHasBeenMatchedBefore){
-                request = true;
-            }
-            if (this.userId === user1){
-                edit = true;
-                cancel = true;
-            } else if (this.userId === user2){
-                edit = false;
-                cancel = true;
-            }
-        }
-        if (user1 === "" && user2 === ""){
-            request = false;
-            edit = false;
-            cancel = false;
-        }
-
-        return{
-            create:create,
-            request:request,
-            edit:edit,
-            cancel:cancel,
-            result:result,
-            review:review,
-        }
-    }
-
-    static navigationOptions = {
-        title: 'Calendar',
-    };
 
     handleCreateNewSchedule (){
         const { navigate } = this.props.navigation;
@@ -203,10 +131,10 @@ export default class CalendarScreen extends Component {
                     date={this.state.selectedDate}
                     time={"-"}
                     location={"-"}
-                    status={this.getStatus("","",isPastSchedule,reviewStatus)}
+                    status={LeagueScheduleOperation.getSchedulStatus("","",isPastSchedule,reviewStatus)}
                     player1={""}
                     player2={""}
-                    option={this.getOptions("","",isPastSchedule,reviewStatus)}
+                    option={LeagueScheduleOperation.getAvailableOptionOfSchedule(this.userId,"","",isPastSchedule,reviewStatus)}
                     createCallBack={this.handleCreateNewSchedule}
                     requestCallBack={this.handleRequestSchedule}
                     editCallBack={this.handleEditSchedule}
@@ -354,17 +282,14 @@ export default class CalendarScreen extends Component {
                                     user1Id: value.user1_id,
                                     user2Id: value.user2_id,
                                     venueName: value.venue_name,
-                                    status:this.getStatus(value.user1_id,value.user2_id,true,reviewStatus),
-                                    option:this.getOptions(value.user1_id,value.user2_id,true,reviewStatus,data)
+                                    status: LeagueScheduleOperation.getSchedulStatus(value.user1_id,value.user2_id,true,reviewStatus),
+                                    option: LeagueScheduleOperation.getAvailableOptionOfSchedule(this.userId,value.user1_id,value.user2_id,true,reviewStatus,data)
                                 };
                                 this.scan.push(temp);
                                 let t = {};
                                 t[temp.upcomingDate] = [{startingDay: true, color: 'grey'}, {endingDay: true, color: 'grey'}];
                                 this.markDates = Object.assign(t,this.markDates);
-                                this.setState(
-                                    {
-                                        scheduleList:this.scan,
-                                    },);
+                                this.setState({scheduleList:this.scan,},);
                             }
                         });
                     } else {
@@ -379,8 +304,8 @@ export default class CalendarScreen extends Component {
                             user1Id: value.user1_id,
                             user2Id: value.user2_id,
                             venueName: value.venue_name,
-                            status:this.getStatus(value.user1_id,value.user2_id,isPastSchedule,reviewStatus),
-                            option:this.getOptions(value.user1_id,value.user2_id,isPastSchedule,reviewStatus,data)
+                            status: LeagueScheduleOperation.getSchedulStatus(value.user1_id,value.user2_id,isPastSchedule,reviewStatus),
+                            option: LeagueScheduleOperation.getAvailableOptionOfSchedule(this.userId,value.user1_id,value.user2_id,isPastSchedule,reviewStatus,data)
                         };
                         this.scan.push(temp);
                         let checkRepeatDate = Object.keys(this.markDates);
@@ -397,10 +322,7 @@ export default class CalendarScreen extends Component {
                         this.markDates = Object.assign(t,this.markDates);
                     }
                 });
-                this.setState(
-                    {
-                        scheduleList:this.scan,
-                    },);
+                this.setState({scheduleList:this.scan,},);
             }
         };
         this.scheduleOperation.loadSchedule(this.leagueId,onScan);

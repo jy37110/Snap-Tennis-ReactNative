@@ -19,6 +19,17 @@ export default class EachScheduleView extends Component {
         this.getPlayer1NameCallback = this.getPlayer1NameCallback.bind(this);
         this.getPlayer2NameCallback = this.getPlayer2NameCallback.bind(this);
         let userServiceInstance = new UserService();
+        this.matchInfo = {
+            scheduleId: this.props.id,
+            finishedDate:this.props.date,
+            latitude:this.props.latitude,
+            leagueId:this.props.leagueId,
+            longitude:this.props.longitude,
+            player1Id:this.props.player1,
+            player2Id:this.props.player2,
+            suburb:this.props.suburb,
+            venueName:this.props.location,
+        };
         this.state = {
             player1Name:"",
             player2Name:""
@@ -54,7 +65,7 @@ export default class EachScheduleView extends Component {
                             <MenuOption onSelect={() => this.props.editCallBack(this.props.id)} disabled={!this.props.option.edit} text='Make a change' />
                             <MenuOption onSelect={() => this.props.cancelCallBack(this.props.id, this.props.player1, this.props.player2)} disabled={!this.props.option.cancel} text='I want to cancel' />
                             <MenuOption onSelect={this.props.resultCallBack} disabled={!this.props.option.result} text='I want to see result' />
-                            <MenuOption onSelect={this.props.reviewCallBack} disabled={!this.props.option.review} text='I want to review opponent' />
+                            <MenuOption onSelect={() => this.props.reviewCallBack(this.state.player1Name,this.state.player2Name,this.matchInfo)} disabled={!this.props.option.review} text='I want to review opponent' />
                         </MenuOptions>
                     </Menu>
                 </View>

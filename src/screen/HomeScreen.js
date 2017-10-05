@@ -38,7 +38,13 @@ export default class HomeScreen extends Component {
                 key: 6,
                 title: 'Develop entry',
                 source: require('../image/map_court.png'),
-                action: () => {navigate('LeagueReview',{leagueId:"efaa0eb1-362c-4e3b-a514-16be15599be0"})},
+                action: () => {navigate("LeagueReview",{
+                    leagueId:this.leagueId,
+                    p1Id:"62c88ffd-019b-4bbb-8d17-69427c669ae5",
+                    p2Id:"d3d8dc87-2cfc-4f95-9995-c163f082ce9b",
+                    p1Name:"Chao",
+                    p2Name:"Sam",
+                })},
             },
         ];
         const { navigate } = this.props.navigation;

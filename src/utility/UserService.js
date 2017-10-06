@@ -37,9 +37,9 @@ export default class UserService{
                     alert(err);
                 } else {
                     if(Object.keys(data).length === 0) {
-                        callback("")
+                        callback(userId,"")
                     } else {
-                        callback(data.Item.first_name + " " + data.Item.surname)
+                        callback(userId,data.Item.first_name + " " + data.Item.surname)
                     }
                 }
             })

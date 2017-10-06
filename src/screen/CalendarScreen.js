@@ -13,7 +13,8 @@ import { Calendar } from 'react-native-calendars';
 export default class CalendarScreen extends Component {
     constructor(props){
         super(props);
-        this.params = this.props.navigation.state.params;
+        this.params = this.props.navigation.state.params.params;
+        this.leaguePlayerList = this.props.navigation.state.params.playerList;
         this.renderEmptySchedule = this.renderEmptySchedule.bind(this);
         this.handleCreateNewSchedule = this.handleCreateNewSchedule.bind(this);
         this.handleRequestSchedule = this.handleRequestSchedule.bind(this);
@@ -95,7 +96,8 @@ export default class CalendarScreen extends Component {
     handleCancelSchedule = (scheduleId, p1, p2) => {
         let deleteOnSuccess = () => {
             alert("Schedule has been deleted successfully");
-            this.refreshContent();
+            this.props.navigation.goBack();
+            // this.refreshContent();
         };
         if(this.userId === p1){
             this.scheduleOperation.deleteSchedule(scheduleId, deleteOnSuccess);
@@ -107,7 +109,7 @@ export default class CalendarScreen extends Component {
 
     handleResultSchedule(){
         const { navigate } = this.props.navigation;
-        navigate("LeagueResult",{leagueId:this.leagueId})
+        navigate("LeagueResult",{leagueId:this.leagueId,playerList:this.leaguePlayerList})
     }
 
     handleReviewSchedule(p1Name,p2Name,matchInfo){
@@ -267,7 +269,7 @@ export default class CalendarScreen extends Component {
                                 if (data.Count > 0) {
                                     if (data.Items[0].validated === "Y") {reviewStatus = "review finished"}
                                     else {
-                                        if ((this.userId === value.user1_id && data.Items[0].player2Comment === "null") || (this.userId === value.user2_id && data.Items[0].player1Comment === "null")) reviewStatus = "wait for opponent review";
+                                        if ((this.userId === value.user1_id && data.Items[0].player2_comment === "null") || (this.userId === value.user2_id && data.Items[0].player1_comment === "null")) {reviewStatus = "wait for opponent review"}
                                         else {reviewStatus = "wait for my review"}
                                     }
                                 }

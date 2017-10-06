@@ -150,7 +150,7 @@ export default class LeagueScheduleOperation{
             else if (reviewStatus === "no review") status = "Ready for review";
             else if (reviewStatus === "review finished") status = "Finished";
             else if (reviewStatus === "wait for opponent review") status = "Waiting for opponent review";
-            else if (reviewStatus === "wait for my review") status = "Ready for review o";
+            else if (reviewStatus === "wait for my review") status = "Ready for review";
             else status = "Unknown status";
         } else {
             if (user1 === "" && user2 === "") status = "Waiting for new player";

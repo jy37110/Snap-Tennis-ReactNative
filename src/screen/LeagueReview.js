@@ -24,11 +24,11 @@ export default class LeagueReview extends Component {
         this.toBeUpdatedMatchId = "";
         this.previousComment = "";
         this.matchIsUnderFirstReview = true;
+        this.commentContent = "";
         this.state = {
             titleText:"Please comment your match experience. It will help us to find a better match for you next time.",
             switchValue:false,
             score:"",
-            comment:"",
             isValid:true,
             errMsg:"",
             selectedWinner:"",
@@ -43,7 +43,7 @@ export default class LeagueReview extends Component {
                 } else {
                     this.matchIsUnderFirstReview = false;
                     this.toBeUpdatedMatchId = data.Items[0].match_id;
-                    this.previousComment = this.isP1Review ? data.Items[0].player2_comment : data.Items.player1_comment;
+                    this.previousComment = this.isP1Review ? data.Items[0].player2_comment : data.Items[0].player1_comment;
                 }
             }
         })
@@ -62,9 +62,9 @@ export default class LeagueReview extends Component {
                 latitude: this.params.matchInfo.latitude,
                 leagueId: this.params.matchInfo.leagueId,
                 longitude: this.params.matchInfo.longitude,
-                player1Comment: this.isP1Review ? "This guy didn't come. " + this.state.comment : "null",
+                player1Comment: this.isP1Review ? "This guy didn't come. " + this.commentContent : "null",
                 player1Id: this.params.matchInfo.player1Id,
-                player2Comment: this.isP1Review ? "null" : "This guy didn't come. " + this.state.comment,
+                player2Comment: this.isP1Review ? "null" : "This guy didn't come. " + this.commentContent,
                 player2Id: this.params.matchInfo.player2Id,
                 score: "none",
                 suburb: this.params.matchInfo.suburb,
@@ -74,7 +74,7 @@ export default class LeagueReview extends Component {
             };
             this.NZSinglesPlayerReview = {
                 reviewId: "R" + this.userId + new Date().toString(),
-                comment: "This guy didn't come. " + this.state.comment,
+                comment: "This guy didn't come. " + this.commentContent,
                 levelComparison: "none",
                 noShow: "Y",
                 playerUnderReview: this.isP1Review ? this.params.matchInfo.player2Id : this.params.matchInfo.player1Id,
@@ -89,9 +89,9 @@ export default class LeagueReview extends Component {
                 latitude: this.params.matchInfo.latitude,
                 leagueId: this.params.matchInfo.leagueId,
                 longitude: this.params.matchInfo.longitude,
-                player1Comment: this.isP1Review ? this.state.comment : "null",
+                player1Comment: this.isP1Review ? this.commentContent : "null",
                 player1Id: this.params.matchInfo.player1Id,
-                player2Comment: this.isP1Review ? "null" : this.state.comment,
+                player2Comment: this.isP1Review ? "null" : this.commentContent,
                 player2Id: this.params.matchInfo.player2Id,
                 score: this.state.score,
                 suburb: this.params.matchInfo.suburb,
@@ -101,7 +101,7 @@ export default class LeagueReview extends Component {
             };
             this.NZSinglesPlayerReview = {
                 reviewId: "R" + this.userId + new Date().toString(),
-                comment: this.state.comment,
+                comment: this.commentContent,
                 levelComparison: this.state.selectedLevel,
                 noShow: "N",
                 playerUnderReview: this.isP1Review ? this.params.matchInfo.player2Id : this.params.matchInfo.player1Id,
@@ -262,7 +262,7 @@ export default class LeagueReview extends Component {
                     <View style={this.styles.eachRowContainer}>
                         <TextInput
                             style={{height: 60, flex:1, fontSize:12}}
-                            onChangeText={(text) => this.setState({comment:text})}
+                            onChangeText={(text) => this.commentContent = text}
                             multiline={true}
                             placeholder="Good match"
                         />

@@ -18,21 +18,21 @@ export default class LeagueInfo extends Component {
             playerNameList: [],
         };
         this.playerNameArr = [];
+        this.playerList = [];
         let userServiceInstance = new UserService();
         this.params.players.map((playerId) => {
-            userServiceInstance.getUserFullName(playerId,this.getPlayerNameCallBack)
+            userServiceInstance.getUserFullName(playerId,(id,name) => {
+                this.playerNameArr.push(name);
+                this.playerList.push({playerId:id,playerName:name});
+                this.setState({
+                    playerNameList:this.playerNameArr
+                })
+            })
         });
         let currentDate = new Date();
         let leagueEndDate = new Date(this.params.endDate.substr(0,10).replace(/-/g,"/") + " 23:59:59");
         this.isCompletedLeague = currentDate > leagueEndDate;
     }
-
-    getPlayerNameCallBack = (name) => {
-        this.playerNameArr.push(name);
-        this.setState({
-            playerNameList:this.playerNameArr
-        })
-    };
 
     static navigationOptions = {
         title: 'My Leagues',
@@ -49,7 +49,7 @@ export default class LeagueInfo extends Component {
                             source={require('../image/calender.png')}
                         />
                         <Text style={this.styles.bodyTitleText}
-                              onPress={()=>{navigate("CalendarPage",this.params)}}
+                              onPress={()=>{navigate("CalendarPage",{params:this.params,playerList:this.playerList})}}
                         >Schedule Match</Text>
                     </View>
                 </View>
@@ -130,7 +130,7 @@ export default class LeagueInfo extends Component {
                             source={require('../image/league.png')}
                         />
                         <Text style={this.styles.bodyTitleText}
-                              onPress={()=>{navigate("LeagueResult",{leagueId:this.params.id})}}
+                              onPress={()=>{navigate("LeagueResult",{leagueId:this.params.id,playerList:this.playerList})}}
                         >Match Results</Text>
                     </View>
                 </View>

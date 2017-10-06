@@ -14,6 +14,9 @@ export default class HomeScreen extends Component {
     static navigationOptions = {
         title: 'Snap Tennis',
     };
+
+    static userId = "62c88ffd-019b-4bbb-8d17-69427c669ae5";
+
     render() {
         const screens = [
             {
@@ -38,7 +41,7 @@ export default class HomeScreen extends Component {
                 key: 6,
                 title: 'Develop entry',
                 source: require('../image/map_court.png'),
-                action: () => {navigate("LeagueReview",{
+                action: () => {navigate("LeagueResult",{
                     leagueId:this.leagueId,
                     p1Id:"62c88ffd-019b-4bbb-8d17-69427c669ae5",
                     p2Id:"d3d8dc87-2cfc-4f95-9995-c163f082ce9b",

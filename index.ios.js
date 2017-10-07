@@ -34,6 +34,7 @@ const App = StackNavigator({
 });
 
 export default class nativeWebStorm extends Component {
+
   render() {
     return (
         <MenuContext>

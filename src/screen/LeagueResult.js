@@ -20,7 +20,7 @@ export default class LeagueResult extends Component{
         rankingCalculator.loadMatchResult(this.params.leagueId, (err, data) => {
             if (err) alert("err: " + err);
             else {
-                this.rankingCalculate(data.Items, this.params.playerList);
+                let playerListWithRanking = rankingCalculator.rankingCalculate(data.Items, this.params.playerList);
                 let matchHistory = [];
                 data.Items.forEach((match) => {
                     matchHistory.push({
@@ -36,6 +36,7 @@ export default class LeagueResult extends Component{
                 });
                 this.setState({
                     matchHistory:matchHistory,
+                    playerListWithRanking:playerListWithRanking,
                 })
             }
         })
@@ -43,28 +44,6 @@ export default class LeagueResult extends Component{
 
     static navigationOptions = {
         title: "League Ranking",
-    };
-
-    rankingCalculate = (matchResultList, playerList) => {
-        let tempPlayerList = [];
-        for (let i = 0; i < playerList.length; i++){
-            let currentPlayerId = playerList[i].playerId;
-            let winTimes = 0;
-            let lostTimes = 0;
-            for (let j = 0; j < matchResultList.length; j ++){
-                if (matchResultList[j].winner === currentPlayerId) winTimes++;
-                if ((matchResultList[j].player1_id === currentPlayerId || matchResultList[j].player2_id === currentPlayerId) && matchResultList[j].winner !== currentPlayerId) lostTimes++;
-            }
-            tempPlayerList.push({
-                playerId: currentPlayerId,
-                playerName: playerList[i].playerName,
-                winTimes: winTimes,
-                lostTimes: lostTimes,
-            })
-        }
-        this.setState({
-            playerListWithRanking:tempPlayerList,
-        })
     };
 
     getUserName = (playerList, userId) => {
@@ -112,7 +91,7 @@ export default class LeagueResult extends Component{
                                 </View>
                                 <Text style={{color:'rgb(255,64,129)',margin:1,flex:0.15,textAlign:'center'}}>{player.winTimes}</Text>
                                 <Text style={{color:'rgb(33,150,243)',margin:1,flex:0.15,textAlign:'center'}}>{player.lostTimes}</Text>
-                                <Text style={{color:'rgb(60,60,60)',margin:1,flex:0.15,textAlign:'center'}}>1</Text>
+                                <Text style={{color:'rgb(60,60,60)',margin:1,flex:0.15,textAlign:'center'}}>{player.rank}</Text>
                             </View>
                         )
                     })}
@@ -211,6 +190,5 @@ export default class LeagueResult extends Component{
             color:'grey',
             flex:0.7,
         }
-
     });
 }

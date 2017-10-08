@@ -4,6 +4,7 @@ import {
     Text,
     View,
     Image,
+    Platform,
 } from 'react-native';
 import MapView from 'react-native-maps';
 
@@ -15,7 +16,7 @@ export default class HomeScreen extends Component {
         title: 'Snap Tennis',
     };
 
-    static userId = "62c88ffd-019b-4bbb-8d17-69427c669ae5";
+    static userId = Platform.select({ios:"62c88ffd-019b-4bbb-8d17-69427c669ae5", android:"891d5b75-6acc-429f-ac50-fa27158c611b"});
 
     render() {
         const screens = [

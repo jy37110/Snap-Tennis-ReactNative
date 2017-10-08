@@ -10,13 +10,14 @@ import {
     Text,
 } from 'react-native';
 import ReviewService from '../utility/ReviewService';
+import HomeScreen from "./HomeScreen";
 
 export default class LeagueReview extends Component {
     constructor(props){
         super(props);
         this.params = this.props.navigation.state.params;
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.userId = "62c88ffd-019b-4bbb-8d17-69427c669ae5";
+        this.userId = HomeScreen.userId;
         this.NZSinglesMatchesPlayedForm = {};
         this.NZSinglesPlayerReview = {};
         this.isP1Review = this.userId === this.params.matchInfo.player1Id;
@@ -279,6 +280,8 @@ export default class LeagueReview extends Component {
                         color={Platform.select({ios:"white", android:"grey"})}
                     />
                 </View>
+
+                <View style={{height:20}}></View>
 
             </ScrollView>
         )

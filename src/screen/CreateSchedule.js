@@ -10,6 +10,7 @@ import {
 import TimePicker from 'react-native-modal-datetime-picker';
 import DynamoDb from '../utility/DynamoDb';
 import LeagueScheduleOperation from "../utility/LeagueScheduleOperation";
+import HomeScreen from "./HomeScreen";
 
 export default class CreateSchedule extends Component {
     constructor(props){
@@ -22,7 +23,7 @@ export default class CreateSchedule extends Component {
         this.dbInstance = new DynamoDb();
         this.dbContext = this.dbInstance.getDbContext();
         this.scan = [];
-        this.userId = "62c88ffd-019b-4bbb-8d17-69427c669ae5";
+        this.userId = HomeScreen.userId;
         this.leagueId = this.params.leagueId;
         this.selectedDate = this.params.selectedDate;
         this.venueList = this.params.venueList;
@@ -234,6 +235,7 @@ export default class CreateSchedule extends Component {
                     />
                 </View>
 
+                <View style={{height:20}}></View>
             </ScrollView>
         )
     }

@@ -7,11 +7,12 @@ import {
     Image,
 } from 'react-native';
 import UserService from "../utility/UserService";
+import HomeScreen from "./HomeScreen";
 
 export default class LeagueInfo extends Component {
     constructor(props){
         super(props);
-        this.userId = "62c88ffd-019b-4bbb-8d17-69427c669ae5";
+        this.userId = HomeScreen.userId;
         this.params = this.props.navigation.state.params;
         this.state = {
             switchValue: "No",
@@ -134,6 +135,8 @@ export default class LeagueInfo extends Component {
                         >Match Results</Text>
                     </View>
                 </View>
+
+                <View style={{height:20}}></View>
 
             </ScrollView>
         )

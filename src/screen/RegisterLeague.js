@@ -7,23 +7,33 @@ import {
     ScrollView,
 } from 'react-native';
 import DynamoDb from '../utility/DynamoDb';
+import HomeScreen from "./HomeScreen";
+import LeagueRegisterService from '../utility/LeagueRegisterService';
+import ProfileService from '../utility/ProfileService';
+import VenueService from '../utility/VenueService';
 
 export default class RegisterLeague extends Component {
     constructor(props){
         super(props);
-        this.userId = "62c88ffd-019b-4bbb-8d17-69427c669ae5";
+        this.userId = HomeScreen.userId;
         this.getLeaguesFromDynamo = this.getLeaguesFromDynamo.bind(this);
         this.dbInstance = new DynamoDb();
         this.dbContext = this.dbInstance.getDbContext();
         this.scanOngoingLeagues = [];
         this.scanCopleteLeagues = [];
+        this.registrationInfo = [];
         this.state = {
-            ongoingLeague:[],
-            completeLeague:[],
+            ongoingLeague: [],
+            completeLeague: [],
             switchValue: "No",
+            registrationTable: [],
         };
         this.getLeaguesFromDynamo();
     }
+
+    static navigationOptions = {
+        title: 'Play Local League',
+    };
 
     getLeaguesFromDynamo(){
         let params = {
@@ -75,26 +85,66 @@ export default class RegisterLeague extends Component {
         this.dbContext.scan(params, onScan);
     }
 
-    static navigationOptions = {
-        title: 'Play Local League',
+    handleSwitch = (value) => {
+        if (value){
+            let leagueRegisterService = new LeagueRegisterService();
+            let profileService = new ProfileService();
+            let userProfile = {};
+            profileService.getUserProfile(this.userId, (err, data) => {
+                if (err) alert("err: " + err);
+                else {
+                    let userPreferedVenueList = [];
+                    let userPreferedSuburbList = [];
+                    if (data.Item === undefined){
+                        alert("no profile found")
+                    } else {
+                        let venueService = new VenueService();
+                        userProfile = data.Item;
+                        if(userProfile.playing_preferences.PP3a !== undefined) userPreferedVenueList.push(userProfile.playing_preferences.PP3a);
+                        if(userProfile.playing_preferences.PP3b !== undefined) userPreferedVenueList.push(userProfile.playing_preferences.PP3b);
+                        if(userProfile.playing_preferences.PP3c !== undefined) userPreferedVenueList.push(userProfile.playing_preferences.PP3c);
+                        if(userProfile.playing_preferences.PP3d !== undefined) userPreferedVenueList.push(userProfile.playing_preferences.PP3d);
+                        if(userProfile.playing_preferences.PP3e !== undefined) userPreferedVenueList.push(userProfile.playing_preferences.PP3e);
+
+                        for (let i = 0; i < userPreferedVenueList.length; i++){
+                            venueService.getSuburbByVenueName(userPreferedVenueList[i],(err,suburb) => {
+                                if (err) alert("err:" + err);
+                                else {
+                                    if (!userPreferedSuburbList.includes(suburb.Items[0].suburb)){
+                                        userPreferedSuburbList.push(suburb.Items[0].suburb);
+                                        leagueRegisterService.getCurrentRegistrationInfo(suburb.Items[0].suburb, userProfile.capability,(err, registerInfo) => {
+                                            if (err) alert("err: " + err);
+                                            else {
+                                                let interested = 0;
+                                                let confirmed = 0;
+                                                for (let i = 0; i < registerInfo.Items.length; i++){
+                                                    if (registerInfo.Items[i].confirmed === "Y") confirmed++;
+                                                    else interested++;
+                                                }
+                                                this.registrationInfo.push({suburb:suburb.Items[0].suburb, interested:interested, confirmed:confirmed});
+                                                this.setState({registrationTable:this.registrationInfo});
+                                            }
+                                        })
+                                    }
+                                }
+                            });
+                        }
+                    }
+                }
+            });
+
+
+        } else {
+            this.registrationInfo = [];
+            this.setState({registrationTable:[]})
+        }
     };
 
-    render() {
-        const { navigate } = this.props.navigation;
-        return (
-            <ScrollView style={this.styles.RegisterLeagueContainer}>
-                <View style={{flex: 1, flexDirection:'row'}}>
-                    <Text style={this.styles.title}>Register for Local League</Text>
-                    <Switch
-                        style={this.styles.switchBar}
-                        onValueChange={(value) => this.setState({switchValue: value ? "Yes" : "No"})}
-                        value = {this.state.switchValue === "Yes"}
-                    />
-                    <Text style={{fontSize: 13, color: 'grey', marginLeft: 10, marginTop: 5}}>
-                        {this.state.switchValue}
-                    </Text>
-                </View>
-
+    renderRegisterInfoTable = () => {
+        let totalInterested = 0;
+        let totalConfirmed = 0;
+        if (this.state.switchValue === "Yes") {
+            return(
                 <View style={this.styles.tableContainer}>
                     <View style={this.styles.tableHeadContainer}>
                         <View style={this.styles.suburbView}>
@@ -108,23 +158,48 @@ export default class RegisterLeague extends Component {
                         </View>
                     </View>
 
-                    <View style={this.styles.tableHeadContainer}>
-                        <Text style={this.styles.tableBodyTextBlack}>Albany</Text>
-                        <Text style={this.styles.tableBodyTextRed}>3</Text>
-                        <Text style={this.styles.tableBodyTextBlue}>0</Text>
-                    </View>
-                    <View style={this.styles.tableHeadContainer}>
-                        <Text style={this.styles.tableBodyTextBlack}>Narrow Neck</Text>
-                        <Text style={this.styles.tableBodyTextRed}>1</Text>
-                        <Text style={this.styles.tableBodyTextBlue}>0</Text>
-                    </View>
+                    {this.registrationInfo.map((item) => {
+                        totalInterested += Number(item.interested);
+                        totalConfirmed += Number(item.confirmed);
+                        return(
+                            <View style={this.styles.tableHeadContainer} key={item.suburb}>
+                                <Text style={this.styles.tableBodyTextBlack}>{item.suburb}</Text>
+                                <Text style={this.styles.tableBodyTextRed}>{item.interested}</Text>
+                                <Text style={this.styles.tableBodyTextBlue}>{item.confirmed}</Text>
+                            </View>
+                        )
+                    })}
+
                     <View style={this.styles.tableHeadContainer}>
                         <Text style={this.styles.tableFootTextBlack}>Total</Text>
-                        <Text style={this.styles.tableFootTextRed}>4</Text>
-                        <Text style={this.styles.tableFootTextBlue}>0</Text>
+                        <Text style={this.styles.tableFootTextRed}>{totalInterested.toString()}</Text>
+                        <Text style={this.styles.tableFootTextBlue}>{totalConfirmed.toString()}</Text>
                     </View>
-
                 </View>
+            )
+        }
+    };
+
+    render() {
+        const { navigate } = this.props.navigation;
+        return (
+            <ScrollView style={this.styles.RegisterLeagueContainer}>
+                <View style={{flex: 1, flexDirection:'row'}}>
+                    <Text style={this.styles.title}>Register for Local League</Text>
+                    <Switch
+                        style={this.styles.switchBar}
+                        onValueChange={(value) => {
+                            this.setState({switchValue: value ? "Yes" : "No"});
+                            this.handleSwitch(value);
+                        }}
+                        value = {this.state.switchValue === "Yes"}
+                    />
+                    <Text style={{fontSize: 13, color: 'grey', marginLeft: 10, marginTop: 5}}>
+                        {this.state.switchValue}
+                    </Text>
+                </View>
+
+                {this.renderRegisterInfoTable()}
 
                 <View style={this.styles.ongoingLeagueContainer}>
                     <Text style={this.styles.subTitle}>
@@ -161,6 +236,8 @@ export default class RegisterLeague extends Component {
                         )
                     })}
                 </View>
+
+                <View style={{height:20}}></View>
 
             </ScrollView>
         )
@@ -234,21 +311,21 @@ export default class RegisterLeague extends Component {
             textAlign:"center",
         },
         tableBodyTextBlack:{
-            backgroundColor: 'rgb(180,180,180)',
+            backgroundColor: 'white',
             color: 'black',
             margin: 1,
             flex:0.3,
             textAlign:'center',
         },
         tableBodyTextRed:{
-            backgroundColor: 'rgb(180,180,180)',
+            backgroundColor: 'white',
             color: 'rgb(255,64,129)',
             margin: 1,
             flex:0.3,
             textAlign:'center',
         },
         tableBodyTextBlue:{
-            backgroundColor: 'rgb(180,180,180)',
+            backgroundColor: 'white',
             color: 'rgb(33,150,243)',
             margin: 1,
             flex:0.3,

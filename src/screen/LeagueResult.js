@@ -140,6 +140,7 @@ export default class LeagueResult extends Component{
                     )
                 })}
 
+                <View style={{height:20}}></View>
 
             </ScrollView>
         )

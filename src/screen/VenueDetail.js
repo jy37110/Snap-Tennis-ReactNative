@@ -43,6 +43,9 @@ export default class VenueDetail extends Component {
                     </View>
                     }
                 />
+
+                <View style={{height:20}}></View>
+
             </ScrollView>
         )
     }

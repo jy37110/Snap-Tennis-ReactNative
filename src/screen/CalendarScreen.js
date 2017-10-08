@@ -3,12 +3,15 @@ import {
     StyleSheet,
     ScrollView,
     Button,
+    View,
+    Platform,
 } from 'react-native';
 import DynamoDb from '../utility/DynamoDb';
 import EachScheduleView from '../components/EachScheduleView';
 import LeagueScheduleOperation from "../utility/LeagueScheduleOperation";
 import ReviewService from '../utility/ReviewService';
 import { Calendar } from 'react-native-calendars';
+import HomeScreen from "./HomeScreen";
 
 export default class CalendarScreen extends Component {
     constructor(props){
@@ -28,7 +31,7 @@ export default class CalendarScreen extends Component {
         this.dbContext = this.dbInstance.getDbContext();
         this.scan = [];
         this.hasSchedule = false;
-        this.userId = "62c88ffd-019b-4bbb-8d17-69427c669ae5";
+        this.userId = HomeScreen.userId;
         this.startDate = this.params.startDate.substr(0,10);
         this.endDate = this.params.endDate.substr(0,10);
         this.leagueId = this.params.id;
@@ -221,7 +224,7 @@ export default class CalendarScreen extends Component {
                         {/*color={Platform.select({ios:"white", android:"grey"})}*/}
                     {/*/>*/}
                 {/*</View>*/}
-
+                <View style={{height:20}}></View>
             </ScrollView>
         )
     }

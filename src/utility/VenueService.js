@@ -22,4 +22,35 @@ export default class VenueService{
             callback(err,data);
         })
     }
+
+    getVenueReview(venueName, suburb, callback){
+        let params = {
+            TableName:"NZVenueReview",
+            ProjectionExpression:"suburb, venue_name, venue_review_id, comments, reviewer_id",
+            FilterExpression: 'suburb = :suburb and venue_name = :venueName',
+            ExpressionAttributeValues: {
+                ":venueName": venueName,
+                ":suburb":suburb,
+            }
+        };
+        this.dbContext.scan(params, function(err, data){
+            callback(err,data);
+        })
+    }
+
+    createReview(reviewInfo,callback){
+        let params = {
+            TableName: "NZVenueReview",
+            Item:{
+                venue_review_id: reviewInfo.reviewId,
+                comments: reviewInfo.comments,
+                reviewer_id: reviewInfo.reviewerId,
+                suburb: reviewInfo.suburb,
+                venue_name: reviewInfo.venueName,
+            }
+        };
+        this.dbContext.put(params, function (err, data) {
+            callback(err,data);
+        })
+    }
 }

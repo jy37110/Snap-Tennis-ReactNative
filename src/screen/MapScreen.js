@@ -51,7 +51,8 @@ export default class MapScreen extends Component {
                 {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
                 {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
                 {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
-                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""}]
+                {title:"", suburb:"", latlng:{latitude:0, longitude:0,}, numberOfCourts:"", access:"", averageRating:"", condition:"", costPerHour:"", designation:"", region:"", address:""},
+                ]
         };
     }
 

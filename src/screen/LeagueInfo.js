@@ -18,15 +18,13 @@ export default class LeagueInfo extends Component {
             switchValue: "No",
             playerNameList: [],
         };
-        this.playerNameArr = [];
         this.playerList = [];
         let userServiceInstance = new UserService();
         this.params.players.map((playerId) => {
             userServiceInstance.getUserFullName(playerId,(id,name) => {
-                this.playerNameArr.push(name);
                 this.playerList.push({playerId:id,playerName:name});
                 this.setState({
-                    playerNameList:this.playerNameArr
+                    playerNameList:this.playerList
                 })
             })
         });
@@ -111,12 +109,12 @@ export default class LeagueInfo extends Component {
                         <Text style={this.styles.bodyTitleText}>League Players List:</Text>
                     </View>
                     <View style={this.styles.eachContentContainer}>
-                        {this.state.playerNameList.map((item, i) => {
+                        {this.state.playerNameList.map((item) => {
                             return(
-                                <Text key={i}
+                                <Text key={item.playerId}
                                       style={this.styles.eachLineOfContent}
-                                      onPress={()=>{alert("My name is: " + item)}}
-                                >{item}</Text>
+                                      onPress={()=>{navigate("PlayerInfo",{leagueId:this.params.id,playerId:item.playerId,playerName:item.playerName})}}
+                                >{item.playerName}</Text>
                             )
                         })}
                     </View>

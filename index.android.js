@@ -16,6 +16,7 @@ import CreateSchedule from './src/screen/CreateSchedule';
 import EditSchedule from './src/screen/EditSchedule';
 import LeagueResult from './src/screen/LeagueResult';
 import LeagueReview from './src/screen/LeagueReview';
+import PlayerInfo from './src/screen/PlayerInfo';
 import { MenuContext } from 'react-native-popup-menu';
 
 const App = StackNavigator({
@@ -30,6 +31,7 @@ const App = StackNavigator({
     EditSchedule:{screen: EditSchedule},
     LeagueResult:{screen: LeagueResult},
     LeagueReview:{screen: LeagueReview},
+    PlayerInfo:{screen: PlayerInfo},
 });
 
 export default class nativeWebStorm extends Component {

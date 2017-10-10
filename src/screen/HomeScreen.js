@@ -17,6 +17,8 @@ export default class HomeScreen extends Component {
     };
 
     static userId = Platform.select({ios:"62c88ffd-019b-4bbb-8d17-69427c669ae5", android:"891d5b75-6acc-429f-ac50-fa27158c611b"});
+    // static userId = Platform.select({ios:"62c88ffd-019b-4bbb-8d17-69427c669ae5", android:"62c88ffd-019b-4bbb-8d17-69427c669ae5"});
+
 
     render() {
         const screens = [
@@ -38,18 +40,18 @@ export default class HomeScreen extends Component {
                 source: require('../image/map_court.png'),
                 action: () => {navigate('Map')},
             },
-            {
-                key: 6,
-                title: 'Develop entry',
-                source: require('../image/map_court.png'),
-                action: () => {navigate("LeagueResult",{
-                    leagueId:this.leagueId,
-                    p1Id:"62c88ffd-019b-4bbb-8d17-69427c669ae5",
-                    p2Id:"d3d8dc87-2cfc-4f95-9995-c163f082ce9b",
-                    p1Name:"Chao",
-                    p2Name:"Sam",
-                })},
-            },
+            // {
+            //     key: 6,
+            //     title: 'Develop entry',
+            //     source: require('../image/map_court.png'),
+            //     action: () => {navigate("LeagueResult",{
+            //         leagueId:this.leagueId,
+            //         p1Id:"62c88ffd-019b-4bbb-8d17-69427c669ae5",
+            //         p2Id:"d3d8dc87-2cfc-4f95-9995-c163f082ce9b",
+            //         p1Name:"Chao",
+            //         p2Name:"Sam",
+            //     })},
+            // },
         ];
         const { navigate } = this.props.navigation;
         const renderedButtons = screens.map(b => {

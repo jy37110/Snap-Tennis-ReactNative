@@ -8,8 +8,13 @@ export default class DynamoDb{
             secretAccessKey: "ajyvc6xi5KEjsRoThmafIzL0yg6bpBT00zyW7/fY"
         });
         this.docClient = new AWS.DynamoDB.DocumentClient({dynamoDbCrc32:false});
+        this.S3Instance = new AWS.S3();
     }
     getDbContext(){
         return this.docClient;
+    }
+
+    getS3Instance(){
+        return this.S3Instance;
     }
 }

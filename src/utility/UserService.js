@@ -45,4 +45,16 @@ export default class UserService{
             })
         }
     }
+
+    getUserInfo(userId, callback){
+        if (userId !== ""){
+            let params = {
+                TableName:"NZUser",
+                Key:{"user_id":userId}
+            };
+            this.dbContext.get(params,function(err,data){
+                callback(err, data.Item);
+            })
+        }
+    }
 }
